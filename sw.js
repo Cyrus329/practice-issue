@@ -1,12 +1,12 @@
-const CACHE_NAME = "question-bank-trainer-20260623-final-merge-1570";
+const CACHE_NAME = "question-bank-trainer-20260623-sequence-answer-analysis-1570-v1";
 const ASSETS = [
   "./",
   "./index.html",
-  "./styles.css?v=20260623-final-merge-1570",
+  "./styles.css?v=20260623-sequence-answer-analysis-1570-v1",
   "./core.js",
-  "./app.js?v=20260623-final-merge-1570",
-  "./question-bank-data.js?v=20260623-final-merge-1570",
-  "./question-bank-data.json?v=20260623-final-merge-1570",
+  "./app.js?v=20260623-sequence-answer-analysis-1570-v1",
+  "./question-bank-data.js?v=20260623-sequence-answer-analysis-1570-v1",
+  "./question-bank-data.json?v=20260623-sequence-answer-analysis-1570-v1",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png"

@@ -5,6 +5,9 @@ const PROGRESS_STORE = "progress";
 const BUNDLED_DATA_URL = "question-bank-data.json";
 const PAGE_SIZE = QuestionBankCore.PAGE_SIZE;
 
+const FORCE_CLEAN_VERSION_KEY = "zsb-question-bank-trainer:clean-version";
+const FORCE_CLEAN_VERSION = "20260623-sequence-answer-analysis-1570-v1";
+
 const els = {
   searchInput: document.querySelector("#searchInput"),
   subjectFilter: document.querySelector("#subjectFilter"),
@@ -189,19 +192,17 @@ async function ensureBundledQuestionsCurrent() {
     return false;
   }
 
-  if (!state.questions.length) {
+  const savedCleanVersion = localStorage.getItem(FORCE_CLEAN_VERSION_KEY) || "";
+  const bundledIds = new Set(bundled.map((question) => String(question.id || "")));
+  const localIds = new Set(state.questions.map((question) => String(question.id || "")));
+  const sameQuestionSet = state.questions.length === bundled.length &&
+    bundled.every((question) => localIds.has(String(question.id || ""))) &&
+    state.questions.every((question) => bundledIds.has(String(question.id || "")));
+
+  if (savedCleanVersion !== FORCE_CLEAN_VERSION || !sameQuestionSet) {
     await replaceQuestions(bundled, { silent: true });
-    showToast(`已载入内置题库 ${bundled.length} 道`);
-    return true;
-  }
-
-  const merged = mergeQuestionsPreferBundled(state.questions, bundled);
-  const localIds = new Set(state.questions.map((question) => question.id));
-  const hasNewBundledQuestion = bundled.some((question) => !localIds.has(question.id));
-
-  if (merged.length !== state.questions.length || hasNewBundledQuestion) {
-    await replaceQuestions(merged, { silent: true });
-    showToast(`题库已合并更新到 ${merged.length} 道，已保留本地原有题和做题记录`);
+    localStorage.setItem(FORCE_CLEAN_VERSION_KEY, FORCE_CLEAN_VERSION);
+    showToast(`题库已重置为干净版 ${bundled.length} 道，已清掉本地重复/乱码题`);
     return true;
   }
 
