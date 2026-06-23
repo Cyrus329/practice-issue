@@ -1,0 +1,839 @@
+{
+  "splitMode": "one-question-per-record",
+  "sourceImages": 102,
+  "importedRecords": 466,
+  "bySubject": {
+    "计算机": 393,
+    "英语": 38,
+    "高数": 35
+  },
+  "skippedPages": [
+    {
+      "id": "new-102",
+      "file": "new-102.jpg",
+      "subject": "计算机",
+      "chunksDetected": 1,
+      "recordsImported": 0,
+      "chars": 354,
+      "reason": "未能稳定拆出单题，先不硬塞乱码"
+    }
+  ],
+  "pageSummaries": [
+    {
+      "id": "new-001",
+      "file": "new-001.jpg",
+      "subject": "计算机",
+      "chunksDetected": 6,
+      "recordsImported": 4,
+      "chars": 902
+    },
+    {
+      "id": "new-002",
+      "file": "new-002.jpg",
+      "subject": "计算机",
+      "chunksDetected": 3,
+      "recordsImported": 3,
+      "chars": 818
+    },
+    {
+      "id": "new-003",
+      "file": "new-003.jpg",
+      "subject": "计算机",
+      "chunksDetected": 12,
+      "recordsImported": 10,
+      "chars": 1366
+    },
+    {
+      "id": "new-004",
+      "file": "new-004.jpg",
+      "subject": "计算机",
+      "chunksDetected": 12,
+      "recordsImported": 7,
+      "chars": 1289
+    },
+    {
+      "id": "new-005",
+      "file": "new-005.jpg",
+      "subject": "计算机",
+      "chunksDetected": 5,
+      "recordsImported": 5,
+      "chars": 1035
+    },
+    {
+      "id": "new-006",
+      "file": "new-006.jpg",
+      "subject": "计算机",
+      "chunksDetected": 8,
+      "recordsImported": 8,
+      "chars": 1491
+    },
+    {
+      "id": "new-007",
+      "file": "new-007.jpg",
+      "subject": "计算机",
+      "chunksDetected": 15,
+      "recordsImported": 11,
+      "chars": 1696
+    },
+    {
+      "id": "new-008",
+      "file": "new-008.jpg",
+      "subject": "计算机",
+      "chunksDetected": 9,
+      "recordsImported": 8,
+      "chars": 1314
+    },
+    {
+      "id": "new-009",
+      "file": "new-009.jpg",
+      "subject": "计算机",
+      "chunksDetected": 2,
+      "recordsImported": 2,
+      "chars": 776
+    },
+    {
+      "id": "new-010",
+      "file": "new-010.jpg",
+      "subject": "计算机",
+      "chunksDetected": 9,
+      "recordsImported": 8,
+      "chars": 1631
+    },
+    {
+      "id": "new-011",
+      "file": "new-011.jpg",
+      "subject": "计算机",
+      "chunksDetected": 11,
+      "recordsImported": 10,
+      "chars": 1264
+    },
+    {
+      "id": "new-012",
+      "file": "new-012.jpg",
+      "subject": "计算机",
+      "chunksDetected": 11,
+      "recordsImported": 8,
+      "chars": 981
+    },
+    {
+      "id": "new-013",
+      "file": "new-013.jpg",
+      "subject": "计算机",
+      "chunksDetected": 10,
+      "recordsImported": 10,
+      "chars": 1390
+    },
+    {
+      "id": "new-014",
+      "file": "new-014.jpg",
+      "subject": "计算机",
+      "chunksDetected": 18,
+      "recordsImported": 10,
+      "chars": 1541
+    },
+    {
+      "id": "new-015",
+      "file": "new-015.jpg",
+      "subject": "计算机",
+      "chunksDetected": 9,
+      "recordsImported": 5,
+      "chars": 1175
+    },
+    {
+      "id": "new-016",
+      "file": "new-016.jpg",
+      "subject": "计算机",
+      "chunksDetected": 9,
+      "recordsImported": 8,
+      "chars": 1731
+    },
+    {
+      "id": "new-017",
+      "file": "new-017.jpg",
+      "subject": "计算机",
+      "chunksDetected": 9,
+      "recordsImported": 6,
+      "chars": 1535
+    },
+    {
+      "id": "new-018",
+      "file": "new-018.jpg",
+      "subject": "计算机",
+      "chunksDetected": 6,
+      "recordsImported": 6,
+      "chars": 1187
+    },
+    {
+      "id": "new-019",
+      "file": "new-019.jpg",
+      "subject": "计算机",
+      "chunksDetected": 8,
+      "recordsImported": 7,
+      "chars": 1345
+    },
+    {
+      "id": "new-020",
+      "file": "new-020.jpg",
+      "subject": "计算机",
+      "chunksDetected": 1,
+      "recordsImported": 1,
+      "chars": 515
+    },
+    {
+      "id": "new-021",
+      "file": "new-021.jpg",
+      "subject": "计算机",
+      "chunksDetected": 10,
+      "recordsImported": 8,
+      "chars": 1028
+    },
+    {
+      "id": "new-022",
+      "file": "new-022.jpg",
+      "subject": "计算机",
+      "chunksDetected": 9,
+      "recordsImported": 3,
+      "chars": 772
+    },
+    {
+      "id": "new-023",
+      "file": "new-023.jpg",
+      "subject": "计算机",
+      "chunksDetected": 5,
+      "recordsImported": 3,
+      "chars": 520
+    },
+    {
+      "id": "new-024",
+      "file": "new-024.jpg",
+      "subject": "计算机",
+      "chunksDetected": 7,
+      "recordsImported": 6,
+      "chars": 778
+    },
+    {
+      "id": "new-025",
+      "file": "new-025.jpg",
+      "subject": "计算机",
+      "chunksDetected": 7,
+      "recordsImported": 6,
+      "chars": 1083
+    },
+    {
+      "id": "new-026",
+      "file": "new-026.jpg",
+      "subject": "计算机",
+      "chunksDetected": 10,
+      "recordsImported": 9,
+      "chars": 1327
+    },
+    {
+      "id": "new-027",
+      "file": "new-027.jpg",
+      "subject": "计算机",
+      "chunksDetected": 8,
+      "recordsImported": 8,
+      "chars": 1204
+    },
+    {
+      "id": "new-028",
+      "file": "new-028.jpg",
+      "subject": "计算机",
+      "chunksDetected": 6,
+      "recordsImported": 6,
+      "chars": 1226
+    },
+    {
+      "id": "new-029",
+      "file": "new-029.jpg",
+      "subject": "计算机",
+      "chunksDetected": 8,
+      "recordsImported": 8,
+      "chars": 1333
+    },
+    {
+      "id": "new-030",
+      "file": "new-030.jpg",
+      "subject": "计算机",
+      "chunksDetected": 7,
+      "recordsImported": 5,
+      "chars": 1188
+    },
+    {
+      "id": "new-031",
+      "file": "new-031.jpg",
+      "subject": "计算机",
+      "chunksDetected": 14,
+      "recordsImported": 10,
+      "chars": 1473
+    },
+    {
+      "id": "new-032",
+      "file": "new-032.jpg",
+      "subject": "计算机",
+      "chunksDetected": 19,
+      "recordsImported": 7,
+      "chars": 1265
+    },
+    {
+      "id": "new-033",
+      "file": "new-033.jpg",
+      "subject": "计算机",
+      "chunksDetected": 11,
+      "recordsImported": 10,
+      "chars": 1443
+    },
+    {
+      "id": "new-034",
+      "file": "new-034.jpg",
+      "subject": "计算机",
+      "chunksDetected": 12,
+      "recordsImported": 7,
+      "chars": 1443
+    },
+    {
+      "id": "new-035",
+      "file": "new-035.jpg",
+      "subject": "计算机",
+      "chunksDetected": 2,
+      "recordsImported": 2,
+      "chars": 333
+    },
+    {
+      "id": "new-036",
+      "file": "new-036.jpg",
+      "subject": "英语",
+      "chunksDetected": 6,
+      "recordsImported": 4,
+      "chars": 874
+    },
+    {
+      "id": "new-037",
+      "file": "new-037.jpg",
+      "subject": "英语",
+      "chunksDetected": 2,
+      "recordsImported": 2,
+      "chars": 583
+    },
+    {
+      "id": "new-038",
+      "file": "new-038.jpg",
+      "subject": "英语",
+      "chunksDetected": 3,
+      "recordsImported": 3,
+      "chars": 898
+    },
+    {
+      "id": "new-039",
+      "file": "new-039.jpg",
+      "subject": "英语",
+      "chunksDetected": 2,
+      "recordsImported": 1,
+      "chars": 868
+    },
+    {
+      "id": "new-040",
+      "file": "new-040.jpg",
+      "subject": "英语",
+      "chunksDetected": 6,
+      "recordsImported": 5,
+      "chars": 1032
+    },
+    {
+      "id": "new-041",
+      "file": "new-041.jpg",
+      "subject": "英语",
+      "chunksDetected": 1,
+      "recordsImported": 1,
+      "chars": 592
+    },
+    {
+      "id": "new-042",
+      "file": "new-042.jpg",
+      "subject": "英语",
+      "chunksDetected": 2,
+      "recordsImported": 1,
+      "chars": 771
+    },
+    {
+      "id": "new-043",
+      "file": "new-043.jpg",
+      "subject": "英语",
+      "chunksDetected": 6,
+      "recordsImported": 5,
+      "chars": 825
+    },
+    {
+      "id": "new-044",
+      "file": "new-044.jpg",
+      "subject": "英语",
+      "chunksDetected": 4,
+      "recordsImported": 3,
+      "chars": 726
+    },
+    {
+      "id": "new-045",
+      "file": "new-045.jpg",
+      "subject": "英语",
+      "chunksDetected": 6,
+      "recordsImported": 2,
+      "chars": 685
+    },
+    {
+      "id": "new-046",
+      "file": "new-046.jpg",
+      "subject": "英语",
+      "chunksDetected": 5,
+      "recordsImported": 4,
+      "chars": 1023
+    },
+    {
+      "id": "new-047",
+      "file": "new-047.jpg",
+      "subject": "英语",
+      "chunksDetected": 6,
+      "recordsImported": 5,
+      "chars": 1023
+    },
+    {
+      "id": "new-048",
+      "file": "new-048.jpg",
+      "subject": "英语",
+      "chunksDetected": 3,
+      "recordsImported": 2,
+      "chars": 432
+    },
+    {
+      "id": "new-049",
+      "file": "new-049.jpg",
+      "subject": "高数",
+      "chunksDetected": 1,
+      "recordsImported": 1,
+      "chars": 177
+    },
+    {
+      "id": "new-050",
+      "file": "new-050.jpg",
+      "subject": "高数",
+      "chunksDetected": 0,
+      "recordsImported": 1,
+      "chars": 204
+    },
+    {
+      "id": "new-051",
+      "file": "new-051.jpg",
+      "subject": "高数",
+      "chunksDetected": 0,
+      "recordsImported": 1,
+      "chars": 280
+    },
+    {
+      "id": "new-052",
+      "file": "new-052.jpg",
+      "subject": "高数",
+      "chunksDetected": 1,
+      "recordsImported": 1,
+      "chars": 312
+    },
+    {
+      "id": "new-053",
+      "file": "new-053.jpg",
+      "subject": "高数",
+      "chunksDetected": 1,
+      "recordsImported": 1,
+      "chars": 207
+    },
+    {
+      "id": "new-054",
+      "file": "new-054.jpg",
+      "subject": "高数",
+      "chunksDetected": 0,
+      "recordsImported": 1,
+      "chars": 261
+    },
+    {
+      "id": "new-055",
+      "file": "new-055.jpg",
+      "subject": "高数",
+      "chunksDetected": 0,
+      "recordsImported": 1,
+      "chars": 260
+    },
+    {
+      "id": "new-056",
+      "file": "new-056.jpg",
+      "subject": "高数",
+      "chunksDetected": 0,
+      "recordsImported": 1,
+      "chars": 126
+    },
+    {
+      "id": "new-057",
+      "file": "new-057.jpg",
+      "subject": "高数",
+      "chunksDetected": 7,
+      "recordsImported": 7,
+      "chars": 734
+    },
+    {
+      "id": "new-058",
+      "file": "new-058.jpg",
+      "subject": "高数",
+      "chunksDetected": 4,
+      "recordsImported": 4,
+      "chars": 762
+    },
+    {
+      "id": "new-059",
+      "file": "new-059.jpg",
+      "subject": "高数",
+      "chunksDetected": 5,
+      "recordsImported": 5,
+      "chars": 857
+    },
+    {
+      "id": "new-060",
+      "file": "new-060.jpg",
+      "subject": "高数",
+      "chunksDetected": 8,
+      "recordsImported": 8,
+      "chars": 961
+    },
+    {
+      "id": "new-061",
+      "file": "new-061.jpg",
+      "subject": "高数",
+      "chunksDetected": 3,
+      "recordsImported": 3,
+      "chars": 447
+    },
+    {
+      "id": "new-062",
+      "file": "new-062.jpg",
+      "subject": "计算机",
+      "chunksDetected": 3,
+      "recordsImported": 1,
+      "chars": 275
+    },
+    {
+      "id": "new-063",
+      "file": "new-063.jpg",
+      "subject": "计算机",
+      "chunksDetected": 8,
+      "recordsImported": 6,
+      "chars": 1084
+    },
+    {
+      "id": "new-064",
+      "file": "new-064.jpg",
+      "subject": "计算机",
+      "chunksDetected": 5,
+      "recordsImported": 5,
+      "chars": 816
+    },
+    {
+      "id": "new-065",
+      "file": "new-065.jpg",
+      "subject": "计算机",
+      "chunksDetected": 3,
+      "recordsImported": 3,
+      "chars": 916
+    },
+    {
+      "id": "new-066",
+      "file": "new-066.jpg",
+      "subject": "计算机",
+      "chunksDetected": 5,
+      "recordsImported": 5,
+      "chars": 802
+    },
+    {
+      "id": "new-067",
+      "file": "new-067.jpg",
+      "subject": "计算机",
+      "chunksDetected": 8,
+      "recordsImported": 4,
+      "chars": 686
+    },
+    {
+      "id": "new-068",
+      "file": "new-068.jpg",
+      "subject": "计算机",
+      "chunksDetected": 5,
+      "recordsImported": 4,
+      "chars": 968
+    },
+    {
+      "id": "new-069",
+      "file": "new-069.jpg",
+      "subject": "计算机",
+      "chunksDetected": 4,
+      "recordsImported": 2,
+      "chars": 517
+    },
+    {
+      "id": "new-070",
+      "file": "new-070.jpg",
+      "subject": "计算机",
+      "chunksDetected": 9,
+      "recordsImported": 6,
+      "chars": 855
+    },
+    {
+      "id": "new-071",
+      "file": "new-071.jpg",
+      "subject": "计算机",
+      "chunksDetected": 9,
+      "recordsImported": 4,
+      "chars": 801
+    },
+    {
+      "id": "new-072",
+      "file": "new-072.jpg",
+      "subject": "计算机",
+      "chunksDetected": 4,
+      "recordsImported": 2,
+      "chars": 582
+    },
+    {
+      "id": "new-073",
+      "file": "new-073.jpg",
+      "subject": "计算机",
+      "chunksDetected": 12,
+      "recordsImported": 5,
+      "chars": 995
+    },
+    {
+      "id": "new-074",
+      "file": "new-074.jpg",
+      "subject": "计算机",
+      "chunksDetected": 8,
+      "recordsImported": 4,
+      "chars": 810
+    },
+    {
+      "id": "new-075",
+      "file": "new-075.jpg",
+      "subject": "计算机",
+      "chunksDetected": 10,
+      "recordsImported": 4,
+      "chars": 756
+    },
+    {
+      "id": "new-076",
+      "file": "new-076.jpg",
+      "subject": "计算机",
+      "chunksDetected": 7,
+      "recordsImported": 4,
+      "chars": 924
+    },
+    {
+      "id": "new-077",
+      "file": "new-077.jpg",
+      "subject": "计算机",
+      "chunksDetected": 8,
+      "recordsImported": 5,
+      "chars": 1003
+    },
+    {
+      "id": "new-078",
+      "file": "new-078.jpg",
+      "subject": "计算机",
+      "chunksDetected": 5,
+      "recordsImported": 4,
+      "chars": 588
+    },
+    {
+      "id": "new-079",
+      "file": "new-079.jpg",
+      "subject": "计算机",
+      "chunksDetected": 5,
+      "recordsImported": 3,
+      "chars": 644
+    },
+    {
+      "id": "new-080",
+      "file": "new-080.jpg",
+      "subject": "计算机",
+      "chunksDetected": 8,
+      "recordsImported": 5,
+      "chars": 1055
+    },
+    {
+      "id": "new-081",
+      "file": "new-081.jpg",
+      "subject": "计算机",
+      "chunksDetected": 6,
+      "recordsImported": 3,
+      "chars": 750
+    },
+    {
+      "id": "new-082",
+      "file": "new-082.jpg",
+      "subject": "计算机",
+      "chunksDetected": 6,
+      "recordsImported": 4,
+      "chars": 827
+    },
+    {
+      "id": "new-083",
+      "file": "new-083.jpg",
+      "subject": "计算机",
+      "chunksDetected": 7,
+      "recordsImported": 6,
+      "chars": 914
+    },
+    {
+      "id": "new-084",
+      "file": "new-084.jpg",
+      "subject": "计算机",
+      "chunksDetected": 8,
+      "recordsImported": 5,
+      "chars": 951
+    },
+    {
+      "id": "new-085",
+      "file": "new-085.jpg",
+      "subject": "计算机",
+      "chunksDetected": 8,
+      "recordsImported": 5,
+      "chars": 999
+    },
+    {
+      "id": "new-086",
+      "file": "new-086.jpg",
+      "subject": "计算机",
+      "chunksDetected": 5,
+      "recordsImported": 4,
+      "chars": 618
+    },
+    {
+      "id": "new-087",
+      "file": "new-087.jpg",
+      "subject": "计算机",
+      "chunksDetected": 8,
+      "recordsImported": 3,
+      "chars": 815
+    },
+    {
+      "id": "new-088",
+      "file": "new-088.jpg",
+      "subject": "计算机",
+      "chunksDetected": 6,
+      "recordsImported": 4,
+      "chars": 587
+    },
+    {
+      "id": "new-089",
+      "file": "new-089.jpg",
+      "subject": "计算机",
+      "chunksDetected": 9,
+      "recordsImported": 4,
+      "chars": 906
+    },
+    {
+      "id": "new-090",
+      "file": "new-090.jpg",
+      "subject": "计算机",
+      "chunksDetected": 9,
+      "recordsImported": 6,
+      "chars": 793
+    },
+    {
+      "id": "new-091",
+      "file": "new-091.jpg",
+      "subject": "计算机",
+      "chunksDetected": 5,
+      "recordsImported": 4,
+      "chars": 731
+    },
+    {
+      "id": "new-092",
+      "file": "new-092.jpg",
+      "subject": "计算机",
+      "chunksDetected": 7,
+      "recordsImported": 4,
+      "chars": 1134
+    },
+    {
+      "id": "new-093",
+      "file": "new-093.jpg",
+      "subject": "计算机",
+      "chunksDetected": 7,
+      "recordsImported": 5,
+      "chars": 836
+    },
+    {
+      "id": "new-094",
+      "file": "new-094.jpg",
+      "subject": "计算机",
+      "chunksDetected": 7,
+      "recordsImported": 5,
+      "chars": 895
+    },
+    {
+      "id": "new-095",
+      "file": "new-095.jpg",
+      "subject": "计算机",
+      "chunksDetected": 5,
+      "recordsImported": 3,
+      "chars": 721
+    },
+    {
+      "id": "new-096",
+      "file": "new-096.jpg",
+      "subject": "计算机",
+      "chunksDetected": 7,
+      "recordsImported": 6,
+      "chars": 1072
+    },
+    {
+      "id": "new-097",
+      "file": "new-097.jpg",
+      "subject": "计算机",
+      "chunksDetected": 5,
+      "recordsImported": 3,
+      "chars": 658
+    },
+    {
+      "id": "new-098",
+      "file": "new-098.jpg",
+      "subject": "计算机",
+      "chunksDetected": 5,
+      "recordsImported": 4,
+      "chars": 595
+    },
+    {
+      "id": "new-099",
+      "file": "new-099.jpg",
+      "subject": "计算机",
+      "chunksDetected": 2,
+      "recordsImported": 1,
+      "chars": 704
+    },
+    {
+      "id": "new-100",
+      "file": "new-100.jpg",
+      "subject": "计算机",
+      "chunksDetected": 2,
+      "recordsImported": 1,
+      "chars": 1274
+    },
+    {
+      "id": "new-101",
+      "file": "new-101.jpg",
+      "subject": "计算机",
+      "chunksDetected": 3,
+      "recordsImported": 2,
+      "chars": 544
+    },
+    {
+      "id": "new-102",
+      "file": "new-102.jpg",
+      "subject": "计算机",
+      "chunksDetected": 1,
+      "recordsImported": 0,
+      "chars": 354
+    }
+  ]
+}

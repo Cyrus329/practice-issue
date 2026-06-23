@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#147a7e">
+  <title>专升本题库训练中心</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Question Bank</p>
+        <h1>专升本题库训练中心</h1>
+      </div>
+      <div class="top-actions">
+        <button class="icon-button" id="sampleButton" type="button" title="载入示例题" aria-label="载入示例题">
+          <span aria-hidden="true">＋</span><span>示例</span>
+        </button>
+        <button class="icon-button" id="stressButton" type="button" title="载入1万题演示" aria-label="载入1万题演示">
+          <span aria-hidden="true">≡</span><span>1万演示</span>
+        </button>
+        <button class="icon-button" id="importButton" type="button" title="导入题库" aria-label="导入题库">
+          <span aria-hidden="true">↥</span><span>导入</span>
+        </button>
+        <button class="icon-button secondary" id="exportButton" type="button" title="导出题库" aria-label="导出题库">
+          <span aria-hidden="true">↧</span><span>导出</span>
+        </button>
+      </div>
+    </header>
+
+    <input id="importInput" type="file" accept=".json,application/json" hidden>
+
+    <section class="toolbar" aria-label="题库筛选">
+      <label class="field search-field">
+        <span>搜索</span>
+        <input id="searchInput" type="search" placeholder="题号、考点、关键词">
+      </label>
+      <label class="field">
+        <span>科目</span>
+        <select id="subjectFilter">
+          <option value="all">全部</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>章节</span>
+        <select id="chapterFilter">
+          <option value="all">全部</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>状态</span>
+        <select id="statusFilter">
+          <option value="all">全部</option>
+          <option value="unseen">未做</option>
+          <option value="wrong">最近做错</option>
+          <option value="correct">最近做对</option>
+          <option value="wrongBook">已进错题本</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="stats-grid" aria-label="统计">
+      <div class="stat-tile">
+        <span>题库</span>
+        <strong id="totalCount">0</strong>
+      </div>
+      <div class="stat-tile">
+        <span>当前筛选</span>
+        <strong id="filteredCount">0</strong>
+      </div>
+      <div class="stat-tile">
+        <span>最近做错</span>
+        <strong id="wrongCount">0</strong>
+      </div>
+      <div class="stat-tile">
+        <span>已进错题本</span>
+        <strong id="wrongBookCount">0</strong>
+      </div>
+    </section>
+
+    <main class="workspace">
+      <section class="list-panel" aria-label="题目列表">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">List</p>
+            <h2>题目</h2>
+          </div>
+          <div class="pager">
+            <button id="prevPageButton" type="button" class="small-button" aria-label="上一页">‹</button>
+            <span id="pageInfo">1 / 1</span>
+            <button id="nextPageButton" type="button" class="small-button" aria-label="下一页">›</button>
+          </div>
+        </div>
+        <div class="questions-list" id="questionsList" aria-live="polite"></div>
+      </section>
+
+      <section class="detail-panel" id="detailPanel" aria-label="题目详情">
+        <div class="empty-detail">
+          <p class="eyebrow">Detail</p>
+          <h2>选择一道题开始</h2>
+          <p>答案和解析会先隐藏，检查时再打开。</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="core.js"></script>
+  <script src="question-bank-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
