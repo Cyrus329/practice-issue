@@ -1,0 +1,8718 @@
+{
+  "computerReport": [
+    {
+      "id": "COMP-0001",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 1,
+      "status": "matched",
+      "page": 2
+    },
+    {
+      "id": "COMP-0002",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 2,
+      "status": "matched",
+      "page": 2
+    },
+    {
+      "id": "COMP-0003",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 3,
+      "status": "matched",
+      "page": 2
+    },
+    {
+      "id": "COMP-0004",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 4,
+      "status": "matched",
+      "page": 2
+    },
+    {
+      "id": "COMP-0005",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 5,
+      "status": "matched-no-letter",
+      "page": 2
+    },
+    {
+      "id": "COMP-0006",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 6,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0007",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 7,
+      "status": "matched-no-letter",
+      "page": 2
+    },
+    {
+      "id": "COMP-0008",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 8,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0009",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 9,
+      "status": "matched",
+      "page": 2
+    },
+    {
+      "id": "COMP-0010",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 10,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0011",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 11,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0012",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 12,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0013",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 13,
+      "status": "matched-no-letter",
+      "page": 2
+    },
+    {
+      "id": "COMP-0014",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 14,
+      "status": "matched",
+      "page": 2
+    },
+    {
+      "id": "COMP-0015",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 15,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0016",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 16,
+      "status": "matched",
+      "page": 2
+    },
+    {
+      "id": "COMP-0017",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 17,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0018",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 18,
+      "status": "matched",
+      "page": 2
+    },
+    {
+      "id": "COMP-0019",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 19,
+      "status": "matched",
+      "page": 2
+    },
+    {
+      "id": "COMP-0020",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 20,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0021",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 21,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0022",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 22,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0023",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 23,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0024",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 24,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0025",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 25,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0026",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 26,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0027",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 27,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0028",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 28,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0029",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 29,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0030",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 30,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0031",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 31,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0032",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 32,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0033",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 33,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0034",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 34,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0035",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 35,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0036",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 36,
+      "status": "matched",
+      "page": 3
+    },
+    {
+      "id": "COMP-0037",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 37,
+      "status": "matched",
+      "page": 4
+    },
+    {
+      "id": "COMP-0038",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 38,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0039",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 39,
+      "status": "matched",
+      "page": 4
+    },
+    {
+      "id": "COMP-0040",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 40,
+      "status": "matched",
+      "page": 4
+    },
+    {
+      "id": "COMP-0041",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 41,
+      "status": "matched",
+      "page": 4
+    },
+    {
+      "id": "COMP-0042",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 42,
+      "status": "matched",
+      "page": 4
+    },
+    {
+      "id": "COMP-0043",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 43,
+      "status": "matched",
+      "page": 4
+    },
+    {
+      "id": "COMP-0044",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 44,
+      "status": "matched",
+      "page": 4
+    },
+    {
+      "id": "COMP-0045",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 45,
+      "status": "matched",
+      "page": 4
+    },
+    {
+      "id": "COMP-0046",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 46,
+      "status": "matched",
+      "page": 4
+    },
+    {
+      "id": "COMP-0047",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 47,
+      "status": "matched",
+      "page": 4
+    },
+    {
+      "id": "COMP-0048",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 48,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0049",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 49,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0050",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 50,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0051",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 51,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0052",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 52,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0053",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 53,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0054",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 54,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0055",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 55,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0056",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 56,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0057",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 57,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0058",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 58,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0059",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 59,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0060",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 60,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0061",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 61,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0062",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 62,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0063",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 63,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0064",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 64,
+      "status": "matched",
+      "page": 5
+    },
+    {
+      "id": "COMP-0065",
+      "chapter": "第一章计算机基础",
+      "type": "单项选择题",
+      "number": 65,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0066",
+      "chapter": "第一章计算机基础",
+      "type": "判断题",
+      "number": 1,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0067",
+      "chapter": "第一章计算机基础",
+      "type": "判断题",
+      "number": 2,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0068",
+      "chapter": "第一章计算机基础",
+      "type": "判断题",
+      "number": 3,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0069",
+      "chapter": "第一章计算机基础",
+      "type": "判断题",
+      "number": 4,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0070",
+      "chapter": "第一章计算机基础",
+      "type": "判断题",
+      "number": 5,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0071",
+      "chapter": "第一章计算机基础",
+      "type": "判断题",
+      "number": 6,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0072",
+      "chapter": "第一章计算机基础",
+      "type": "判断题",
+      "number": 7,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0073",
+      "chapter": "第一章计算机基础",
+      "type": "判断题",
+      "number": 8,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0074",
+      "chapter": "第一章计算机基础",
+      "type": "判断题",
+      "number": 9,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0075",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 1,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0076",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 2,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0077",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 3,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0078",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 4,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0079",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 5,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0080",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 6,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0081",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 7,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0082",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 8,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0083",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 9,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0084",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 10,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0085",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 11,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0086",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 12,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0087",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 13,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0088",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 14,
+      "status": "matched",
+      "page": 6
+    },
+    {
+      "id": "COMP-0089",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 15,
+      "status": "matched",
+      "page": 7
+    },
+    {
+      "id": "COMP-0090",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 16,
+      "status": "matched",
+      "page": 7
+    },
+    {
+      "id": "COMP-0091",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 17,
+      "status": "matched",
+      "page": 7
+    },
+    {
+      "id": "COMP-0092",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 18,
+      "status": "matched",
+      "page": 7
+    },
+    {
+      "id": "COMP-0093",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 19,
+      "status": "matched",
+      "page": 7
+    },
+    {
+      "id": "COMP-0094",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 20,
+      "status": "matched",
+      "page": 7
+    },
+    {
+      "id": "COMP-0095",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 21,
+      "status": "matched",
+      "page": 7
+    },
+    {
+      "id": "COMP-0096",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 22,
+      "status": "matched",
+      "page": 7
+    },
+    {
+      "id": "COMP-0097",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 23,
+      "status": "matched",
+      "page": 7
+    },
+    {
+      "id": "COMP-0098",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 24,
+      "status": "matched",
+      "page": 7
+    },
+    {
+      "id": "COMP-0099",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 25,
+      "status": "matched-no-letter",
+      "page": 7
+    },
+    {
+      "id": "COMP-0100",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 26,
+      "status": "matched",
+      "page": 7
+    },
+    {
+      "id": "COMP-0101",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 27,
+      "status": "matched",
+      "page": 7
+    },
+    {
+      "id": "COMP-0102",
+      "chapter": "第一章计算机基础",
+      "type": "填空题",
+      "number": 28,
+      "status": "matched",
+      "page": 7
+    },
+    {
+      "id": "COMP-0103",
+      "chapter": "第一章计算机基础",
+      "type": "简答题",
+      "number": 1,
+      "status": "matched",
+      "page": 7
+    },
+    {
+      "id": "COMP-0104",
+      "chapter": "第一章计算机基础",
+      "type": "简答题",
+      "number": 2,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0105",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 1,
+      "status": "matched",
+      "page": 8
+    },
+    {
+      "id": "COMP-0106",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 2,
+      "status": "matched",
+      "page": 8
+    },
+    {
+      "id": "COMP-0107",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 3,
+      "status": "matched",
+      "page": 8
+    },
+    {
+      "id": "COMP-0108",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 4,
+      "status": "matched",
+      "page": 8
+    },
+    {
+      "id": "COMP-0109",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 5,
+      "status": "matched",
+      "page": 8
+    },
+    {
+      "id": "COMP-0110",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 6,
+      "status": "matched",
+      "page": 8
+    },
+    {
+      "id": "COMP-0111",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 7,
+      "status": "matched",
+      "page": 8
+    },
+    {
+      "id": "COMP-0112",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 8,
+      "status": "matched",
+      "page": 8
+    },
+    {
+      "id": "COMP-0113",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 9,
+      "status": "matched",
+      "page": 8
+    },
+    {
+      "id": "COMP-0114",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 10,
+      "status": "matched",
+      "page": 8
+    },
+    {
+      "id": "COMP-0115",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 11,
+      "status": "matched",
+      "page": 8
+    },
+    {
+      "id": "COMP-0116",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 12,
+      "status": "matched",
+      "page": 8
+    },
+    {
+      "id": "COMP-0117",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 13,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0118",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 14,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0119",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 15,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0120",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 16,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0121",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 17,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0122",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 18,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0123",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 19,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0124",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 20,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0125",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 21,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0126",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 22,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0127",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 23,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0128",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 24,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0129",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 25,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0130",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 26,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0131",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 27,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0132",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 28,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0133",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 29,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0134",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 30,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0135",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 31,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0136",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 32,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0137",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 33,
+      "status": "matched",
+      "page": 9
+    },
+    {
+      "id": "COMP-0138",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 34,
+      "status": "matched-no-letter",
+      "page": 9
+    },
+    {
+      "id": "COMP-0139",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 35,
+      "status": "matched",
+      "page": 10
+    },
+    {
+      "id": "COMP-0140",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 36,
+      "status": "matched",
+      "page": 10
+    },
+    {
+      "id": "COMP-0141",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 37,
+      "status": "matched",
+      "page": 10
+    },
+    {
+      "id": "COMP-0142",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 38,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0143",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 39,
+      "status": "matched",
+      "page": 10
+    },
+    {
+      "id": "COMP-0144",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 40,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0145",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 41,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0146",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 42,
+      "status": "matched-no-letter",
+      "page": 10
+    },
+    {
+      "id": "COMP-0147",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 43,
+      "status": "matched-no-letter",
+      "page": 10
+    },
+    {
+      "id": "COMP-0148",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 44,
+      "status": "matched",
+      "page": 10
+    },
+    {
+      "id": "COMP-0149",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 45,
+      "status": "matched",
+      "page": 10
+    },
+    {
+      "id": "COMP-0150",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 46,
+      "status": "matched",
+      "page": 10
+    },
+    {
+      "id": "COMP-0151",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 47,
+      "status": "matched",
+      "page": 10
+    },
+    {
+      "id": "COMP-0152",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 48,
+      "status": "matched",
+      "page": 10
+    },
+    {
+      "id": "COMP-0153",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 49,
+      "status": "matched",
+      "page": 10
+    },
+    {
+      "id": "COMP-0154",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 50,
+      "status": "matched",
+      "page": 11
+    },
+    {
+      "id": "COMP-0155",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 51,
+      "status": "matched",
+      "page": 11
+    },
+    {
+      "id": "COMP-0156",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 52,
+      "status": "matched",
+      "page": 11
+    },
+    {
+      "id": "COMP-0157",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 53,
+      "status": "matched",
+      "page": 11
+    },
+    {
+      "id": "COMP-0158",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 54,
+      "status": "matched",
+      "page": 11
+    },
+    {
+      "id": "COMP-0159",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 55,
+      "status": "matched",
+      "page": 11
+    },
+    {
+      "id": "COMP-0160",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 56,
+      "status": "matched",
+      "page": 11
+    },
+    {
+      "id": "COMP-0161",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 57,
+      "status": "matched",
+      "page": 11
+    },
+    {
+      "id": "COMP-0162",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 58,
+      "status": "matched",
+      "page": 11
+    },
+    {
+      "id": "COMP-0163",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 59,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0164",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 60,
+      "status": "matched",
+      "page": 11
+    },
+    {
+      "id": "COMP-0165",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 61,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0166",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 62,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0167",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 63,
+      "status": "matched",
+      "page": 11
+    },
+    {
+      "id": "COMP-0168",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 64,
+      "status": "matched",
+      "page": 11
+    },
+    {
+      "id": "COMP-0169",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 65,
+      "status": "matched",
+      "page": 11
+    },
+    {
+      "id": "COMP-0170",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 66,
+      "status": "matched",
+      "page": 11
+    },
+    {
+      "id": "COMP-0171",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 67,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0172",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 68,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0173",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 69,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0174",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 70,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0175",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 71,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0176",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 72,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0177",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 73,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0178",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 74,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0179",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 75,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0180",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 76,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0181",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 77,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0182",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 78,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0183",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 79,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0184",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "单项选择题",
+      "number": 80,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0185",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "判断题",
+      "number": 1,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0186",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "判断题",
+      "number": 2,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0187",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "判断题",
+      "number": 3,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0188",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "判断题",
+      "number": 4,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0189",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "判断题",
+      "number": 5,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0190",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "判断题",
+      "number": 6,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0191",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "判断题",
+      "number": 7,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0192",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "判断题",
+      "number": 8,
+      "status": "matched",
+      "page": 12
+    },
+    {
+      "id": "COMP-0193",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "判断题",
+      "number": 9,
+      "status": "matched",
+      "page": 13
+    },
+    {
+      "id": "COMP-0194",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "判断题",
+      "number": 10,
+      "status": "matched",
+      "page": 13
+    },
+    {
+      "id": "COMP-0195",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "判断题",
+      "number": 11,
+      "status": "matched",
+      "page": 13
+    },
+    {
+      "id": "COMP-0196",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "填空题",
+      "number": 1,
+      "status": "matched",
+      "page": 13
+    },
+    {
+      "id": "COMP-0197",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "填空题",
+      "number": 2,
+      "status": "matched",
+      "page": 13
+    },
+    {
+      "id": "COMP-0198",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "填空题",
+      "number": 3,
+      "status": "matched",
+      "page": 13
+    },
+    {
+      "id": "COMP-0199",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "填空题",
+      "number": 4,
+      "status": "matched",
+      "page": 13
+    },
+    {
+      "id": "COMP-0200",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "填空题",
+      "number": 5,
+      "status": "matched",
+      "page": 13
+    },
+    {
+      "id": "COMP-0201",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "填空题",
+      "number": 6,
+      "status": "matched",
+      "page": 13
+    },
+    {
+      "id": "COMP-0202",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "填空题",
+      "number": 7,
+      "status": "matched",
+      "page": 13
+    },
+    {
+      "id": "COMP-0203",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "填空题",
+      "number": 8,
+      "status": "matched",
+      "page": 13
+    },
+    {
+      "id": "COMP-0204",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "填空题",
+      "number": 9,
+      "status": "matched",
+      "page": 13
+    },
+    {
+      "id": "COMP-0205",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "填空题",
+      "number": 10,
+      "status": "matched",
+      "page": 13
+    },
+    {
+      "id": "COMP-0206",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "简答题",
+      "number": 1,
+      "status": "matched",
+      "page": 13
+    },
+    {
+      "id": "COMP-0207",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "简答题",
+      "number": 2,
+      "status": "matched",
+      "page": 14
+    },
+    {
+      "id": "COMP-0208",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "简答题",
+      "number": 3,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0209",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "简答题",
+      "number": 4,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0210",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "简答题",
+      "number": 5,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0211",
+      "chapter": "第二章计算机系统基本组成",
+      "type": "简答题",
+      "number": 6,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0212",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 1,
+      "status": "matched",
+      "page": 15
+    },
+    {
+      "id": "COMP-0213",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 2,
+      "status": "matched",
+      "page": 15
+    },
+    {
+      "id": "COMP-0214",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 3,
+      "status": "matched",
+      "page": 15
+    },
+    {
+      "id": "COMP-0215",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 4,
+      "status": "matched",
+      "page": 15
+    },
+    {
+      "id": "COMP-0216",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 5,
+      "status": "matched",
+      "page": 15
+    },
+    {
+      "id": "COMP-0217",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 6,
+      "status": "matched",
+      "page": 15
+    },
+    {
+      "id": "COMP-0218",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 7,
+      "status": "matched",
+      "page": 15
+    },
+    {
+      "id": "COMP-0219",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 8,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0220",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 9,
+      "status": "matched",
+      "page": 15
+    },
+    {
+      "id": "COMP-0221",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 10,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0222",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 11,
+      "status": "matched",
+      "page": 15
+    },
+    {
+      "id": "COMP-0223",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 12,
+      "status": "matched",
+      "page": 15
+    },
+    {
+      "id": "COMP-0224",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 13,
+      "status": "matched",
+      "page": 15
+    },
+    {
+      "id": "COMP-0225",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 14,
+      "status": "matched",
+      "page": 16
+    },
+    {
+      "id": "COMP-0226",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 15,
+      "status": "matched",
+      "page": 16
+    },
+    {
+      "id": "COMP-0227",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 16,
+      "status": "matched",
+      "page": 16
+    },
+    {
+      "id": "COMP-0228",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 17,
+      "status": "matched",
+      "page": 16
+    },
+    {
+      "id": "COMP-0229",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 18,
+      "status": "matched",
+      "page": 16
+    },
+    {
+      "id": "COMP-0230",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 19,
+      "status": "matched",
+      "page": 16
+    },
+    {
+      "id": "COMP-0231",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 20,
+      "status": "matched",
+      "page": 16
+    },
+    {
+      "id": "COMP-0232",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 21,
+      "status": "matched",
+      "page": 16
+    },
+    {
+      "id": "COMP-0233",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 22,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0234",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 23,
+      "status": "matched",
+      "page": 16
+    },
+    {
+      "id": "COMP-0235",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 24,
+      "status": "matched",
+      "page": 16
+    },
+    {
+      "id": "COMP-0236",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 25,
+      "status": "matched",
+      "page": 16
+    },
+    {
+      "id": "COMP-0237",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 26,
+      "status": "matched",
+      "page": 16
+    },
+    {
+      "id": "COMP-0238",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 27,
+      "status": "matched",
+      "page": 16
+    },
+    {
+      "id": "COMP-0239",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 28,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0240",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 29,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0241",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 30,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0242",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 31,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0243",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 32,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0244",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 33,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0245",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 34,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0246",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 35,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0247",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 36,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0248",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 37,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0249",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 38,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0250",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 39,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0251",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 40,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0252",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 41,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0253",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 42,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0254",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 43,
+      "status": "matched",
+      "page": 17
+    },
+    {
+      "id": "COMP-0255",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 44,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0256",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 45,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0257",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 46,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0258",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 47,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0259",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 48,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0260",
+      "chapter": "第三章操作系统",
+      "type": "单项选择题",
+      "number": 49,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0261",
+      "chapter": "第三章操作系统",
+      "type": "判断题",
+      "number": 1,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0262",
+      "chapter": "第三章操作系统",
+      "type": "判断题",
+      "number": 2,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0263",
+      "chapter": "第三章操作系统",
+      "type": "判断题",
+      "number": 3,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0264",
+      "chapter": "第三章操作系统",
+      "type": "判断题",
+      "number": 4,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0265",
+      "chapter": "第三章操作系统",
+      "type": "判断题",
+      "number": 5,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0266",
+      "chapter": "第三章操作系统",
+      "type": "判断题",
+      "number": 6,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0267",
+      "chapter": "第三章操作系统",
+      "type": "判断题",
+      "number": 7,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0268",
+      "chapter": "第三章操作系统",
+      "type": "判断题",
+      "number": 8,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0269",
+      "chapter": "第三章操作系统",
+      "type": "判断题",
+      "number": 9,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0270",
+      "chapter": "第三章操作系统",
+      "type": "填空题",
+      "number": 1,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0271",
+      "chapter": "第三章操作系统",
+      "type": "填空题",
+      "number": 2,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0272",
+      "chapter": "第三章操作系统",
+      "type": "填空题",
+      "number": 3,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0273",
+      "chapter": "第三章操作系统",
+      "type": "填空题",
+      "number": 4,
+      "status": "matched",
+      "page": 18
+    },
+    {
+      "id": "COMP-0274",
+      "chapter": "第三章操作系统",
+      "type": "填空题",
+      "number": 5,
+      "status": "matched",
+      "page": 19
+    },
+    {
+      "id": "COMP-0275",
+      "chapter": "第三章操作系统",
+      "type": "填空题",
+      "number": 6,
+      "status": "matched",
+      "page": 19
+    },
+    {
+      "id": "COMP-0276",
+      "chapter": "第三章操作系统",
+      "type": "简答题",
+      "number": 1,
+      "status": "matched",
+      "page": 19
+    },
+    {
+      "id": "COMP-0277",
+      "chapter": "第三章操作系统",
+      "type": "简答题",
+      "number": 2,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0278",
+      "chapter": "第三章操作系统",
+      "type": "简答题",
+      "number": 3,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0279",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 1,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0280",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 2,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0281",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 3,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0282",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 4,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0283",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 5,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0284",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 6,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0285",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 7,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0286",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 8,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0287",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 9,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0288",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 10,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0289",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 11,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0290",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 12,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0291",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 13,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0292",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 14,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0293",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 15,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0294",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 16,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0295",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 17,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0296",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 18,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0297",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 19,
+      "status": "matched",
+      "page": 20
+    },
+    {
+      "id": "COMP-0298",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 20,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0299",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 21,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0300",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 22,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0301",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 23,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0302",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 24,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0303",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 25,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0304",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 26,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0305",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 27,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0306",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 28,
+      "status": "matched-no-letter",
+      "page": 21
+    },
+    {
+      "id": "COMP-0307",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 29,
+      "status": "matched-no-letter",
+      "page": 21
+    },
+    {
+      "id": "COMP-0308",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 30,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0309",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 31,
+      "status": "matched-no-letter",
+      "page": 21
+    },
+    {
+      "id": "COMP-0310",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 32,
+      "status": "matched-no-letter",
+      "page": 21
+    },
+    {
+      "id": "COMP-0311",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 33,
+      "status": "matched-no-letter",
+      "page": 21
+    },
+    {
+      "id": "COMP-0312",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 34,
+      "status": "matched-no-letter",
+      "page": 21
+    },
+    {
+      "id": "COMP-0313",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 35,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0314",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 36,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0315",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 37,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0316",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 38,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0317",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 39,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0318",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 40,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0319",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 41,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0320",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 42,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0321",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 43,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0322",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 44,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0323",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 45,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0324",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 46,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0325",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 47,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0326",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 48,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0327",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 49,
+      "status": "matched-no-letter",
+      "page": 21
+    },
+    {
+      "id": "COMP-0328",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 50,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0329",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 51,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0330",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 52,
+      "status": "matched",
+      "page": 21
+    },
+    {
+      "id": "COMP-0331",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 53,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0332",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 54,
+      "status": "matched",
+      "page": 24
+    },
+    {
+      "id": "COMP-0333",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 55,
+      "status": "matched",
+      "page": 24
+    },
+    {
+      "id": "COMP-0378",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 56,
+      "status": "matched",
+      "page": 24
+    },
+    {
+      "id": "COMP-0379",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 57,
+      "status": "matched",
+      "page": 24
+    },
+    {
+      "id": "COMP-0380",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 58,
+      "status": "matched",
+      "page": 24
+    },
+    {
+      "id": "COMP-0381",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 59,
+      "status": "matched",
+      "page": 24
+    },
+    {
+      "id": "COMP-0382",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 60,
+      "status": "matched",
+      "page": 24
+    },
+    {
+      "id": "COMP-0383",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 61,
+      "status": "matched",
+      "page": 24
+    },
+    {
+      "id": "COMP-0384",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 62,
+      "status": "matched-no-letter",
+      "page": 24
+    },
+    {
+      "id": "COMP-0385",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 63,
+      "status": "matched",
+      "page": 24
+    },
+    {
+      "id": "COMP-0386",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 64,
+      "status": "matched",
+      "page": 24
+    },
+    {
+      "id": "COMP-0387",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 65,
+      "status": "matched",
+      "page": 24
+    },
+    {
+      "id": "COMP-0388",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 66,
+      "status": "matched",
+      "page": 24
+    },
+    {
+      "id": "COMP-0389",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 67,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0390",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 68,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0391",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 69,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0392",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 70,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0393",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 71,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0394",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 72,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0395",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 73,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0396",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 74,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0397",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 75,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0398",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 76,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0399",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 77,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0400",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 78,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0401",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 79,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0402",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 80,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0403",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 81,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0404",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 82,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0405",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 83,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0406",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 84,
+      "status": "matched",
+      "page": 25
+    },
+    {
+      "id": "COMP-0407",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 85,
+      "status": "matched",
+      "page": 26
+    },
+    {
+      "id": "COMP-0408",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 86,
+      "status": "matched",
+      "page": 26
+    },
+    {
+      "id": "COMP-0409",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 87,
+      "status": "matched",
+      "page": 26
+    },
+    {
+      "id": "COMP-0410",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 88,
+      "status": "matched",
+      "page": 26
+    },
+    {
+      "id": "COMP-0411",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 89,
+      "status": "matched",
+      "page": 26
+    },
+    {
+      "id": "COMP-0412",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 90,
+      "status": "matched",
+      "page": 26
+    },
+    {
+      "id": "COMP-0413",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 91,
+      "status": "matched",
+      "page": 26
+    },
+    {
+      "id": "COMP-0414",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 92,
+      "status": "matched",
+      "page": 26
+    },
+    {
+      "id": "COMP-0415",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 93,
+      "status": "matched",
+      "page": 26
+    },
+    {
+      "id": "COMP-0416",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 94,
+      "status": "matched",
+      "page": 26
+    },
+    {
+      "id": "COMP-0417",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 95,
+      "status": "matched",
+      "page": 26
+    },
+    {
+      "id": "COMP-0418",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 96,
+      "status": "matched",
+      "page": 26
+    },
+    {
+      "id": "COMP-0419",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 97,
+      "status": "matched",
+      "page": 26
+    },
+    {
+      "id": "COMP-0420",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 98,
+      "status": "matched",
+      "page": 26
+    },
+    {
+      "id": "COMP-0421",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 99,
+      "status": "matched",
+      "page": 27
+    },
+    {
+      "id": "COMP-0422",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 100,
+      "status": "matched",
+      "page": 27
+    },
+    {
+      "id": "COMP-0423",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 101,
+      "status": "matched",
+      "page": 30
+    },
+    {
+      "id": "COMP-0424",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 102,
+      "status": "matched",
+      "page": 27
+    },
+    {
+      "id": "COMP-0425",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 103,
+      "status": "matched",
+      "page": 27
+    },
+    {
+      "id": "COMP-0426",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 104,
+      "status": "matched",
+      "page": 30
+    },
+    {
+      "id": "COMP-0427",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 105,
+      "status": "matched",
+      "page": 30
+    },
+    {
+      "id": "COMP-0428",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 106,
+      "status": "matched",
+      "page": 30
+    },
+    {
+      "id": "COMP-0429",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 107,
+      "status": "matched",
+      "page": 30
+    },
+    {
+      "id": "COMP-0430",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 108,
+      "status": "matched",
+      "page": 30
+    },
+    {
+      "id": "COMP-0431",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 109,
+      "status": "matched",
+      "page": 30
+    },
+    {
+      "id": "COMP-0432",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 110,
+      "status": "matched",
+      "page": 30
+    },
+    {
+      "id": "COMP-0433",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 111,
+      "status": "matched",
+      "page": 30
+    },
+    {
+      "id": "COMP-0434",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 112,
+      "status": "matched",
+      "page": 30
+    },
+    {
+      "id": "COMP-0435",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 113,
+      "status": "matched",
+      "page": 30
+    },
+    {
+      "id": "COMP-0436",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 114,
+      "status": "matched",
+      "page": 30
+    },
+    {
+      "id": "COMP-0488",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 115,
+      "status": "matched",
+      "page": 30
+    },
+    {
+      "id": "COMP-0489",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 116,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0490",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 117,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0491",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 118,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0492",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 119,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0493",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 120,
+      "status": "matched-no-letter",
+      "page": 31
+    },
+    {
+      "id": "COMP-0494",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 121,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0495",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 122,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0496",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 123,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0497",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 124,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0498",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 125,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0499",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 126,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0500",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 127,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0501",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 128,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0502",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 129,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0503",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 130,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0504",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 131,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0505",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 132,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0506",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 133,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0507",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 134,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0508",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 135,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0509",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 136,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0510",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 137,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0511",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 138,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0512",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 139,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0513",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 140,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0514",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 141,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0515",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 142,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0516",
+      "chapter": "第四章办公自动化",
+      "type": "单项选择题",
+      "number": 143,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0334",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 1,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0335",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 2,
+      "status": "matched-no-letter",
+      "page": 22
+    },
+    {
+      "id": "COMP-0336",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 3,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0337",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 4,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0338",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 5,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0339",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 6,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0340",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 7,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0341",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 8,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0342",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 9,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0343",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 10,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0344",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 11,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0345",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 12,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0346",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 13,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0347",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 14,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0348",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 15,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0349",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 16,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0350",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 17,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0351",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 18,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0352",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 19,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0353",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 20,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0437",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 21,
+      "status": "matched",
+      "page": 27
+    },
+    {
+      "id": "COMP-0438",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 22,
+      "status": "matched",
+      "page": 27
+    },
+    {
+      "id": "COMP-0439",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 23,
+      "status": "matched",
+      "page": 27
+    },
+    {
+      "id": "COMP-0440",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 24,
+      "status": "matched",
+      "page": 27
+    },
+    {
+      "id": "COMP-0441",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 25,
+      "status": "matched",
+      "page": 27
+    },
+    {
+      "id": "COMP-0442",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 26,
+      "status": "matched",
+      "page": 27
+    },
+    {
+      "id": "COMP-0443",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 27,
+      "status": "matched",
+      "page": 27
+    },
+    {
+      "id": "COMP-0444",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 28,
+      "status": "matched",
+      "page": 27
+    },
+    {
+      "id": "COMP-0445",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 29,
+      "status": "matched",
+      "page": 27
+    },
+    {
+      "id": "COMP-0446",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 30,
+      "status": "matched",
+      "page": 27
+    },
+    {
+      "id": "COMP-0447",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 31,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0448",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 32,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0449",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 33,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0450",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 34,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0451",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 35,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0452",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 36,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0453",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 37,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0454",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 38,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0455",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 39,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0456",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 40,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0457",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 41,
+      "status": "matched-no-letter",
+      "page": 31
+    },
+    {
+      "id": "COMP-0458",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 42,
+      "status": "matched-no-letter",
+      "page": 31
+    },
+    {
+      "id": "COMP-0459",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 43,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0460",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 44,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0461",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 45,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0462",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 46,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0463",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 47,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0464",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 48,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0465",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 49,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0517",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 50,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0518",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 51,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0519",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 52,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0520",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 53,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0521",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 54,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0522",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 55,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0523",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 56,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0524",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 57,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0525",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 58,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0526",
+      "chapter": "第四章办公自动化",
+      "type": "判断题",
+      "number": 59,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0354",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 1,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0355",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 2,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0356",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 3,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0357",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 4,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0358",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 5,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0359",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 6,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0360",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 7,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0361",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 8,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0362",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 9,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0363",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 10,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0364",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 11,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0365",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 12,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0366",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 13,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0367",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 14,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0368",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 15,
+      "status": "matched",
+      "page": 22
+    },
+    {
+      "id": "COMP-0369",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 16,
+      "status": "matched",
+      "page": 23
+    },
+    {
+      "id": "COMP-0370",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 17,
+      "status": "matched",
+      "page": 23
+    },
+    {
+      "id": "COMP-0371",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 18,
+      "status": "matched",
+      "page": 23
+    },
+    {
+      "id": "COMP-0372",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 19,
+      "status": "matched",
+      "page": 23
+    },
+    {
+      "id": "COMP-0466",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 20,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0467",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 21,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0468",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 22,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0469",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 23,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0470",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 24,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0471",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 25,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0472",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 26,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0473",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 27,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0474",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 28,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0475",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 29,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0476",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 30,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0477",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 31,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0478",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 32,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0479",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 33,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0480",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 34,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0481",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 35,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0482",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 36,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0527",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 37,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0528",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 38,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0529",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 39,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0530",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 40,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0531",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 41,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0532",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 42,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0533",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 43,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0534",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 44,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0535",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 45,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0536",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 46,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0537",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 47,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0538",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 48,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0539",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 49,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0540",
+      "chapter": "第四章办公自动化",
+      "type": "填空题",
+      "number": 50,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0373",
+      "chapter": "第四章办公自动化",
+      "type": "简答题",
+      "number": 1,
+      "status": "matched",
+      "page": 23
+    },
+    {
+      "id": "COMP-0374",
+      "chapter": "第四章办公自动化",
+      "type": "简答题",
+      "number": 2,
+      "status": "matched",
+      "page": 28
+    },
+    {
+      "id": "COMP-0375",
+      "chapter": "第四章办公自动化",
+      "type": "简答题",
+      "number": 3,
+      "status": "matched",
+      "page": 29
+    },
+    {
+      "id": "COMP-0376",
+      "chapter": "第四章办公自动化",
+      "type": "简答题",
+      "number": 4,
+      "status": "matched",
+      "page": 31
+    },
+    {
+      "id": "COMP-0377",
+      "chapter": "第四章办公自动化",
+      "type": "简答题",
+      "number": 5,
+      "status": "matched",
+      "page": 32
+    },
+    {
+      "id": "COMP-0483",
+      "chapter": "第四章办公自动化",
+      "type": "简答题",
+      "number": 6,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0484",
+      "chapter": "第四章办公自动化",
+      "type": "简答题",
+      "number": 7,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0485",
+      "chapter": "第四章办公自动化",
+      "type": "简答题",
+      "number": 8,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0486",
+      "chapter": "第四章办公自动化",
+      "type": "简答题",
+      "number": 9,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0487",
+      "chapter": "第四章办公自动化",
+      "type": "简答题",
+      "number": 10,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0541",
+      "chapter": "第四章办公自动化",
+      "type": "简答题",
+      "number": 11,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0542",
+      "chapter": "第四章办公自动化",
+      "type": "简答题",
+      "number": 12,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0543",
+      "chapter": "第四章办公自动化",
+      "type": "简答题",
+      "number": 13,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0544",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 1,
+      "status": "matched",
+      "page": 33
+    },
+    {
+      "id": "COMP-0545",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 2,
+      "status": "matched",
+      "page": 33
+    },
+    {
+      "id": "COMP-0546",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 3,
+      "status": "matched",
+      "page": 33
+    },
+    {
+      "id": "COMP-0547",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 4,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0548",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 5,
+      "status": "matched",
+      "page": 33
+    },
+    {
+      "id": "COMP-0549",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 6,
+      "status": "matched",
+      "page": 33
+    },
+    {
+      "id": "COMP-0550",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 7,
+      "status": "matched",
+      "page": 33
+    },
+    {
+      "id": "COMP-0551",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 8,
+      "status": "matched",
+      "page": 33
+    },
+    {
+      "id": "COMP-0552",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 9,
+      "status": "matched",
+      "page": 33
+    },
+    {
+      "id": "COMP-0553",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 10,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0554",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 11,
+      "status": "matched",
+      "page": 33
+    },
+    {
+      "id": "COMP-0555",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 12,
+      "status": "matched",
+      "page": 33
+    },
+    {
+      "id": "COMP-0556",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 13,
+      "status": "matched",
+      "page": 34
+    },
+    {
+      "id": "COMP-0557",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 14,
+      "status": "matched",
+      "page": 34
+    },
+    {
+      "id": "COMP-0558",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 15,
+      "status": "matched",
+      "page": 34
+    },
+    {
+      "id": "COMP-0559",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 16,
+      "status": "matched",
+      "page": 34
+    },
+    {
+      "id": "COMP-0560",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 17,
+      "status": "matched",
+      "page": 34
+    },
+    {
+      "id": "COMP-0561",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 18,
+      "status": "matched",
+      "page": 34
+    },
+    {
+      "id": "COMP-0562",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 19,
+      "status": "matched",
+      "page": 34
+    },
+    {
+      "id": "COMP-0563",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 20,
+      "status": "matched",
+      "page": 34
+    },
+    {
+      "id": "COMP-0564",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 21,
+      "status": "matched",
+      "page": 34
+    },
+    {
+      "id": "COMP-0565",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 22,
+      "status": "matched",
+      "page": 34
+    },
+    {
+      "id": "COMP-0566",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 23,
+      "status": "matched",
+      "page": 34
+    },
+    {
+      "id": "COMP-0567",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 24,
+      "status": "matched",
+      "page": 34
+    },
+    {
+      "id": "COMP-0568",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 25,
+      "status": "matched",
+      "page": 34
+    },
+    {
+      "id": "COMP-0569",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 26,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0570",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 27,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0571",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 28,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0572",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 29,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0573",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 30,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0574",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 31,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0575",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 32,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0576",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 33,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0577",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 34,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0578",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 35,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0579",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 36,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0580",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 37,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0581",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 38,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0582",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 39,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0583",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 40,
+      "status": "matched",
+      "page": 35
+    },
+    {
+      "id": "COMP-0584",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 41,
+      "status": "matched-no-letter",
+      "page": 36
+    },
+    {
+      "id": "COMP-0585",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 42,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0586",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 43,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0587",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 44,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0588",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 45,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0589",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 46,
+      "status": "matched-no-letter",
+      "page": 36
+    },
+    {
+      "id": "COMP-0590",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 47,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0591",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 48,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0592",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 49,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0593",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 50,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0594",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 51,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0595",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 52,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0596",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 53,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0597",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 54,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0598",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 55,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0599",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 56,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0600",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 57,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0601",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 58,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0602",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 59,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0603",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 60,
+      "status": "matched",
+      "page": 36
+    },
+    {
+      "id": "COMP-0604",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 61,
+      "status": "matched",
+      "page": 37
+    },
+    {
+      "id": "COMP-0605",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 62,
+      "status": "matched",
+      "page": 37
+    },
+    {
+      "id": "COMP-0606",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 63,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0607",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 64,
+      "status": "matched",
+      "page": 37
+    },
+    {
+      "id": "COMP-0608",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 65,
+      "status": "matched",
+      "page": 37
+    },
+    {
+      "id": "COMP-0609",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 66,
+      "status": "matched",
+      "page": 37
+    },
+    {
+      "id": "COMP-0610",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 67,
+      "status": "matched",
+      "page": 37
+    },
+    {
+      "id": "COMP-0611",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 68,
+      "status": "matched",
+      "page": 37
+    },
+    {
+      "id": "COMP-0612",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 69,
+      "status": "matched",
+      "page": 37
+    },
+    {
+      "id": "COMP-0613",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 70,
+      "status": "matched",
+      "page": 37
+    },
+    {
+      "id": "COMP-0614",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 71,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0615",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 72,
+      "status": "matched",
+      "page": 37
+    },
+    {
+      "id": "COMP-0616",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 73,
+      "status": "matched",
+      "page": 37
+    },
+    {
+      "id": "COMP-0617",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 74,
+      "status": "matched",
+      "page": 37
+    },
+    {
+      "id": "COMP-0618",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 75,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0619",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 76,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0620",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 77,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0621",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 78,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0622",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 79,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0623",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 80,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0624",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 81,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0625",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 82,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0626",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 83,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0627",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 84,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0628",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 85,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0629",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 86,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0630",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 87,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0631",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 88,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0632",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 89,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0633",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 90,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0634",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 91,
+      "status": "matched",
+      "page": 38
+    },
+    {
+      "id": "COMP-0635",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 92,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0636",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 93,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0637",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 94,
+      "status": "matched-no-letter",
+      "page": 39
+    },
+    {
+      "id": "COMP-0638",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 95,
+      "status": "matched-no-letter",
+      "page": 39
+    },
+    {
+      "id": "COMP-0639",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 96,
+      "status": "matched-no-letter",
+      "page": 39
+    },
+    {
+      "id": "COMP-0640",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 97,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0641",
+      "chapter": "第五章网络与信息安全",
+      "type": "单项选择题",
+      "number": 98,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0642",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 1,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0643",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 2,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0644",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 3,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0645",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 4,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0646",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 5,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0647",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 6,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0648",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 7,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0649",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 8,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0650",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 9,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0651",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 10,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0652",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 11,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0653",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 12,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0654",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 13,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0655",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 14,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0656",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 15,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0657",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 16,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0658",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 17,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0659",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 18,
+      "status": "matched",
+      "page": 39
+    },
+    {
+      "id": "COMP-0660",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 19,
+      "status": "matched-no-letter",
+      "page": 40
+    },
+    {
+      "id": "COMP-0661",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 20,
+      "status": "matched",
+      "page": 40
+    },
+    {
+      "id": "COMP-0662",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 21,
+      "status": "matched",
+      "page": 40
+    },
+    {
+      "id": "COMP-0663",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 22,
+      "status": "matched",
+      "page": 40
+    },
+    {
+      "id": "COMP-0664",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 23,
+      "status": "matched",
+      "page": 40
+    },
+    {
+      "id": "COMP-0665",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 24,
+      "status": "matched",
+      "page": 40
+    },
+    {
+      "id": "COMP-0666",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 25,
+      "status": "matched-no-letter",
+      "page": 40
+    },
+    {
+      "id": "COMP-0667",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 26,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0668",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 27,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0669",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 28,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0670",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 29,
+      "status": "matched-no-letter",
+      "page": 40
+    },
+    {
+      "id": "COMP-0671",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 30,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0672",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 31,
+      "status": "matched",
+      "page": 40
+    },
+    {
+      "id": "COMP-0673",
+      "chapter": "第五章网络与信息安全",
+      "type": "判断题",
+      "number": 32,
+      "status": "matched",
+      "page": 40
+    },
+    {
+      "id": "COMP-0674",
+      "chapter": "第五章网络与信息安全",
+      "type": "案例题",
+      "number": 1,
+      "status": "matched",
+      "page": 40
+    },
+    {
+      "id": "COMP-0675",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 1,
+      "status": "matched",
+      "page": 40
+    },
+    {
+      "id": "COMP-0676",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 2,
+      "status": "matched",
+      "page": 40
+    },
+    {
+      "id": "COMP-0677",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 3,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0678",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 4,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0679",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 5,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0680",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 6,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0681",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 7,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0682",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 8,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0683",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 9,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0684",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 10,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0685",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 11,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0686",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 12,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0687",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 13,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0688",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 14,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0689",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 15,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0690",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 16,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0691",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 17,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0692",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 18,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0693",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 19,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0694",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 20,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0695",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 21,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0696",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 22,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0697",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 23,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0698",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 24,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0699",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 25,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0700",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 26,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0701",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 27,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0702",
+      "chapter": "第五章网络与信息安全",
+      "type": "填空题",
+      "number": 28,
+      "status": "matched",
+      "page": 41
+    },
+    {
+      "id": "COMP-0703",
+      "chapter": "第五章网络与信息安全",
+      "type": "简答题",
+      "number": 1,
+      "status": "matched",
+      "page": 42
+    },
+    {
+      "id": "COMP-0704",
+      "chapter": "第五章网络与信息安全",
+      "type": "简答题",
+      "number": 2,
+      "status": "matched",
+      "page": 42
+    },
+    {
+      "id": "COMP-0705",
+      "chapter": "第五章网络与信息安全",
+      "type": "简答题",
+      "number": 3,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0706",
+      "chapter": "第五章网络与信息安全",
+      "type": "简答题",
+      "number": 4,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0707",
+      "chapter": "第五章网络与信息安全",
+      "type": "简答题",
+      "number": 5,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0708",
+      "chapter": "第五章网络与信息安全",
+      "type": "简答题",
+      "number": 6,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0709",
+      "chapter": "第五章网络与信息安全",
+      "type": "简答题",
+      "number": 7,
+      "status": "missing-answer-block"
+    },
+    {
+      "id": "COMP-0710",
+      "chapter": "第五章网络与信息安全",
+      "type": "简答题",
+      "number": 8,
+      "status": "missing-answer-block"
+    }
+  ],
+  "englishReport": [
+    {
+      "id": "ENG-TEXT-001",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-002",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-003",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-004",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-005",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-006",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-007",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-008",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-009",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-010",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-011",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-012",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-013",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-014",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-015",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-016",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-017",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-018",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-019",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-020",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-021",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-022",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-023",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-024",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-025",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-026",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-027",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-028",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-029",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-030",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-031",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-032",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-033",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-034",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-035",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-036",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-037",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-038",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-039",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-040",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-041",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-042",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-043",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-044",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-045",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-046",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-047",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-048",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-049",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-050",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-051",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-052",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-053",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-054",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-055",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-056",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-057",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-058",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-059",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-060",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-061",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-062",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-063",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-064",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-065",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-066",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-067",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-068",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-069",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-070",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-071",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-072",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-073",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-074",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-075",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-076",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-077",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-078",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-079",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-080",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-081",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-082",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-083",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-084",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-085",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-086",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-087",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-088",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-089",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-090",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-091",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-092",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-093",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-094",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-095",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-096",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-097",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-098",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-099",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-100",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-101",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-102",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-103",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-104",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-105",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-106",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-107",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-108",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-109",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-110",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-111",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-112",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-113",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-114",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-115",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-116",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-117",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-118",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-119",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-120",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-121",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-122",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-123",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-124",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-125",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-126",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-127",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-128",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-129",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-130",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-131",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-132",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-133",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-134",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-135",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-136",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-137",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-138",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-139",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-140",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-141",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-142",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-143",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-144",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-145",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-146",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-147",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-148",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-149",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-150",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-151",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-152",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-153",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-154",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-155",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-156",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-157",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-158",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-159",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-160",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-161",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-162",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-163",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-164",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-165",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-166",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-167",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-168",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-169",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-170",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-171",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-172",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-173",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-174",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-175",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-176",
+      "status": "matched"
+    },
+    {
+      "id": "ENG-TEXT-177",
+      "status": "matched"
+    }
+  ],
+  "computerOverrideReport": [
+    {
+      "id": "COMP-0005",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0006",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0007",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0008",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0010",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0011",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0012",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0013",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0015",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0017",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0038",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0065",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0082",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0083",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0087",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0099",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0104",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0119",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0120",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0138",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0142",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0144",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0145",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0146",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0147",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0163",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0165",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0166",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0174",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0176",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0186",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0189",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0190",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0208",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0209",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0210",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0211",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0219",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0221",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0233",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0245",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0277",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0278",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0282",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0305",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0306",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0307",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0308",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0309",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0310",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0311",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0312",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0313",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0318",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0319",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0321",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0322",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0323",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0324",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0327",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0335",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0336",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0337",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0338",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0342",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0345",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0384",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0457",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0458",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0462",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0463",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0464",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0465",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0483",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0484",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0485",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0486",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0487",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0493",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0495",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0496",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0497",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0498",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0499",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0500",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0501",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0502",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0503",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0504",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0505",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0506",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0507",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0508",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0509",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0510",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0511",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0512",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0513",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0514",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0515",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0516",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0517",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0518",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0519",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0520",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0521",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0522",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0523",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0524",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0525",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0526",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0540",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0541",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0542",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0543",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0547",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0553",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0584",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0588",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0589",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0591",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0602",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0606",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0614",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0632",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0637",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0638",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0639",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0651",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0652",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0660",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0666",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0667",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0668",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0669",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0670",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0671",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0685",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0686",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0687",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0705",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0706",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0707",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0708",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0709",
+      "status": "manual-reference"
+    },
+    {
+      "id": "COMP-0710",
+      "status": "manual-reference"
+    }
+  ],
+  "pending": [],
+  "duplicates": [
+    {
+      "id": "MATH-0106",
+      "subject": "高数",
+      "chapter": "反函数",
+      "stem": "求 y=(sin3x)/2，x∈[-π/6,π/6] 的反函数"
+    },
+    {
+      "id": "MATH-0214",
+      "subject": "高数",
+      "chapter": "微分",
+      "stem": "【以配图为准】求 y=xsinxlnx 的微分。；这是本批新上传 Word 错题，已按小题拆分为独立卡片。"
+    }
+  ],
+  "heldBack": [
+    {
+      "id": "MATH-BASIC1-001",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第1页第1题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-001.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-002",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第1页第2题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-002.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-003",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第1页第3题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-003.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-004",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第1页第4题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-004.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-005",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第1页第5题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-005.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-006",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第1页第6题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-006.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-007",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第1页第7题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-007.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-008",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第1页第8题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-008.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-009",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第2页第1题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-009.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-010",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第2页第2题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-010.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-011",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第2页第3题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-011.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-012",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第2页第4题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-012.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-013",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第2页第5题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-013.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-014",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第2页第6题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-014.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-015",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第2页第7题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-015.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-016",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第2页第8题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-016.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-017",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第2页第9题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-017.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-018",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第2页第10题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-018.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-019",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第3页第1题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-019.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-020",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第3页第2题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-020.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-021",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第3页第3题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-021.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-022",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第3页第4题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-022.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-023",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第3页第5题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-023.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-024",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第4页第1题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-024.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-025",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第4页第2题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-025.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-026",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第4页第3题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-026.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-027",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第4页第4题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-027.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-028",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第4页第5题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-028.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-029",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第4页第6题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-029.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-030",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第4页第7题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-030.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-031",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第4页第8题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-031.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-032",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第4页第9题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-032.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-033",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第4页第10题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-033.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-034",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第5页第1题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-034.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-035",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第5页第2题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-035.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-036",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第5页第3题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-036.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-037",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第5页第4题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-037.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-038",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第5页第5题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-038.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-039",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第5页第6题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-039.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-040",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第5页第7题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-040.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-041",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第5页第8题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-041.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-042",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第5页第9题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-042.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-043",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第5页第10题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-043.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-044",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第5页第11题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-044.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-045",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第5页第12题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-045.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-046",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第5页第13题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-046.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-047",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第6页第1题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-047.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-048",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第7页第1题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-048.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-049",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第7页第2题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-049.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-050",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第7页第3题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-050.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-051",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第7页第4题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-051.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-052",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第7页第5题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-052.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-053",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第7页第6题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-053.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-054",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第7页第7题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-054.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-055",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第7页第8题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-055.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-056",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第7页第9题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-056.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-057",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第7页第10题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-057.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-058",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第8页第1题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-058.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-059",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第8页第2题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-059.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-060",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第8页第3题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-060.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-061",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第8页第4题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-061.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-062",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第8页第5题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-062.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-063",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第8页第6题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-063.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-064",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第8页第7题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-064.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-065",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第8页第8题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-065.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-066",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第8页第9题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-066.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-067",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第8页第10题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-067.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-068",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第8页第11题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-068.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-069",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第8页第12题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-069.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-070",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第9页第1题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-070.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-071",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第9页第2题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-071.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-072",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第9页第3题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-072.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-073",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第9页第4题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-073.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-074",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第9页第5题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-074.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-075",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第9页第6题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-075.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-076",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第9页第7题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-076.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-077",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第9页第8题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-077.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-078",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第9页第9题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-078.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-079",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第9页第10题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-079.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-080",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第10页第1题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-080.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-081",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第10页第2题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-081.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-082",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第10页第3题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-082.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-083",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第11页第1题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-083.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-084",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第11页第2题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-084.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-085",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第11页第3题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-085.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-086",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第12页第1题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-086.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-087",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第12页第2题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-087.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-088",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第12页第3题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-088.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-089",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第13页第1题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-089.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-090",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第13页第2题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-090.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-091",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第13页第3题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-091.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    },
+    {
+      "id": "MATH-BASIC1-092",
+      "subject": "高数",
+      "chapter": "基础篇第1章",
+      "type": "图片题",
+      "stem": "基础篇第1章 PDF 第13页第4题（见原题图片）",
+      "options": [],
+      "answer": "",
+      "analysis": "源PDF为扫描图片，暂未提供答案解析；已按题号切成单题图片，避免公式OCR乱码。",
+      "difficulty": "2",
+      "tags": [
+        "高数",
+        "基础篇第1章",
+        "PDF题图"
+      ],
+      "images": [
+        "question-images/basis-ch1/basis-ch1-092.png"
+      ],
+      "source": "基础篇第1章.pdf"
+    }
+  ]
+}

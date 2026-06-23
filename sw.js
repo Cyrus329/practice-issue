@@ -1,12 +1,12 @@
-const CACHE_NAME = "question-bank-trainer-20260623-mobile-flow";
+const CACHE_NAME = "question-bank-trainer-20260623-final-merge-1570";
 const ASSETS = [
   "./",
   "./index.html",
-  "./styles.css?v=20260623-mobile-flow",
+  "./styles.css?v=20260623-final-merge-1570",
   "./core.js",
-  "./app.js?v=20260623-mobile-flow",
-  "./question-bank-data.js",
-  "./question-bank-data.json",
+  "./app.js?v=20260623-final-merge-1570",
+  "./question-bank-data.js?v=20260623-final-merge-1570",
+  "./question-bank-data.json?v=20260623-final-merge-1570",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png"

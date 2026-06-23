@@ -1,0 +1,1290 @@
+{
+  "removedBadOcrQuestions": 466,
+  "removedPreview": [
+    {
+      "id": "NEW-SPLIT-0001",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "2. 考 .， 点 .） 重点： 廾艹又凵文件和文件夹的基本操作；@次重点： 计算机的应用， 程序设计语言， BIOS， 总线， 接口， 二进制数的运算： 规则， 补码， 信息存储单位， 常见的操作系统， 扇区和簇， 任务管理器。 注： 为与真题保持一致， 本书所有判断题中表述正确的填， 表述错误的填 B0 第一节计算思维基础一刷基础 @案 P169 难度： 責正确率： 单项选择题"
+    },
+    {
+      "id": "NEW-SPLIT-0002",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "1. 关于计算思维正确的说法是"
+    },
+    {
+      "id": "NEW-SPLIT-0003",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "2. 对于计算思维的特征， 下列说法中不正确的是"
+    },
+    {
+      "id": "NEW-SPLIT-0004",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "1. 计算思维是运用计算机科学的基础概念进行问题求解、 系统设计， 以及人类行为理解等涵盖计算机科学之广度的一系列思维活动。 2， 计算思维是计算机的思维方式。"
+    },
+    {
+      "id": "NEW-SPLIT-0005",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "1. 以电子管为物理器件的计算机是 （） 计算机。"
+    },
+    {
+      "id": "NEW-SPLIT-0006",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "2. 利用计算机绘制建筑工程图纸属于"
+    },
+    {
+      "id": "NEW-SPLIT-0007",
+      "subject": "计算机",
+      "chapter": "第五章网络与信息安全",
+      "source": "102张图片单题拆分",
+      "stem": "3. 以微处理器为核心组成的微型计算机属于 （） 计算机。"
+    },
+    {
+      "id": "NEW-SPLIT-0008",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "8. 计算机的应用领域包括科学计算、 数据处理、 人工智能及 （） 等。"
+    },
+    {
+      "id": "NEW-SPLIT-0009",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "9. 目前， 在研制战略武器时使用的巨型计算机， 采用的物理器件是"
+    },
+    {
+      "id": "NEW-SPLIT-0010",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "10. 第一代计算机主要用于"
+    },
+    {
+      "id": "NEW-SPLIT-0011",
+      "subject": "计算机",
+      "chapter": "第五章网络与信息安全",
+      "source": "102张图片单题拆分",
+      "stem": "11. 各种笔记本电脑、 掌上电脑的大量使用， 是计算机 （） 的一个标志。"
+    },
+    {
+      "id": "NEW-SPLIT-0012",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "13. 某计算机的运算速度每秒钟可以达到亿亿次， 主要应用在航空、 航天、 军事、 核能、 气象等需要海量数据运算的领域中， 它属于"
+    },
+    {
+      "id": "NEW-SPLIT-0013",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "14. 计算机管理教学的英文缩写是 & CAM"
+    },
+    {
+      "id": "NEW-SPLIT-0014",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "15. 微型计算机的发展是以 （） 的发展为表征的。"
+    },
+    {
+      "id": "NEW-SPLIT-0015",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "16. 下列计算机的应用中， 属于科学计算的是"
+    },
+    {
+      "id": "NEW-SPLIT-0016",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "17. 一台计算机每秒能够完成亿亿次以上运算， 这体现了计算机"
+    },
+    {
+      "id": "NEW-SPLIT-0017",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "1. 模拟计算机既可用于模拟数据处理， 也可用于数字数据处理。 2， 目前， 我国具有代表性的超级计算机有神威 · 太湖之光、 天河二号等。"
+    },
+    {
+      "id": "NEW-SPLIT-0018",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "7. 微型化是计算机发展的唯一趋势。 & 科学计算是目前计算机应用最广泛的领域。"
+    },
+    {
+      "id": "NEW-SPLIT-0019",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "10. 与科学计算相比， 数据处理的特点是数据输人 / 输出量大， 而计算方法却相对简单。"
+    },
+    {
+      "id": "NEW-SPLIT-0020",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "11. 数据处理包括数据的收集、 者、 加工和输出等， 而数值是指完成数值型数据的科学计算。 （一刷拔高 @案 P17 难度： 責責正确率： / 9 单项选择题"
+    },
+    {
+      "id": "NEW-SPLIT-0021",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "1. CAD 和 CAM 是当今计算机的主要应用领域， 其具体的含义是"
+    },
+    {
+      "id": "NEW-SPLIT-0022",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "2. 目前许多企业都使用计算机计算、 管理职工工资， 这是计算机在 （） 领域中的应用。"
+    },
+    {
+      "id": "NEW-SPLIT-0023",
+      "subject": "计算机",
+      "chapter": "第三章操作系统",
+      "source": "102张图片单题拆分",
+      "stem": "3. 从 （） 开始， 出现了操作系统， 计算机开始应用于文字处理、 图形处理等各个领域。"
+    },
+    {
+      "id": "NEW-SPLIT-0024",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "1. 电子计算机的发展经历了四代， 第三代计算机采用的物理器件是 2， 英文缩写 CAE 的中文意思是 3， 在计算机的发展趋势中，、 . . 一一一 . . . . . . . . . 一是指计算机具有模拟人的感觉和思维过程的能力。"
+    },
+    {
+      "id": "NEW-SPLIT-0025",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "1. 下列不属于冯 · 诺依曼体系结构的是"
+    },
+    {
+      "id": "NEW-SPLIT-0026",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "2. 以下 （） 是系统软件。"
+    },
+    {
+      "id": "NEW-SPLIT-0027",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "5. CPU 可以一刷基础 @案 PI 72 正确率： 难度： 女女脊 / 44 单项选择题某航空公司的机票预订系统属于"
+    },
+    {
+      "id": "NEW-SPLIT-0028",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "2. 下列设备中不能用作输出设备的是"
+    },
+    {
+      "id": "NEW-SPLIT-0029",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "4. 条形码阅读器、 扫描仪是"
+    },
+    {
+      "id": "NEW-SPLIT-0030",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "6. 计算机中正在运行的程序和数据都是保存在计算机的 （） 中。"
+    },
+    {
+      "id": "NEW-SPLIT-0031",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "7. 构成 CPU 的主要部件是"
+    },
+    {
+      "id": "NEW-SPLIT-0032",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "10. 计算机硬件系统通常是由 （） 几部分组成的。"
+    },
+    {
+      "id": "NEW-SPLIT-0033",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "11. 微型计算机的运算器、 控制器及内存储器统称为"
+    },
+    {
+      "id": "NEW-SPLIT-0034",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "12. 下列选项中， 都是计算机硬件的是 & 存储器、 DOS#BASIC"
+    },
+    {
+      "id": "NEW-SPLIT-0035",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "13. 组成计算机指令的两部分是"
+    },
+    {
+      "id": "NEW-SPLIT-0036",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "14. 计算机中的 Cache 是"
+    },
+    {
+      "id": "NEW-SPLIT-0037",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "16. 随机存取存储器 RAM 的特点是 'A. RAM 中既可写入信息， 也可读出信息"
+    },
+    {
+      "id": "NEW-SPLIT-0038",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "刷题一计算机基础知识 0. 17， 在计算机中， 负责指挥和协调控制计算机各部分自动 《 协调运行的部件是"
+    },
+    {
+      "id": "NEW-SPLIT-0039",
+      "subject": "计算机",
+      "chapter": "第四章办公自动化",
+      "source": "102张图片单题拆分",
+      "stem": "19. 下列属于应用软件的是 0"
+    },
+    {
+      "id": "NEW-SPLIT-0040",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "20. （） 是计算机系统唯一能识别的、 不需要翻译直接供机器使用的程序设计语言"
+    },
+    {
+      "id": "NEW-SPLIT-0041",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "21. （） 对源程序一边翻译一边执行， 并不产生目标程序。"
+    },
+    {
+      "id": "NEW-SPLIT-0042",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "22. 关于高级语言的说法中， （） 是错误的。"
+    },
+    {
+      "id": "NEW-SPLIT-0043",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "2.、 RAM、 高速缓存）、 硬盘都是存储器， 中 c 沐能直接访问的存储器是 ROMO （3， 计算机断电后， ROM 中的信息会丢失。 4 《 一个完整的计算机系统通常是由硬件系统和软件系统两大部分组成的。"
+    },
+    {
+      "id": "NEW-SPLIT-0044",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "5. 键盘和显示器都是计算机的 0 设备； 键盘是输人设备， 显示器是输出设备。"
+    },
+    {
+      "id": "NEW-SPLIT-0045",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "7. 》 中央处理器和主存储器构成计算机的主体， 称为主机。 & 计算机的硬件系统由控制器、 显示器、 打印机、 主机 《 键盘组成。"
+    },
+    {
+      "id": "NEW-SPLIT-0046",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "10. 要提高计算机的运算速度， 只需要采用高速 CPU， 而对主存储器没有速度要求。 ll. CPU 的主要任务是取指令、 分析指令和执行指令。"
+    },
+    {
+      "id": "NEW-SPLIT-0047",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "14. 解释型的高级语言是指对源程序进行翻译的过程中， 翻译一条执行一条， 直到程序结束"
+    },
+    {
+      "id": "NEW-SPLIT-0048",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "15. 用机器语言编写的程序执行速度较慢， 用高级语言编写的程序执行速度快。 填空题 I. 计算机硬件由运算器、 控制器、 存储器、 输人设备和输出设备五个部分组成， 其中运算器和控制器统称为"
+    },
+    {
+      "id": "NEW-SPLIT-0049",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "2. . 一一一一一 . 一是直接运行在裸机上的最基本的系统软件， 且任何软件必须在它的支持下才能运行。"
+    },
+    {
+      "id": "NEW-SPLIT-0050",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "4. Cache 的中文译名是由一串二进制代码组成， 包括操作码和地址码两部分。 5，、 累加器和寄存器等组成。"
+    },
+    {
+      "id": "NEW-SPLIT-0051",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "7. 组成计算机的五大部分是输人设备、 控制器、 运算器、 和输出设备。 - 一刷拔高难度： 女女女脊旮正确率： 单项选择题"
+    },
+    {
+      "id": "NEW-SPLIT-0052",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "1. 下列叙述中， 不正确的是"
+    },
+    {
+      "id": "NEW-SPLIT-0053",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "3. 下列 4 种存储器中， 属于易失性存储器的是"
+    },
+    {
+      "id": "NEW-SPLIT-0054",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "4.， 以下说法错误的是"
+    },
+    {
+      "id": "NEW-SPLIT-0055",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "5. 下列关于计算机 CPU 的叙述， 错误的是"
+    },
+    {
+      "id": "NEW-SPLIT-0056",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "6. 下列选项中存取速度最快的设备是"
+    },
+    {
+      "id": "NEW-SPLIT-0057",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "1. 固化在计算机上的基本输人输出系统简称是"
+    },
+    {
+      "id": "NEW-SPLIT-0058",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "1. 微机硬件系统中最核心的部件是"
+    },
+    {
+      "id": "NEW-SPLIT-0059",
+      "subject": "计算机",
+      "chapter": "第五章网络与信息安全",
+      "source": "102张图片单题拆分",
+      "stem": "2. 衡量计算机运算速度的一个常用单位是 MIPS， 其含义是 A， 执行一个标准测试程序所用的时间 （秒）"
+    },
+    {
+      "id": "NEW-SPLIT-0060",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "3. 主板上的 CMOS 芯片的主要用途是"
+    },
+    {
+      "id": "NEW-SPLIT-0061",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "4. 关于 PC 机主板上的 CMOS 芯片， 下面说法中正确的是"
+    },
+    {
+      "id": "NEW-SPLIT-0062",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "5. 打印机的种类有针式打印机、 喷墨打印机及"
+    },
+    {
+      "id": "NEW-SPLIT-0063",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "9. 计算机的硕盘属于"
+    },
+    {
+      "id": "NEW-SPLIT-0064",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "10. 下列选项中， 不属于 CPU 性能指标的是"
+    },
+    {
+      "id": "NEW-SPLIT-0065",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "3. 微机总线主要由数据总线、 地址总线、 控制总线三类组成。 4， 打印机是一种输出设备。"
+    },
+    {
+      "id": "NEW-SPLIT-0066",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "5. 总线能同时传送的二进制数据的位数是总线的带宽。 6， 多线程减少了 CPU 的闲置时间， 提高了 CPU 的运行效率。 7， 目前， CPU 中的 cache 一般分成三级， 其中 LI Cache 是多个核心共享的。 8， lntel 中， 相较于 Core i3， Core i9 是低端处理器， 且它的核心数和缓存较少。"
+    },
+    {
+      "id": "NEW-SPLIT-0067",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "1. 微型计算机系统总线是由数据总线、 和控制总线三部分组成的。 即时钟频率， 是指计算机 CPU 在单位时间内发出的脉冲数， 很大程度上决定了计算机的"
+    },
+    {
+      "id": "NEW-SPLIT-0068",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "2. 运算速度。 一刷拔高 @案 P175 难度： 女責女正确率： / 12 单项选择题"
+    },
+    {
+      "id": "NEW-SPLIT-0069",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "1. 内存条插在主板的 （） 上。"
+    },
+    {
+      "id": "NEW-SPLIT-0070",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "2. 下列不属于外存储器的是"
+    },
+    {
+      "id": "NEW-SPLIT-0071",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "4. 下列几种存储器中， 存取周期最短的是"
+    },
+    {
+      "id": "NEW-SPLIT-0072",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "5. 主机、 主板、 主存、 主频， 这四项术语在计算机系统中指的是"
+    },
+    {
+      "id": "NEW-SPLIT-0073",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "6. 字长为 64 位的计算机是指"
+    },
+    {
+      "id": "NEW-SPLIT-0074",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "7. 下列选项中， 不属于主板上常见的接口的是"
+    },
+    {
+      "id": "NEW-SPLIT-0075",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "8. 某计算机系统总线的位宽为 32 位， 工作频率为 200 MHz， 则该总线的理论带宽是 D. 1600 MB/s"
+    },
+    {
+      "id": "NEW-SPLIT-0076",
+      "subject": "计算机",
+      "chapter": "第二章计算机系统基本组成",
+      "source": "102张图片单题拆分",
+      "stem": "2. 微型机的软盘与硬盘比较， 硕盘的特点是存取速度快及存储容量大。 3， USB 接口支持热插拔。 生 HDMI 接口可以替代 DVI 接口。 - 11"
+    },
+    {
+      "id": "NEW-SPLIT-0077",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "1. 在计算机中， ASCII 是 0 一"
+    },
+    {
+      "id": "NEW-SPLIT-0078",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "4. 计算机内部处理汉字所使用的编码是"
+    },
+    {
+      "id": "NEW-SPLIT-0079",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "5. 下列计数法中， 绝对值最大的数是"
+    },
+    {
+      "id": "NEW-SPLIT-0080",
+      "subject": "计算机",
+      "chapter": "第一章计算机基础",
+      "source": "102张图片单题拆分",
+      "stem": "6. 二进制数 01 11010110 转换为十六进制数是"
+    }
+  ],
+  "readableCh3Blocks": 146,
+  "importedCh3Questions": 136,
+  "pendingItems": 14,
+  "importedPreview": [
+    {
+      "mode": "added",
+      "id": "COMP-CH3-002",
+      "pdfNumber": "002",
+      "answer": "A"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-003",
+      "pdfNumber": "003",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-004",
+      "pdfNumber": "004",
+      "answer": "裸机"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-005",
+      "pdfNumber": "005",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-006",
+      "pdfNumber": "006",
+      "answer": "运算器，控制器，存储器，输入设备，输出设备"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-007",
+      "pdfNumber": "007",
+      "answer": "控制器"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-008",
+      "pdfNumber": "008",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-009",
+      "pdfNumber": "009",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-010",
+      "pdfNumber": "010",
+      "answer": "错"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-011",
+      "pdfNumber": "011",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-012",
+      "pdfNumber": "012",
+      "answer": "执行指令"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-013",
+      "pdfNumber": "013",
+      "answer": "操作码，地址码"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-014",
+      "pdfNumber": "014",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-015",
+      "pdfNumber": "015",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-017",
+      "pdfNumber": "017",
+      "answer": "并行"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-018",
+      "pdfNumber": "018",
+      "answer": "执行"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-019",
+      "pdfNumber": "019",
+      "answer": "对"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-020",
+      "pdfNumber": "020",
+      "answer": "A"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-021",
+      "pdfNumber": "021",
+      "answer": "错"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-022",
+      "pdfNumber": "022",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-023",
+      "pdfNumber": "023",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-024",
+      "pdfNumber": "024",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-025",
+      "pdfNumber": "025",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-026",
+      "pdfNumber": "026",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-027",
+      "pdfNumber": "027",
+      "answer": "错"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-028",
+      "pdfNumber": "028",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-029",
+      "pdfNumber": "029",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-030",
+      "pdfNumber": "030",
+      "answer": "错"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-031",
+      "pdfNumber": "031",
+      "answer": "A"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-032",
+      "pdfNumber": "032",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-033",
+      "pdfNumber": "033",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-034",
+      "pdfNumber": "034",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-035",
+      "pdfNumber": "035",
+      "answer": "CPU"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-036",
+      "pdfNumber": "036",
+      "answer": "对"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-037",
+      "pdfNumber": "037",
+      "answer": "对"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-038",
+      "pdfNumber": "038",
+      "answer": "对"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-039",
+      "pdfNumber": "039",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-040",
+      "pdfNumber": "040",
+      "answer": "ABD"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-041",
+      "pdfNumber": "041",
+      "answer": "ABD"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-042",
+      "pdfNumber": "042",
+      "answer": "BE"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-043",
+      "pdfNumber": "043",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-044",
+      "pdfNumber": "044",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-045",
+      "pdfNumber": "045",
+      "answer": "直接"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-046",
+      "pdfNumber": "046",
+      "answer": "对"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-047",
+      "pdfNumber": "047",
+      "answer": "对"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-048",
+      "pdfNumber": "048",
+      "answer": "对"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-049",
+      "pdfNumber": "049",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-050",
+      "pdfNumber": "050",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-051",
+      "pdfNumber": "051",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-052",
+      "pdfNumber": "052",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-053",
+      "pdfNumber": "053",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-054",
+      "pdfNumber": "054",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-055",
+      "pdfNumber": "055",
+      "answer": "存储容量，存取速度"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-056",
+      "pdfNumber": "056",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-057",
+      "pdfNumber": "057",
+      "answer": "地址或内存地址"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-058",
+      "pdfNumber": "058",
+      "answer": "地址或主键"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-059",
+      "pdfNumber": "059",
+      "answer": "A"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-060",
+      "pdfNumber": "060",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-061",
+      "pdfNumber": "061",
+      "answer": "错"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-062",
+      "pdfNumber": "062",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-063",
+      "pdfNumber": "063",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-064",
+      "pdfNumber": "064",
+      "answer": "错"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-065",
+      "pdfNumber": "065",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-066",
+      "pdfNumber": "066",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-067",
+      "pdfNumber": "067",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-068",
+      "pdfNumber": "068",
+      "answer": "AB"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-069",
+      "pdfNumber": "069",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-070",
+      "pdfNumber": "070",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-071",
+      "pdfNumber": "071",
+      "answer": "倍速"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-072",
+      "pdfNumber": "072",
+      "answer": "150，1350"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-073",
+      "pdfNumber": "073",
+      "answer": "650，4.7"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-074",
+      "pdfNumber": "074",
+      "answer": "对"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-075",
+      "pdfNumber": "075",
+      "answer": "键盘"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-076",
+      "pdfNumber": "076",
+      "answer": "错"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-077",
+      "pdfNumber": "077",
+      "answer": "打印机"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-078",
+      "pdfNumber": "078",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-079",
+      "pdfNumber": "079",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-080",
+      "pdfNumber": "080",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-081",
+      "pdfNumber": "081",
+      "answer": "ACD"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-082",
+      "pdfNumber": "082",
+      "answer": "对"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-083",
+      "pdfNumber": "083",
+      "answer": "黄"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-084",
+      "pdfNumber": "084",
+      "answer": "错"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-085",
+      "pdfNumber": "085",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-086",
+      "pdfNumber": "086",
+      "answer": "激光打印机"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-087",
+      "pdfNumber": "087",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-088",
+      "pdfNumber": "088",
+      "answer": "A"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-089",
+      "pdfNumber": "089",
+      "answer": "A"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-090",
+      "pdfNumber": "090",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-091",
+      "pdfNumber": "091",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-092",
+      "pdfNumber": "092",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-094",
+      "pdfNumber": "094",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-095",
+      "pdfNumber": "095",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-096",
+      "pdfNumber": "096",
+      "answer": "对"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-097",
+      "pdfNumber": "097",
+      "answer": "A"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-098",
+      "pdfNumber": "098",
+      "answer": "错"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-099",
+      "pdfNumber": "099",
+      "answer": "264"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-100",
+      "pdfNumber": "100",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-101",
+      "pdfNumber": "101",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-102",
+      "pdfNumber": "102",
+      "answer": "串行"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-104",
+      "pdfNumber": "104",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-105",
+      "pdfNumber": "105",
+      "answer": "A"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-106",
+      "pdfNumber": "106",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-107",
+      "pdfNumber": "107",
+      "answer": "对"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-108",
+      "pdfNumber": "108",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-109",
+      "pdfNumber": "109",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-110",
+      "pdfNumber": "110",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-111",
+      "pdfNumber": "111",
+      "answer": "控制总线"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-112",
+      "pdfNumber": "112",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-113",
+      "pdfNumber": "113",
+      "answer": "A"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-114",
+      "pdfNumber": "114",
+      "answer": "程序，数据，文档"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-115",
+      "pdfNumber": "115",
+      "answer": "系统，应用"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-116",
+      "pdfNumber": "116",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-117",
+      "pdfNumber": "117",
+      "answer": "专用应用软件，专用应用软件"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-118",
+      "pdfNumber": "118",
+      "answer": "A"
+    },
+    {
+      "mode": "updated",
+      "id": "COMP-0177",
+      "pdfNumber": "119",
+      "answer": "D"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-120",
+      "pdfNumber": "120",
+      "answer": "B"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-121",
+      "pdfNumber": "121",
+      "answer": "错"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-122",
+      "pdfNumber": "122",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-123",
+      "pdfNumber": "123",
+      "answer": "C"
+    },
+    {
+      "mode": "added",
+      "id": "COMP-CH3-124",
+      "pdfNumber": "124",
+      "answer": "A"
+    }
+  ]
+}

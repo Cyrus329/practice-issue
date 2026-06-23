@@ -1,0 +1,1568 @@
+{
+  "readableBlocks": 145,
+  "matched": 80,
+  "pending": 69,
+  "matchedItems": [
+    {
+      "questionId": "NEW-SPLIT-0378",
+      "questionStem": "002 计算机能按照人们的意图自动、 高速地进行操作， 是因为采用了 （）。",
+      "pdfNumber": "002",
+      "pdfQuestion": "计算机能按照人们的意图自动、高速地进行操作，是因为采用了（ ）。",
+      "answer": "A",
+      "score": 1.0,
+      "secondScore": 0.6939
+    },
+    {
+      "questionId": "NEW-SPLIT-0379",
+      "questionStem": "003 完整的计算机系统包括 （）。",
+      "pdfNumber": "003",
+      "pdfQuestion": "完整的计算机系统包括（ ）。",
+      "answer": "D",
+      "score": 1.0,
+      "secondScore": 0.6502
+    },
+    {
+      "questionId": "NEW-SPLIT-0380",
+      "questionStem": "007 冯 .、 依曼计算机的硬件系统由五大部分组成， 其中整个计算机的指挥中心是",
+      "pdfNumber": "007",
+      "pdfQuestion": "冯·诺依曼计算机的硬件系统由五大部分组成，其中整个计算机的指挥中心是 ________。",
+      "answer": "控制器",
+      "score": 0.9605,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0025",
+      "questionStem": "1. 下列不属于冯 · 诺依曼体系结构的是",
+      "pdfNumber": "008",
+      "pdfQuestion": "下列不属于冯·诺依曼体系结构的是（ ）。",
+      "answer": "D",
+      "score": 1.0,
+      "secondScore": 0.9867
+    },
+    {
+      "questionId": "NEW-SPLIT-0382",
+      "questionStem": "009 计算机的主机指的是 （男）。",
+      "pdfNumber": "009",
+      "pdfQuestion": "计算机的主机指的是（ ）。",
+      "answer": "B",
+      "score": 0.986,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0384",
+      "questionStem": "011 下列关于计算机指令的说法中， 错误的是 （）。",
+      "pdfNumber": "011",
+      "pdfQuestion": "下列关于计算机指令的说法中，错误的是（ ）。",
+      "answer": "D",
+      "score": 1.0,
+      "secondScore": 0.7889
+    },
+    {
+      "questionId": "NEW-SPLIT-0385",
+      "questionStem": "015 以下 （不属于指令系统的指令。",
+      "pdfNumber": "015",
+      "pdfQuestion": "以下（ ）不属于指令系统的指令。",
+      "answer": "B",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0388",
+      "questionStem": "022 关于 CPU 的运算器， 以下说法错误的是 （C)O",
+      "pdfNumber": "022",
+      "pdfQuestion": "关于CPU的运算器，以下说法错误的是（ ）。",
+      "answer": "C",
+      "score": 0.9852,
+      "secondScore": 0.5926
+    },
+    {
+      "questionId": "NEW-SPLIT-0389",
+      "questionStem": "023 下列关于 CPU 控制器的描述中， 不正确的是 （）。",
+      "pdfNumber": "023",
+      "pdfQuestion": "下列关于CPU控制器的描述中，不正确的是（ ）。",
+      "answer": "C",
+      "score": 1.0,
+      "secondScore": 0.62
+    },
+    {
+      "questionId": "NEW-SPLIT-0390",
+      "questionStem": "024 微型计算机中， 能实现算术运算、 逻辑运算及全机控制的部件是 （）。",
+      "pdfNumber": "024",
+      "pdfQuestion": "微型计算机中，能实现算术运算、逻辑运算及全机控制的部件是（ ）。",
+      "answer": "D",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0391",
+      "questionStem": "025 一般来说， CPU 的 （0 越高， 运算速度也就越快。",
+      "pdfNumber": "025",
+      "pdfQuestion": "一般来说，CPU的（ ）越高，运算速度也就越快。",
+      "answer": "B",
+      "score": 0.9792,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0392",
+      "questionStem": "027 可通过设置高速缓冲存储器 (Cache) 来增加计算机内存的容量。 ()(）",
+      "pdfNumber": "027",
+      "pdfQuestion": "可通过设置高速缓冲存储器（Cache）来增加计算机内存的容量。（ ）",
+      "answer": "错",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0195",
+      "questionStem": "56. Cache 可以提高计算机的性能， 这是因为 〈",
+      "pdfNumber": "028",
+      "pdfQuestion": "Cache可以提高计算机的性能，这是因为（ ）。",
+      "answer": "D",
+      "score": 0.9675,
+      "secondScore": 0.9412
+    },
+    {
+      "questionId": "NEW-SPLIT-0394",
+      "questionStem": "029 CPU 中的 LI、 L2 和 L3 Cache 的主要区别在于 （）。",
+      "pdfNumber": "029",
+      "pdfQuestion": "CPU中的L1、L2和L3 Cache的主要区别在于（ ）。",
+      "answer": "C",
+      "score": 0.966,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0395",
+      "questionStem": "030 与 CPU 封装在一起的 cache 可看作主存的延伸， 与主存统一编址， 接受 CPU 的访问， 但速度比主存快。 （丷",
+      "pdfNumber": "030",
+      "pdfQuestion": "与CPU封装在一起的cache可看作主存的延伸，与主存统一编址，接受CPU 的访问，但速度比主存快。（ ）",
+      "answer": "错",
+      "score": 0.986,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0396",
+      "questionStem": "031 在计算机中， 作为一个整体参与运算、 处理和传送的一串二进制数称为 （）， 其位数称为 （色）。",
+      "pdfNumber": "031",
+      "pdfQuestion": "在计算机中，作为一个整体参与运算、处理和传送的一串二进制数称为（ ）， 其位数称为（ ）。",
+      "answer": "A",
+      "score": 0.9879,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0397",
+      "questionStem": "032 CPU 的字长 （通用寄存器的位数。",
+      "pdfNumber": "032",
+      "pdfQuestion": "CPU的字长（ ）通用寄存器的位数。",
+      "answer": "B",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0398",
+      "questionStem": "034 “ 64 位微机 ” 中的 64 位指的是 （。",
+      "pdfNumber": "034",
+      "pdfQuestion": "“64位微机”中的64位指的是（ ）。",
+      "answer": "D",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0400",
+      "questionStem": "036 睿频技允许 CPU 在重任务时提高主频， 而在轻任务时降低主频以节能。",
+      "pdfNumber": "036",
+      "pdfQuestion": "睿频技术允许 CPU 在重任务时提高主频，而在轻任务时降低主频以节能。 （ ）",
+      "answer": "对",
+      "score": 0.9792,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0401",
+      "questionStem": "039 下列选项中， 不属于智能处理器特征的是 (P）。",
+      "pdfNumber": "039",
+      "pdfQuestion": "下列选项中，不属于智能处理器特征的是（ ）。",
+      "answer": "D",
+      "score": 0.9927,
+      "secondScore": 0.6398
+    },
+    {
+      "questionId": "NEW-SPLIT-0402",
+      "questionStem": "040 （多选） 微型计算机系统处理大量数据信息的速度取决于 （A. CPU 的时钟频率",
+      "pdfNumber": "040",
+      "pdfQuestion": "（多选）微型计算机系统处理大量数据信息的速度取决于（ ）。",
+      "answer": "ABD",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0403",
+      "questionStem": "042 （多选） 计算机上安装了主时钟频率很高， 运算能力非常强的 CPU， 但计算机运行 3DMAX 软件进行三维图像处理的速度却并不快， 原因可能包括 （）",
+      "pdfNumber": "042",
+      "pdfQuestion": "（多选）计算机上安装了主时钟频率很高，运算能力非常强的CPU，但计算 机运行3DMAX软件进行三维图像处理的速度却并不快，原因可能包括（ ）。",
+      "answer": "BE",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0404",
+      "questionStem": "043 下列不属于国产芯片的是 （A. 麒麟",
+      "pdfNumber": "043",
+      "pdfQuestion": "下列不属于国产芯片的是（ ）。",
+      "answer": "B",
+      "score": 1.0,
+      "secondScore": 0.5888
+    },
+    {
+      "questionId": "NEW-SPLIT-0405",
+      "questionStem": "044 关于龙芯 CPU 的描述， 以下哪项是错误的 （A. 龙芯 CPU 是基于 SC 架构",
+      "pdfNumber": "044",
+      "pdfQuestion": "关于龙芯CPU的描述，以下哪项是错误的（ ）。",
+      "answer": "B",
+      "score": 0.9358,
+      "secondScore": 0.5625
+    },
+    {
+      "questionId": "NEW-SPLIT-0406",
+      "questionStem": "047 打开一个 Word 文档， 是指把该文档从磁盘调入内存， 并在窗口的工作区显示其内容。 （",
+      "pdfNumber": "047",
+      "pdfQuestion": "打开一个Word文档，是指把该文档从磁盘调入内存，并在窗口的工作区显 示其内容。（ ）",
+      "answer": "对",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0407",
+      "questionStem": "048 在微型计算机中， CPU 对内存的操作有 “ 读 ” 和 “ 写 ”， “ 读 ” 操作是指将内存单元中的内容读入到 CPU 的内部， “ 写 \" 操作则是 CPU 将信息传送到内存单元并保存起来。 （",
+      "pdfNumber": "048",
+      "pdfQuestion": "在微型计算机中，CPU对内存的操作有“读”和“写”，“读”操作是指将 内存单元中的内容读入到CPU的内部，“写”操作则是CPU将信息传送到 内存单元并保存起来。（ ）",
+      "answer": "对",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0180",
+      "questionStem": "31. 以下描述 （不正确。",
+      "pdfNumber": "049",
+      "pdfQuestion": "以下描述（ ）不正确。",
+      "answer": "B",
+      "score": 1.0,
+      "secondScore": 0.5773
+    },
+    {
+      "questionId": "NEW-SPLIT-0408",
+      "questionStem": "050 内存储器是 C PU 能直接访问的存储器， 下列哪一个不属于内存储器 （D)O",
+      "pdfNumber": "050",
+      "pdfQuestion": "内存储器是 CPU 能直接访问的存储器，下列哪一个不属于内存储器（ ）。",
+      "answer": "D",
+      "score": 0.9781,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0409",
+      "questionStem": "051 下列存储器中， （的特点是只能读出原有内容， 不能由用户再写入新内",
+      "pdfNumber": "051",
+      "pdfQuestion": "下列存储器中，（ ）的特点是只能读出原有内容，不能由用户再写入新内 容。",
+      "answer": "B",
+      "score": 0.9863,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0410",
+      "questionStem": "052 引导系统开机自检的程序存放在 （A. 硬盘",
+      "pdfNumber": "052",
+      "pdfQuestion": "引导系统开机自检的程序存放在（ ）。",
+      "answer": "B",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0411",
+      "questionStem": "053 微型计算机系统中的内存条指的是 （A. ROM",
+      "pdfNumber": "053",
+      "pdfQuestion": "微型计算机系统中的内存条指的是（ ）。",
+      "answer": "B",
+      "score": 1.0,
+      "secondScore": 0.9593
+    },
+    {
+      "questionId": "NEW-SPLIT-0412",
+      "questionStem": "056 微型计算机内存容量的基本单位是 （A. 字符",
+      "pdfNumber": "056",
+      "pdfQuestion": "微型计算机内存容量的基本单位是（ ）。",
+      "answer": "B",
+      "score": 1.0,
+      "secondScore": 0.8
+    },
+    {
+      "questionId": "NEW-SPLIT-0413",
+      "questionStem": "059 为了解决用户要求存储容量大、 速度快和成本低之间的矛盾， 目前计算机采用高速缓冲存储器 (cache)、 内存储器和外存储器的体结构该体系结构是。",
+      "pdfNumber": "059",
+      "pdfQuestion": "为了解决用户要求存储容量大、速度快和成本低之间的矛盾，目前计算机采 用高速缓冲存储器（cache）、内存储器和外存储器的体系结构，该体系结构 是（ ）。",
+      "answer": "A",
+      "score": 0.9932,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0414",
+      "questionStem": "060 计算机的多级存储器体系结构中， Cache 的作用是 （）。",
+      "pdfNumber": "060",
+      "pdfQuestion": "计算机的多级存储器体系结构中，Cache的作用是（ ）。",
+      "answer": "B",
+      "score": 1.0,
+      "secondScore": 0.5574
+    },
+    {
+      "questionId": "NEW-SPLIT-0415",
+      "questionStem": "063 计算机机存储体系由多级存储部件构成， 下列部件存储速度最快的是 （乙）。",
+      "pdfNumber": "063",
+      "pdfQuestion": "计算机机存储体系由多级存储部件构成，下列部件存储速度最快的是（ ）。",
+      "answer": "B",
+      "score": 0.9785,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0417",
+      "questionStem": "066 下列存储设备中， 存取速度最快的是 （A. DVD-RW",
+      "pdfNumber": "066",
+      "pdfQuestion": "下列存储设备中，存取速度最快的是（ ）。",
+      "answer": "D",
+      "score": 1.0,
+      "secondScore": 0.7421
+    },
+    {
+      "questionId": "NEW-SPLIT-0418",
+      "questionStem": "067 和机械硬盘相比， 固态硬盘的主要优点是 （A. 容量大",
+      "pdfNumber": "067",
+      "pdfQuestion": "和机械硬盘相比，固态硬盘的主要优点是（ ）。",
+      "answer": "B",
+      "score": 1.0,
+      "secondScore": 0.9835
+    },
+    {
+      "questionId": "NEW-SPLIT-0419",
+      "questionStem": "069 光盘驱动器通过激光束来读取光盘上的数据时， 光学头与光盘 （A. 直接接触",
+      "pdfNumber": "069",
+      "pdfQuestion": "光盘驱动器通过激光束来读取光盘上的数据时，光学头与光盘（ ）。",
+      "answer": "B",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0420",
+      "questionStem": "070 衡量一个光驱性能的主要指标是 （。",
+      "pdfNumber": "070",
+      "pdfQuestion": "衡量一个光驱性能的主要指标是（ ）。",
+      "answer": "C",
+      "score": 1.0,
+      "secondScore": 0.9565
+    },
+    {
+      "questionId": "NEW-SPLIT-0421",
+      "questionStem": "074 输入设备接受用户输入的原始数据和程序， 并将它们转换成计算机可以识别的形式； 输出设备用于将计算机处理的结果转变为用户可接受的形式。 （丷）",
+      "pdfNumber": "074",
+      "pdfQuestion": "输入设备接受用户输入的原始数据和程序，并将它们转换成计算机可以识别 的形式；输出设备用于将计算机处理的结果转变为用户可接受的形式。（ ）",
+      "answer": "对",
+      "score": 0.9896,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0423",
+      "questionStem": "079 液晶显示器 (LCD) 的分辨率指的是 （B)O",
+      "pdfNumber": "079",
+      "pdfQuestion": "液晶显示器（LCD）的分辨率指的是（ ）。",
+      "answer": "B",
+      "score": 0.9221,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0425",
+      "questionStem": "081 （多选） 标准 VGA 显示器中使用的三基色是 (Ä(.))",
+      "pdfNumber": "081",
+      "pdfQuestion": "（多选）标准VGA显示器中使用的三基色是（ ）。",
+      "answer": "ACD",
+      "score": 0.9792,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0426",
+      "questionStem": "082 要使用显示器 “ 真彩色 \" 的显示效果， 计算机显示适配器的颜色质量属性应该至少设置为 24 位。 （V)",
+      "pdfNumber": "082",
+      "pdfQuestion": "要使用显示器“真彩色”的显示效果，计算机显示适配器的颜色质量属性应该 至少设置为24位。（ ）",
+      "answer": "对",
+      "score": 0.9839,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0427",
+      "questionStem": "084 为了防止液晶显示器中的液态晶体挥发， 其工作环境不宜太干燥， 应保持足够的湿度。 （犭）",
+      "pdfNumber": "084",
+      "pdfQuestion": "为了防止液晶显示器中的液态晶体挥发，其工作环境不宜太干燥，应保持足 够的湿度。（ ）",
+      "answer": "错",
+      "score": 0.9821,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0428",
+      "questionStem": "085 喷墨打印机的主要特点是 （犭",
+      "pdfNumber": "085",
+      "pdfQuestion": "喷墨打印机的主要特点是（ ）。",
+      "answer": "C",
+      "score": 0.9821,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0429",
+      "questionStem": "088 图像的打印精度单位是 （）。",
+      "pdfNumber": "088",
+      "pdfQuestion": "图像的打印精度单位是（ ）。",
+      "answer": "A",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0430",
+      "questionStem": "089 在微型计算机中， 主板有着重要的作用， 它是其它部件和各种外部设备",
+      "pdfNumber": "089",
+      "pdfQuestion": "在微型计算机中，主板有着重要的作用，它是其它部件和各种外部设备的 （ ）。",
+      "answer": "A",
+      "score": 0.9871,
+      "secondScore": 0.9579
+    },
+    {
+      "questionId": "NEW-SPLIT-0431",
+      "questionStem": "090 关于主板上的 PCH 芯片组， 以下说法错误的是 （）。",
+      "pdfNumber": "090",
+      "pdfQuestion": "关于主板上的PCH芯片组，以下说法错误的是（ ）。",
+      "answer": "C",
+      "score": 1.0,
+      "secondScore": 0.603
+    },
+    {
+      "questionId": "NEW-SPLIT-0432",
+      "questionStem": "091 固化在计算机主板上的基本输入 / 输出系统简写是 （）。",
+      "pdfNumber": "091",
+      "pdfQuestion": "固化在计算机主板上的基本输入/输出系统简写是（ ）。",
+      "answer": "B",
+      "score": 1.0,
+      "secondScore": 0.7954
+    },
+    {
+      "questionId": "NEW-SPLIT-0433",
+      "questionStem": "094 CMOS 芯片在主板上的作用是 （色）。",
+      "pdfNumber": "094",
+      "pdfQuestion": "CMOS芯片在主板上的作用是（ ）。",
+      "answer": "B",
+      "score": 0.9565,
+      "secondScore": 0.6445
+    },
+    {
+      "questionId": "NEW-SPLIT-0434",
+      "questionStem": "095 关于总线的概念， 下列说法错误的是 （）。",
+      "pdfNumber": "095",
+      "pdfQuestion": "关于总线的概念，下列说法错误的是（ ）。",
+      "answer": "D",
+      "score": 1.0,
+      "secondScore": 0.6667
+    },
+    {
+      "questionId": "NEW-SPLIT-0435",
+      "questionStem": "096 在串行总线中， 二进制数逐位通过一根数据线发送到目的部件， 因此传输控制比较简单， 数据传输的频率较高。 （）",
+      "pdfNumber": "096",
+      "pdfQuestion": "在串行总线中，二进制数逐位通过一根数据线发送到目的部件，因此传输控 制比较简单，数据传输的频率较高。（ ）",
+      "answer": "对",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0436",
+      "questionStem": "097 下列关于总线带宽的说法中， 不正确的是 （）。",
+      "pdfNumber": "097",
+      "pdfQuestion": "下列关于总线带宽的说法中，不正确的是（ ）。",
+      "answer": "A",
+      "score": 1.0,
+      "secondScore": 0.9639
+    },
+    {
+      "questionId": "NEW-SPLIT-0437",
+      "questionStem": "100 关于 I/O 接口的描述， 下列 （C) 是错误的。",
+      "pdfNumber": "100",
+      "pdfQuestion": "关于I/O接口的描述，下列（ ）是错误的。",
+      "answer": "B",
+      "score": 0.9655,
+      "secondScore": 0.5998
+    },
+    {
+      "questionId": "NEW-SPLIT-0438",
+      "questionStem": "101 在计算机系统中， DMA （Direct Memory Access) 的主要功能是 （A. 提高 CPU 的处理速度",
+      "pdfNumber": "101",
+      "pdfQuestion": "在计算机系统中，DMA（Direct Memory Access）的主要功能是（ ）。",
+      "answer": "C",
+      "score": 0.985,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0439",
+      "questionStem": "102 USB 接口是一种通用的一点上 （串行 / 并行） 总线接口， 支持即插即用和热插拨。",
+      "pdfNumber": "102",
+      "pdfQuestion": "USB 接口是一种通用的________（串行/并行）总线接口，支持即插即用和 热插拔。",
+      "answer": "串行",
+      "score": 0.9017,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0440",
+      "questionStem": "104 高清晰度的多媒体接口是 （A. USB",
+      "pdfNumber": "104",
+      "pdfQuestion": "高清晰度的多媒体接口是（ ）。",
+      "answer": "D",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0442",
+      "questionStem": "107 SATA 接口是一种高速的串行接口， 用于硬盘和内存之间的数据传输。 (V)",
+      "pdfNumber": "107",
+      "pdfQuestion": "SATA接口是一种高速的串行接口，用于硬盘和内存之间的数据传输。（ ）",
+      "answer": "对",
+      "score": 0.9792,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0443",
+      "questionStem": "108 关于 PCI 和 PCI-E 总线， 下列描述正确的是 （0。",
+      "pdfNumber": "108",
+      "pdfQuestion": "关于PCI和PCI-E总线，下列描述正确的是（ ）。",
+      "answer": "C",
+      "score": 0.9769,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0444",
+      "questionStem": "109 PCI 是一种 32 位的并行总线， 总线频率为 33MHz， 可扩展为 64 位并提高到 66MHz。 由此可知， PCI 总线的最大带宽是 （少）。",
+      "pdfNumber": "109",
+      "pdfQuestion": "PCI 是一种 32 位的并行总线，总线频率为 33MHz，可扩展为 64 位并提高 到66MHz 。由此可知，PCI总线的最大带宽是（ ）。",
+      "answer": "D",
+      "score": 0.9885,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0445",
+      "questionStem": "110 单通道的 PCI-E 3. 0 的带宽是 8Gbps， 则 16 通道 （x16） 的 PCI-E 3， 0 的带宽是 （乙）。",
+      "pdfNumber": "110",
+      "pdfQuestion": "单通道的PCI-E 3.0的带宽是8Gbps，则16通道（x16）的PCI-E 3.0的带 宽是（ ）。",
+      "answer": "B",
+      "score": 0.9835,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0446",
+      "questionStem": "112 地址总线的位宽是 32b， 则其最大寻址能力是 （0。",
+      "pdfNumber": "112",
+      "pdfQuestion": "地址总线的位宽是32b，则其最大寻址能力是（ ）。",
+      "answer": "C",
+      "score": 0.9691,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0187",
+      "questionStem": "44. 实用程序完成一些与管理计算机系统资源及文件有关的任务， （） 不属于实用程序。",
+      "pdfNumber": "118",
+      "pdfQuestion": "实用程序完成一些与管理计算机系统资源及文件有关的任务，（ ）不属于 实用程序。",
+      "answer": "A",
+      "score": 1.0,
+      "secondScore": 0.9726
+    },
+    {
+      "questionId": "COMP-0177",
+      "questionStem": "73. 下列各组软件中，全部属于(应用软件的是 ( )。",
+      "pdfNumber": "119",
+      "pdfQuestion": "下列各组软件中，全部属于应用软件的是（ ）。",
+      "answer": "D",
+      "score": 1.0,
+      "secondScore": 0.9354
+    },
+    {
+      "questionId": "NEW-SPLIT-0450",
+      "questionStem": "121 机器语言和汇编语言编写的程序的运行效率低于高级语言， 所以机器语言和汇编语言称为低级语言。 （/）",
+      "pdfNumber": "121",
+      "pdfQuestion": "机器语言和汇编语言编写的程序的运行效率低于高级语言，所以机器语言和 汇编语言称为低级语言。（ ）",
+      "answer": "错",
+      "score": 0.985,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0451",
+      "questionStem": "122 对于汇编语言的评述中， （0 是不正确的。",
+      "pdfNumber": "122",
+      "pdfQuestion": "对于汇编语言的评述中，（ ）是不正确的。",
+      "answer": "C",
+      "score": 0.9941,
+      "secondScore": 0.9227
+    },
+    {
+      "questionId": "NEW-SPLIT-0452",
+      "questionStem": "123 高级程序设计语言的主要优点是 （0。",
+      "pdfNumber": "123",
+      "pdfQuestion": "高级程序设计语言的主要优点是（ ）。",
+      "answer": "C",
+      "score": 0.9895,
+      "secondScore": 0.5955
+    },
+    {
+      "questionId": "NEW-SPLIT-0453",
+      "questionStem": "124 用高级语言编写的程序称为 （阝）。",
+      "pdfNumber": "124",
+      "pdfQuestion": "用高级语言编写的程序称为（ ）。",
+      "answer": "A",
+      "score": 0.9804,
+      "secondScore": 0.7288
+    },
+    {
+      "questionId": "NEW-SPLIT-0454",
+      "questionStem": "126 关于语言处理程序的描述， 下列 （区） 是错误的。",
+      "pdfNumber": "126",
+      "pdfQuestion": "关于语言处理程序的描述，下列（ ）是错误的。",
+      "answer": "C",
+      "score": 0.9943,
+      "secondScore": 0.5998
+    },
+    {
+      "questionId": "NEW-SPLIT-0455",
+      "questionStem": "127 解释程序的执行速度相对较慢的原因是 (B）。",
+      "pdfNumber": "127",
+      "pdfQuestion": "解释程序的执行速度相对较慢的原因是（ ）。",
+      "answer": "D",
+      "score": 0.9639,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0456",
+      "questionStem": "128 Basic、 Java、 JavaS cript 和 Python 属于 （0 的语言。",
+      "pdfNumber": "128",
+      "pdfQuestion": "Basic、Java、JavaScript和Python属于（ ）的语言。",
+      "answer": "B",
+      "score": 0.9866,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0457",
+      "questionStem": "129 在编译方式的语言处理程序中， 编译后的目标程序 （A. 可以直接执行",
+      "pdfNumber": "129",
+      "pdfQuestion": "在编译方式的语言处理程序中，编译后的目标程序（ ）。",
+      "answer": "B",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0458",
+      "questionStem": "130 解释程序和编译程序在处理源程序时的主要区别是 （A. 解释程序逐句执行源程序， 编译程序整体编译源程序",
+      "pdfNumber": "130",
+      "pdfQuestion": "解释程序和编译程序在处理源程序时的主要区别是（ ）。",
+      "answer": "A",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0460",
+      "questionStem": "134 四 54 年， 世界上首次出现的高级语一言是 （语",
+      "pdfNumber": "134",
+      "pdfQuestion": "年，世界上首次出现的高级语言是（ ）语言。",
+      "answer": "B",
+      "score": 0.9211,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0461",
+      "questionStem": "135 以下程序设计语言中， 采用虚拟机技术， 因而具有良好跨平台特性的是 （A. Java",
+      "pdfNumber": "135",
+      "pdfQuestion": "以下程序设计语言中，采用虚拟机技术，因而具有良好跨平台特性的是（ ）。",
+      "answer": "A",
+      "score": 0.9712,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0462",
+      "questionStem": "136 （被称为 “ 胶水语言 \"， 常用于将不同模块联结在一起。",
+      "pdfNumber": "136",
+      "pdfQuestion": "（ ）被称为“胶水语言”，常用于将不同模块联结在一起。",
+      "answer": "B",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0463",
+      "questionStem": "138 计算机的工作过程就是执行 . 的过程。 第一台计算机 @ 的诞生仅仅表明人类发明了计算机， 从而进入了 “ 计算胬代。 对后来的计算机在体系结构和工作原理上具有重大影响的是在同一礁由美籍匈牙利数学家 O 和他的同事们研制的 @ 计算机， 采用了 “ O ” 的思想。",
+      "pdfNumber": "138",
+      "pdfQuestion": "计算机的工作过程就是执行 ① 的过程。 第一台计算机 ② 的诞生仅仅表明人类发明了计算机，从而进入了“计算”时 代。对后来的计算机在体系结构和工作原理上具有重大影响的是在同一时期 由美籍匈牙利数学家 ③ 和他的同事们研制的 ④ 计算机，采用了“ ⑤ ” 的思想。 ①_________ ②_________ ③_________ ④_________ ⑤ ________",
+      "answer": "① 程序 ② ENIAC ③ 冯·诺依曼 ④ EDVAC ⑤ 存储程序或存储程序控制",
+      "score": 0.8928,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0464",
+      "questionStem": "140 小伟同学即将毕业， 应聘到一家创意设计公司做视频处理工作。 为了在家里就能工作， 需配置一台高性能电脑， 教计算机课程的张老师给出了如下建议： 所购电脑的内核最好是 . 的， 内存为 @， 操作系统和应用程序最好安装在 O 里， 视频处理软件建议采用 @， 为了连接高清显示设备最好配置 @ 接口。",
+      "pdfNumber": "140",
+      "pdfQuestion": "小伟同学即将毕业，应聘到一家创意设计公司做视频处理工作。为了在家里 就能工作，需配置一台高性能电脑，教计算机课程的张老师给出了如下建议： 所购电脑的内核最好是 ① 的，内存为 ② ，操作系统和应用程序最好安装 在 ③ 里，视频处理软件建议采用 ④ ，为了连接高清显示设备最好配置 ⑤ 接口。 ①",
+      "answer": "① D，② B，③ D，④ C，⑤ C",
+      "score": 0.9484,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0465",
+      "questionStem": "142 小李自己采购主板、 CPU、 内存条、 硬盘、 机箱和电源组装了一台计算机 . 要使该计算机能办公、 上网， 简述接下来还应该完成的工作。",
+      "pdfNumber": "142",
+      "pdfQuestion": "小李自己采购主板、CPU、内存条、硬盘、机箱和电源组装了一台计算机， 要使该计算机能办公、上网，简述接下来还应该完成的工作。",
+      "answer": "① 如果CPU不带核显，那么还需要采购并安装独立显卡； ② 磁盘分区并格式化，安装操作系统； ③ 安装办公软件，例如微软的Office或金山的WPS。 一切正常的话到此可以办公。 ① 按需额外采购网卡和路由器等网络硬件，并向ISP申请上网账号； ② 安装并配置TCP/IP协议，包括IP地址、子网掩码、网关地址和DNS服 务器； ③ 使用ISP提供的账号密码，连接并登录Internet。 一切正常的话到此即可上网。",
+      "score": 1.0,
+      "secondScore": 0
+    },
+    {
+      "questionId": "NEW-SPLIT-0466",
+      "questionStem": "143 某公司购买了一批电脑， 配置是 4 核 CPU、 2GB 内存、 ITB 的机械硬盘。 优化系统： . 计算机系统由哪两部分组成？ 并描述两者之间的关系。 @ 不更换硬件的情况下， 为提高计算机性能， 请增加两个硬件。 @ 请列举一款国产办公软件。",
+      "pdfNumber": "143",
+      "pdfQuestion": "某公司购买了一批电脑，配置是4核CPU、2GB内存、1TB的机械硬盘。为 优化系统： ① 计算机系统由哪两部分组成？并描述两者之间的关系。 ② 不更换硬件的情况下，为提高计算机性能，请增加两个硬件。 ③ 请列举一款国产办公软件。",
+      "answer": "① 完整的计算机系统由硬件系统和软件系统组成，硬件是基础，软件是灵魂； ② 增加内存，增加固态硬盘； ③ WPS或永中Office。",
+      "score": 0.9471,
+      "secondScore": 0
+    }
+  ],
+  "pendingPreview": [
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "001",
+      "questionText": "冯·诺依曼体系的基本结构如下图，图中标识为“①”和“②”处是（ ）。",
+      "answer": "A",
+      "analysis": "根据考纲书，冯·诺依曼计算机的基本结构包括输入设备、存储器（内存储器\n和外存储器）、运算器、控制器和输出设备。计算机的基本工作原理是“存储\n程序”和“自动执行程序”，即程序和数据都存放在存储器中，CPU 依次从\n存储器中取出指令并执行。\n在冯·诺依曼体系结构中：\n数据流（①）表示数据在计算机系统中的传输路径，包括从输入设备传输到存\n储器、存储器到运算器、运算器到存储器，最终到输出设备的过程。\n控制流（②）是指控制器根据程序的指令，对各部件的操作进行协调和控制，\n确保计算机按照指令执行。\n因此，图中的 ① 代表数据流，② 代表控制流。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "004",
+      "questionText": "没有软件的计算机称为________。",
+      "answer": "裸机",
+      "analysis": "根据考纲书，计算机系统由硬件系统和软件系统组成，硬件是计算机的物理\n基础，而软件是计算机运行的指令集合。如果计算机仅由硬件组成，没有软件\n的支持，那么它无法执行任何有意义的任务，这种仅包含硬件、没有软件的计\n算机被称为“裸机”。裸机只能识别由 0 和 1 组成的机器码，用户难以直\n接使用，因此必须依赖软件来完成各种计算和操作。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "005",
+      "questionText": "在计算机系统中，硬件和软件的关系最恰当的描述是（ ）。",
+      "answer": "B",
+      "analysis": "根据考纲书中的描述，硬件是计算机完成各项工作的物质基础，而软件是运\n行在计算机硬件上的各种程序及其相关数据，是计算机系统的“灵魂”。“硬\n件是软件建立和依托的基础，软件是计算机系统的灵魂。仅由硬件组成，没有\n软件的计算机称之为‘裸机’，而‘裸机’只能识别由0、1组成的机器代码，\n用户难以直接使用。而没有硬件对于软件的物质支持，软件则无法运行”。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "006",
+      "questionText": "计算机由5个部分组成，分别是________、________、________、________ 和________。",
+      "answer": "运算器，控制器，存储器，输入设备，输出设备",
+      "analysis": "根据考纲书，计算机的基本组成部分包括运算器、控制器、存储器、输入设备\n和输出设备，这是冯·诺依曼计算机体系结构的核心内容。\n① 运算器：用于执行算术和逻辑运算。\n② 控制器：负责解释和执行指令，控制计算机各部件的协调运行。\n③ 存储器：用于存储程序和数据，包括内存（RAM）和外存（如硬盘、U 盘\n等）。\n④ 输入设备：用于将数据和指令输入计算机，如键盘、鼠标、扫描仪等。\n⑤ 输出设备：用于将计算结果或信息输出，如显示器、打印机、音响等。\n这五大组成部分共同协作，使计算机能够接收输入、存储数据、进行计算并输\n出结果，完成各类计算任务。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "010",
+      "questionText": "在微型计算机系统中，外部设备指的是安装在主机箱外面的设备。（ ）",
+      "answer": "错",
+      "analysis": "根据考纲书，外部设备是计算机系统的重要组成部分，用于输入数据、输出结\n果或进行数据存储，但它并不等同于“安装在主机箱外面的设备”。外部设\n备包括输入设备、输出设备和外存储器，例如键盘、鼠标、显示器、打印机、\n硬盘、U 盘等。\n其中，外存储器（如硬盘、固态硬盘）虽然通常安装在主机箱内部，但仍属于\n外部设备，因为它不是计算机的核心处理单元，而是用于数据存储。因此，以\n“安装在主机箱外面”作为判断标准是不准确的。\n19 ★计算机的工作原理",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": [
+        {
+          "score": 0.8118,
+          "stemScore": 0.8118,
+          "fullScore": 0.8118,
+          "exactStem": true,
+          "questionId": "NEW-SPLIT-0383",
+          "chapter": "第一章计算机基础",
+          "stem": "010 在微型计算机系统中， 外部设备指的是安装在主机箱外面的设备。 （） 19 计算机的工作原理"
+        }
+      ]
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "012",
+      "questionText": "计算机的工作过程实际上是快速地________的过程。",
+      "answer": "执行指令",
+      "analysis": "根据考纲书，计算机的工作过程本质上是按照程序的指令自动、快速地执行\n运算和处理数据的过程。计算机依靠存储程序和自动执行程序的机制，从存\n储器中依次取出指令，并由 CPU 进行解码和执行，完成各种计算和控制任\n务。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "013",
+      "questionText": "通常一条指令由________和________组成。",
+      "answer": "操作码，地址码",
+      "analysis": "根据考纲书，计算机中的指令是计算机执行操作的基本单位，通常由操作码\n和地址码两部分组成。\n操作码：用于指定 CPU 需要执行的操作类型，如加法、减法、存储、取数\n等。\n地址码：用于指示操作数的位置，即告诉 CPU 从哪里获取或存储数据。\n因此，指令格式通常为：操作码+地址码。其中，操作码定义了执行的操作类\n型，而地址码提供了数据存放的具体位置。\n有些指令可以没有操作码，例如停机指令。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "014",
+      "questionText": "指令的有序集合称为（ ），计算机能够识别的所有指令的集合称为（ ）。",
+      "answer": "C",
+      "analysis": "根据考纲书，计算机的指令集合指的是计算机能够直接识别和执行的一组二\n进制指令，这些指令由操作码和地址码组成，统称为机器语言。指令的有序集合\n称为程序",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "016",
+      "questionText": "如下图所示，将不同指令的各个步骤通过多个硬件处理单元进行重叠操作， 从而实现几条指令的并行处理，以加速程序运行过程的技术称为________技 术。",
+      "answer": "流水线或指令流水线",
+      "analysis": "根据考纲书，图示的技术属于流水线或指令流水线技术。流水线技术是一种\n提高计算机处理速度的方法，它通过将不同指令的各个步骤（如取指令、分析\n指令、执行指令等）分阶段处理，并由多个硬件单元并行执行多个指令的不同\n阶段，从而提高 CPU 的执行效率。举例来说，当一条指令处于执行阶段时，\n下一条指令可以同时进行译码，再下一条指令可以取指令，形成多条指令的\n并行处理，从而提高计算机的执行效率。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": [
+        {
+          "score": 0.6523,
+          "stemScore": 0.6523,
+          "fullScore": 0.6523,
+          "exactStem": false,
+          "questionId": "NEW-SPLIT-0386",
+          "chapter": "第二章计算机系统基本组成",
+          "stem": "016 如下图所示， 将不同指令的各个步骤通过多个硬件处理单元进行重叠操作， 从而实现几条指令的并行处理， 以加速程序运行过程的技术称为益而技术。 取指令 1 分析指令 1 执行指令 1 指令 [ 分析指令 2 执行指今 2 取指今 2 指令 2 取指令 3 分析指今 3 执行指令 3 指令 3"
+        }
+      ]
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "017",
+      "questionText": "指令流水线技术使得指令可以________执行。",
+      "answer": "并行",
+      "analysis": "根据考纲书中的描述，指令流水线技术是一种提高计算机执行效率的手段，\n它通过将取指、译码、执行等操作分成多个阶段，使得多个指令可以在不同阶\n段同时处理，从而实现“并行”执行。“指令流水线技术的基本思想是把指\n令执行过程划分为若干个子过程，由多个功能部件分别完成，同时处理多个\n指令的不同子过程，从而提高计算机的执行效率”。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "018",
+      "questionText": "指令的执行过程分为3个步骤：取指令、分析指令和________指令。",
+      "answer": "执行",
+      "analysis": "根据考纲书，计算机执行指令的过程通常分为三个基本步骤：\n① 取指令：CPU 从存储器（内存）中取出下一条要执行的指令，并将其存\n入指令寄存器。\n② 分析指令：CPU 解析指令的操作码，确定要执行的操作类型，并获取指\n令所需的操作数地址或数据。\n③ 执行指令：CPU 根据指令的功能要求，完成运算、数据传输、逻辑判断\n等操作，最终得到计算结果。\n因此，正确答案是：执行指令。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "019",
+      "questionText": "下图对计算机中指令的执行过程的描述是正确的。（ ）",
+      "answer": "对",
+      "analysis": "根据考纲书，计算机的指令执行过程通常遵循取指令-分析指令-执行指令的基\n本流程，并且包含程序控制机制，如判断是否为结束指令。\n从图示来看，该流程正确描述了计算机指令的执行过程：\n① 取指令\n② 分析指令\n③ 判断是否为结束指令：\n如果是结束指令，则程序终止，进入“结束”状态。\n如果不是，则执行该指令，执行完成后回到“取指令”步骤，继续下一条指\n令。\n这一流程符合计算机冯·诺依曼体系的基本工作原理，因此，该图对计算机指\n令的执行过程描述是正确的。\n20 ★CPU",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": [
+        {
+          "score": 0.5698,
+          "stemScore": 0.5698,
+          "fullScore": 0.5698,
+          "exactStem": true,
+          "questionId": "NEW-SPLIT-0387",
+          "chapter": "第二章计算机系统基本组成",
+          "stem": "019 下图对计算机中指令的执行过程的描述是正确的。 否取指令分析指令结束开始是结束指今？ 执行指令 20 CPU"
+        }
+      ]
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "020",
+      "questionText": "计算机中，中央处理器CPU由哪两部分组成（ ）。",
+      "answer": "A",
+      "analysis": "根据考纲书，计算机的中央处理器（CPU）是计算机的核心部件，主要由控\n制器（CU）和运算器（ALU）两部分组成。\n① 控制器：负责从存储器中取指令、分析指令，并协调各部件工作，确保程\n序按顺序执行。\n② 运算器：负责执行算术运算（如加法、减法等）和逻辑运算（如与、或、\n非等）。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "021",
+      "questionText": "微型计算机中，运算器的主要功能是分析指令并译码。（ ）",
+      "answer": "错",
+      "analysis": "根据考纲书，运算器（Arithmetic and Logic Unit, ALU）的主要功能是执\n行算术和逻辑运算，如加、减、乘、除、与、或、非等操作，而指令的分析和\n译码是控制器（Control Unit, CU）的职责。\n在计算机的基本工作流程中：\n① 控制器 负责取指令、分析指令，并向各部件发送控制信号。\n② 运算器 负责执行指令，即对数据进行运算，包括数值计算和逻辑判断。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "026",
+      "questionText": "CPU的主频是指CPU的（ ）。",
+      "answer": "C",
+      "analysis": "根据考纲书，CPU 的主频（Clock Speed）指的是 CPU 每秒钟执行的时钟\n频率，通常以 MHz（百万次/秒）或 GHz（十亿次/秒）为单位。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "033",
+      "questionText": "CPU的字长决定了（ ）。",
+      "answer": "C",
+      "analysis": "根据考纲书，CPU 的字长指的是 CPU 一次能够处理的二进制数据的位数，\n通常以 8 位、16 位、32 位或 64 位表示。字长越长，CPU 在计算过程中\n能处理的数据范围越大，数据精度也越高。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "035",
+      "questionText": "目前手机、个人电脑、服务器等设备使用的________广泛采用多核技术，对 提高处理速度具有显著作用。",
+      "answer": "CPU",
+      "analysis": "考纲书上的原话，记住结论即可。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": [
+        {
+          "score": 0.8223,
+          "stemScore": 0.8223,
+          "fullScore": 0.8223,
+          "exactStem": false,
+          "questionId": "NEW-SPLIT-0399",
+          "chapter": "第一章计算机基础",
+          "stem": "035 目前手机、 个人电脑、 服务器等设备使用的一提高处理速度具有显著作用。"
+        }
+      ]
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "037",
+      "questionText": "QPI总线的带宽越高，意味着CPU的数据处理能力越强。（ ）",
+      "answer": "对",
+      "analysis": "根据考纲书，QPI（Quick Path Interconnect）总线 是 Intel 处理器架构\n中的高速点对点互连技术，用于 CPU 与内存、I/O 设备以及其他 CPU 之\n间的数据传输。QPI 总线的带宽越高，意味着数据在 CPU 和其他组件之间\n的传输速度更快，从而提高 CPU 的数据处理能力。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "038",
+      "questionText": "多线程机制能减少CPU的闲置时间，提高CPU的运行效率。（ ）",
+      "answer": "对",
+      "analysis": "根据考纲书，多线程机制（Multithreading） 是 CPU 通过同时处理多个线\n程 来提高计算效率的一种技术。多线程机制的核心目标是减少 CPU 的空闲\n时间，充分利用计算资源，从而提高 CPU 的运行效率。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "041",
+      "questionText": "（多选）以下能够影响到计算机运行复杂计算问题求解程序速度的因素包括 （ ）。",
+      "answer": "ABD",
+      "analysis": "根据考纲书中的描述，影响计算机运行复杂计算问题求解程序速度的主要因\n素包括以下几方面：\nA、CPU主频的高低直接影响计算速度。CPU 是“计算机的核心部分”，负\n责指令的执行和数据的处理，主频越高，指令执行越快。\nB、主内存容量的大小影响能否一次性装载更多数据和程序。内存是“用来存\n放要执行的程序和数据”的，容量越大，计算机运行大程序的效率越高。\nD、高速缓存（Cache）的容量和命中率是关键性能参数。考纲书指出“高速\n缓存存放当前使用最频繁的指令和数据并实现高速存取”，其容量和命中率\n直接关系到CPU访存效率，是影响运行速度的重要因素。\nC、硬盘接口速度的高低影响的是数据的存取时间，但在执行程序（特别是计\n算密集型程序）时，主要是在内存和CPU之间进行操作，硬盘接口速度影响\n相对较小，因此不是主要因素。\n因此，答案为：ABD",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "045",
+      "questionText": "内存是CPU能够________访问的存储器，用于存放正在运行的程序和数据。",
+      "answer": "直接",
+      "analysis": "根据考纲书，内存（RAM，随机存取存储器）是 CPU 能够直接访问的存储\n器，用于存放正在运行的程序和数据。由于内存的访问速度比外存（如硬盘）\n快得多，CPU 直接从内存中读取指令和数据，以提高计算效率。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "046",
+      "questionText": "程序必须调入内存运行。（ ）",
+      "answer": "对",
+      "analysis": "根据考纲书，计算机采用冯·诺依曼体系结构，其中程序和数据必须存储在内\n存中，CPU 才能直接访问。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "054",
+      "questionText": "以下安装在计算机内部主板插槽上的部件是（ ）。",
+      "answer": "B",
+      "analysis": "根据考纲书，内存条指的是RAM（随机存取存储器）， RAM中用于\n存放正在运行的程序和数据，CPU 可以直接访问 RAM",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "055",
+      "questionText": "RAM主要的性能指标有两个： ________和________。",
+      "answer": "存储容量，存取速度",
+      "analysis": "根据考纲书，RAM 的性能主要取决于两个关键指标：\n① 存储容量：指 RAM可以存储的数据总量，通常以 GB为单位，如 8GB、\n16GB、32GB。存储容量越大，系统可以运行的程序和数据就越多，性能更\n好。\n② 存取速度：指 CPU 访问 RAM 读取或写入数据的速度，通常由内存频\n率（MHz）和延迟决定，例如 DDR4 3200MHz、DDR5 4800MHz。存取速\n度越快，数据交换效率越高，系统运行更流畅。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "057",
+      "questionText": "为了能存取内存的数据，每个内存单元必须有一个唯一的编号，称为 ________。",
+      "answer": "地址或内存地址",
+      "analysis": "根据考纲书，为了能存取内存的数据，每个内存单元必须有一个唯一的编号，\n称为地址或内存地址。地址是计算机存储器中每个存储单元的唯一标识，CPU\n通过内存地址来读取或写入数据。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "058",
+      "questionText": "在程序运行时，可以根据________直接访问随机文件结构中的某一特定记录。",
+      "answer": "地址或主键",
+      "analysis": "根据考纲书，为了能存取内存的数据，每个内存单元必须有一个唯一的\n编号，称为地址或内存地址。地址是计算机存储器中每个存储单元的唯一标\n识，CPU 通过内存地址来读取或写入数据。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "061",
+      "questionText": "计算机的外存储器比内存储器存取速度快。（ ）",
+      "answer": "错",
+      "analysis": "根据考纲书中的描述，“内存的特点是存取速度快，但容量小、价格贵；外存\n的特点是容量大、价格低，但是存取速度慢”。这表明外存的速度远低于内\n存，不能说外存比内存快。\n因此，题目中的说法是错误的。\n答案为：错",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "062",
+      "questionText": "在微型计算机系统常用的存储器中，读写速度最快的是（ ）。",
+      "answer": "D",
+      "analysis": "根据考纲书，在微型计算机系统常用的存储器中，内存（RAM） 的读写速度\n最快，远远快于硬盘、U 盘和光盘。\n存储器读写速度从快到慢：\n① CPU 寄存器（最快，纳秒级）\n② Cache（高速缓存）（纳秒级，比 RAM 快）\n③ 内存（RAM）（微秒级，远快于硬盘和外部存储设备）\n④ 固态硬盘（SSD）（比机械硬盘快，但比 RAM 慢）\n⑤ 机械硬盘（HDD）（毫秒级）\n⑥ U盘、光盘等外部存储设备（速度最慢）",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "064",
+      "questionText": "计算机处理的文件和数据存入磁盘后能被CPU直接访问。（ ）",
+      "answer": "错",
+      "analysis": "根据考纲书中的描述，计算机的外存（如磁盘）是“用来长期存放程序和数\n据”的，但“外存一般只与内存进行数据交换”，CPU 不能直接访问外存，\n而是“计算机可以直接从内存储器中存取信息”。因此，从磁盘读取的数据\n必须先加载到内存，CPU 才能处理。\n所以，文件和数据存入磁盘后不能被CPU直接访问。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "065",
+      "questionText": "磁盘驱动器属于（ ）设备。",
+      "answer": "C",
+      "analysis": "根据考纲书中的描述，任何一种存储器都包含存储介质和存储设备。其中，磁\n盘驱动器是一种存储设备，它在使用过程中既能将数据从磁盘读取到内存（输\n入操作），也能将数据从内存写入磁盘（输出操作），因此它兼具输入和输出功\n能，属于输入/输出（I/O）设备的一种。\n因此，答案为：C",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": [
+        {
+          "score": 0.9769,
+          "stemScore": 0.9341,
+          "fullScore": 0.9769,
+          "exactStem": false,
+          "questionId": "NEW-SPLIT-0416",
+          "chapter": "第一章计算机基础",
+          "stem": "065 磁盘驱动器属于 （乙） 设备。"
+        },
+        {
+          "score": 0.9341,
+          "stemScore": 0.9341,
+          "fullScore": 0.62,
+          "exactStem": false,
+          "questionId": "NEW-SPLIT-0183",
+          "chapter": "第一章计算机基础",
+          "stem": "35. 磁盘驱动器属于 （， 氐设备。"
+        }
+      ]
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "068",
+      "questionText": "（多选）允许随意写入数据文件，并且在断电后不会丢失信息的存储媒体有 （ ）。",
+      "answer": "AB",
+      "analysis": "根据考纲书中的描述，外存储器包括硬盘、光盘、U 盘等，它们的共同特征\n是“容量大、价格低，但是存取速度慢”，并且可以“长期存放程序和数据”。\n其中：\nA、U盘是一种闪存类型的外存，可以随意写入数据，并且断电后信息不丢失，\n属于非易失性存储器。\nB、硬盘也是一种典型的非易失性外部存储设备，可以反复读写，断电后数据\n仍然保留。\nC、光盘虽然也属于外存，但并不都支持随意写入。常见的CD-ROM是只读\n的，CD-R是一次写入，而CD-RW才支持多次写入，但速度和灵活性不如U\n盘和硬盘。\nD、键盘属于输入设备，不具备数据存储功能。\n因此，答案为：AB",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "071",
+      "questionText": "在计算机上用于衡量光盘驱动器传输数据速率的指标称为________。",
+      "answer": "倍速",
+      "analysis": "根据考纲书，衡量光盘驱动器传输数据速率的指标称为倍速（X）。\nCD的1X=150KB/s，DVD的1X =1350KB/s。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "072",
+      "questionText": "CD-ROM 光驱的 1 倍速为________KBps，DVD 光驱的 1 倍速为 ________KBps。",
+      "answer": "150，1350",
+      "analysis": "根据考纲书，衡量光盘驱动器传输数据速率的指标称为倍速（X）。\nCD的1X=150KB/s，DVD的1X =1350KB/s。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "073",
+      "questionText": "CD-ROM 光盘的容量通常为________MB，DVD 光盘的容量一般为 ________GB。",
+      "answer": "650，4.7",
+      "analysis": "根据考纲书中的描述，常见的CD-ROM光盘容量通常为 650MB 左右，而\nDVD光盘因数据密度更高，标准容量一般为 4.7GB，这是单面单层DVD的\n容量。\n23 输入设备",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "075",
+      "questionText": "常用的输入设备有________、鼠标、触摸屏、扫描仪、话筒等。",
+      "answer": "键盘",
+      "analysis": "见上题。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "076",
+      "questionText": "在多媒体扩展设备中，触摸屏是一种坐标定位装置，属于输出设备。（ ）",
+      "answer": "错",
+      "analysis": "根据考纲书，触摸屏一般特指其作为坐标定位装置的“外屏”，属于输入设备，\n而不是输出设备。它通过手指或触控笔的触摸来接收用户输入，将触摸位置\n转换为计算机可以识别的坐标信息，从而进行交互。\n如果题目中的“触摸屏”包含了用于显示内容的“内屏”，那么内屏属于输出\n设备，而外屏属于输入设备。从这个角度上来说，可以说包含了“内屏”和\n“外屏”的触摸屏（显示触摸屏）既属于输入设备，又属于输出设备。\n24 输出设备",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": [
+        {
+          "score": 0.7693,
+          "stemScore": 0.7693,
+          "fullScore": 0.7693,
+          "exactStem": true,
+          "questionId": "NEW-SPLIT-0422",
+          "chapter": "第一章计算机基础",
+          "stem": "076 在多媒体扩展设备中， 触摸屏是一种坐标定位装置， 属于输出设备。 （辽） 24 输出设备、 绘图仪、 音响等。"
+        }
+      ]
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "077",
+      "questionText": "常用的输出设备是显示器、________、绘图仪、音响等。",
+      "answer": "打印机",
+      "analysis": "根据考纲书，输入设备的主要功能是接受用户输入的原始数据和程序，并将\n其转换为计算机可以识别的二进制数据存入内存，例如键盘、鼠标、扫描仪\n等。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "078",
+      "questionText": "关于显示器的说法，错误的是（ ）。",
+      "answer": "B",
+      "analysis": "根据考纲书，显示器的性能通常由颜色位数、分辨率和刷新频率等指标决定，\n但显示器的尺寸并非越大越好，而是要根据使用需求、分辨率和观看距离来\n选择合适的尺寸。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": [
+        {
+          "score": 0.6467,
+          "stemScore": 0.6467,
+          "fullScore": 0.1547,
+          "exactStem": false,
+          "questionId": "COMP-0039",
+          "chapter": "第一章计算机基础",
+          "stem": "39. 关于社会信息化的说法，错误的是 ( )。"
+        },
+        {
+          "score": 0.62,
+          "stemScore": 0.62,
+          "fullScore": 0.179,
+          "exactStem": false,
+          "questionId": "COMP-0230",
+          "chapter": "第三章操作系统",
+          "stem": "19. 在下列关于线程的说法中，错误的是 ( )。"
+        },
+        {
+          "score": 0.62,
+          "stemScore": 0.62,
+          "fullScore": 0.1818,
+          "exactStem": false,
+          "questionId": "NEW-SPLIT-0434",
+          "chapter": "第二章计算机系统基本组成",
+          "stem": "095 关于总线的概念， 下列说法错误的是 （）。"
+        },
+        {
+          "score": 0.5926,
+          "stemScore": 0.5926,
+          "fullScore": 0.1666,
+          "exactStem": false,
+          "questionId": "COMP-0622",
+          "chapter": "第五章网络与信息安全",
+          "stem": "81. 以下有关病毒的说法错误的是 ( )。"
+        },
+        {
+          "score": 0.5913,
+          "stemScore": 0.5913,
+          "fullScore": 0.1305,
+          "exactStem": false,
+          "questionId": "NEW-SPLIT-0042",
+          "chapter": "第一章计算机基础",
+          "stem": "22. 关于高级语言的说法中， （） 是错误的。"
+        }
+      ]
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "080",
+      "questionText": "计算机显示器采用（ ）模型显示颜色。",
+      "answer": "B",
+      "analysis": "根据考纲书，计算机显示器采用 RGB（红、绿、蓝）颜色模型来显示颜色。\nRGB 是一种加色模型，通过不同亮度的红、绿、蓝三原色光的组合来呈现各\n种颜色，广泛应用于显示设备，如计算机显示器、电视屏幕和手机屏幕。\n值得注意的是，C选项中的CMYK（青、品红、黄、黑）是用于印刷的颜色\n模型，而非计算机显示器使用的颜色模型。\nHSL（色相、饱和度、亮度）是一种颜色表示方法，主要用于图像处理和设计\n软件中，不是计算机显示器的基础颜色模型。LAB 颜色模型是一种设备无关\n的颜色表示方式，主要用于色彩校正和高精度色彩处理。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": [
+        {
+          "score": 0.8687,
+          "stemScore": 0.5675,
+          "fullScore": 0.8687,
+          "exactStem": false,
+          "questionId": "NEW-SPLIT-0424",
+          "chapter": "第一章计算机基础",
+          "stem": "080 计算机显示器采用 （A. HSL"
+        }
+      ]
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "083",
+      "questionText": "打印机采用的颜色模式是C（青）、M（品红）、Y（________）和K（黑）。",
+      "answer": "黄",
+      "analysis": "CMYK（青、品红、黄、黑）是用于印刷的颜色模型。其中C代表Cyan，即\n青色；M代表Magenta。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "086",
+      "questionText": "速度快、印字质量好、噪音低的打印机类型是________。",
+      "answer": "激光打印机",
+      "analysis": "根据考纲书，激光打印机具有速度快、印字质量好、噪音低的特点。它采用静\n电成像技术和激光扫描技术，利用碳粉成像并通过高温定影，使打印效果清\n晰细腻。同时，由于激光打印机没有撞击式打印头（针式打印机），其工作过\n程噪音较低，因此广泛应用于办公环境。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "087",
+      "questionText": "（ ）以计算机模型文件为基础，运用粉末状塑料或金属等可黏合材料，通 过逐层打印的方式来构造物体的技术。",
+      "answer": "D",
+      "analysis": "根据考纲书，3D 打印机是一种以计算机模型文件为基础，使用粉末状塑料、\n金属或其他可黏合材料，通过逐层打印的方式构造物体的技术。这种技术属\n于增材制造，广泛应用于工业制造、医疗、建筑、艺术等领域。\nA（针式打印机）错误，针式打印机采用撞击式打印技术，主要用于打印发票\n等场景。\nB（喷墨打印机）错误，喷墨打印机通过喷射墨滴来打印文本和图像，无法进\n行三维成型。\nC（激光打印机）错误，激光打印机利用静电成像原理进行高速高质量的二维\n打印。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "092",
+      "questionText": "计算机从启动到正常使用的过程中，不必经过的阶段是（ ）。",
+      "answer": "C",
+      "analysis": "根据考纲书，微型计算机的启动过程通常包括以下步骤：\n① 开机：计算机通电启动。\n② 自检（POST，自检程序）：BIOS 进行基本硬件检测，确保各部件正常工\n作。\n③ 执行 ROM 中的启动程序：BIOS 读取存储在 ROM（只读存储器）中的\n引导程序，并执行它。\n④ 加载操作系统：引导程序从硬盘或其他存储设备中加载操作系统到内存中。\n⑤ 执行操作系统：操作系统完成初始化，用户可以使用计算机。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "093",
+      "questionText": "微型计算机的启动过程如下图所示，其中空白处应该填写的是________。",
+      "answer": "加载操作系统",
+      "analysis": "根据考纲书中的描述，微型计算机的启动过程包括以下几个步骤：先加电开\n机，然后进行硬件自检，接着执行 ROM 中的启动程序，该启动程序会引导\n加载操作系统，最后进入操作系统环境。因此，图中空白处应填写“加载操作\n系统”这一关键步骤。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "098",
+      "questionText": "总线带宽是指总线能够同时传输的二进制位数。（ ）",
+      "answer": "错",
+      "analysis": "总线能够同时传输的二进制位数称为总线位宽，而总线带宽 = 单位时间内传\n输次数 × 数据传输率 × 位宽，因此题干的说法是错误的。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "099",
+      "questionText": "计算机总线的工作频率为33MHz，总线的宽度为64bit，则它的传输速率为 ________MB/s。",
+      "answer": "264",
+      "analysis": "总线带宽 = 单位时间内传输次数 × 数据传输率 × 位宽\n因此，总线带宽 = 1×33MHz×64bit/8=264MB/s",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "103",
+      "questionText": "如下图所示的连接符号是________接口。",
+      "answer": "USB",
+      "analysis": "记住结论即可。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "105",
+      "questionText": "下列表示高清晰度多媒体接口的是（ ）。",
+      "answer": "A",
+      "analysis": "A（HDMI），即标准的高清晰度多媒体接口，支持音视频同步传输。\nB（Ethernet），即以太网的RJ-45接口，用于网络通信。\nC（SATA），即串行 ATA，是硬盘和主板之间的数据传输接口。\nD（DVI），即数字视频接口，仅支持视频信号传输，不支持音频，因此不能\n完全满足高清多媒体需求。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": [
+        {
+          "score": 0.708,
+          "stemScore": 0.708,
+          "fullScore": 0.632,
+          "exactStem": true,
+          "questionId": "NEW-SPLIT-0441",
+          "chapter": "第二章计算机系统基本组成",
+          "stem": "105 下列表示高清晰度多媒体接口的是 （0 三 sata hdmi"
+        },
+        {
+          "score": 0.6421,
+          "stemScore": 0.6421,
+          "fullScore": 0.5473,
+          "exactStem": false,
+          "questionId": "NEW-SPLIT-0440",
+          "chapter": "第二章计算机系统基本组成",
+          "stem": "104 高清晰度的多媒体接口是 （A. USB"
+        }
+      ]
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "106",
+      "questionText": "下列不属于微型计算机接口的是（ ）。",
+      "answer": "C",
+      "analysis": "根据考纲书，微型计算机接口是用于连接计算机与其他设备的硬件接口，如\n网络接口、显示接口、数据传输接口等。\nA（RJ-45），RJ-45 是计算机网络接口，用于以太网连接（LAN）。\nB（HDMI），HDMI 是高清多媒体接口，用于连接显示设备。\nC（ADSL），ADSL（Asymmetric Digital Subscriber Line，非对称数字用\n户线路）是一种宽带接入技术，用于连接互联网，而不是计算机的标准接口。\nD（USB），USB（Universal Serial Bus）是通用串行总线接口，广泛用于数\n据传输和外设连接。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": [
+        {
+          "score": 0.7288,
+          "stemScore": 0.7288,
+          "fullScore": 0.2689,
+          "exactStem": false,
+          "questionId": "COMP-0061",
+          "chapter": "第一章计算机基础",
+          "stem": "61. 下列不属于计算机特点的是 ( )。"
+        },
+        {
+          "score": 0.5773,
+          "stemScore": 0.5773,
+          "fullScore": 0.3534,
+          "exactStem": false,
+          "questionId": "COMP-0617",
+          "chapter": "第五章网络与信息安全",
+          "stem": "76. 在下列选项中，不属于计算机病毒特征的是 ( )。"
+        }
+      ]
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "111",
+      "questionText": "根据总线上传输信号的不同，可将总线分为地址总线、数据总线和________。",
+      "answer": "控制总线",
+      "analysis": "根据考纲书，计算机的总线按传输的信号类型可以分为三类：\n① 地址总线（Address Bus）：用于传输内存地址或 I/O 设备地址。地址总\n线的位宽决定了 CPU 的最大寻址空间。例如，32 位的地址线，最大寻址空\n间为：232B=4GB\n② 数据总线（Data Bus）：用于传输计算机内部的实际数据。数据总线的位\n宽一般等于CPU的字长，即CPU一次能处理的二进制数的最大位数。\n③ 控制总线（Control Bus）：用于传输控制信号，以协调 CPU、内存和 I/O\n设备的工作。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "113",
+      "questionText": "数据总线的位宽决定了（ ）。",
+      "answer": "A",
+      "analysis": "根据考纲书中的描述，“数据总线是用来传送数据的通道，其位宽表示一次\n可以并行传送的二进制位数”，这直接关系到 CPU 一次能处理多少位数据，\n也就是CPU的字长。因此，数据总线的位宽决定了CPU的字长，是CPU性\n能的重要指标之一。\n其他选项分析：\nB、寻址空间是由地址总线的位数决定的；\nC、CPU的工作频率由内部时钟决定；\nD、总线的带宽与数据总线的位宽和总线频率共同决定，不能单独由数据总线\n位宽决定。\n27 软件基础",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "115",
+      "questionText": "软件系统分为________软件和________软件。",
+      "answer": "系统，应用",
+      "analysis": "根据考纲书，软件系统通常分为两大类：\n系统软件：用于管理计算机硬件资源并为应用软件提供运行环境，例如操作\n系统（Windows、Linux）、驱动程序、编译器等。\n应用软件：用于满足用户特定需求的程序，例如办公软件（Word、Excel）、\n浏览器、游戏、图像处理软件等。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "116",
+      "questionText": "以下（ ）是系统软件。",
+      "answer": "B",
+      "analysis": "根据考纲书中的描述，系统软件包括“操作系统（如 Windows、Mac OS、\nUNIX、Linux 等）、语言处理程序和实用程序”，是用于“管理计算机硬件\n和软件资源，并为应用程序提供支持的软件”。其中，UNIX 是一种多用户、\n多任务的操作系统，属于典型的系统软件。\n其他选项：\nA、Photoshop 是图像处理类的应用软件；\nC、Chrome 是网页浏览器，也属于应用软件；\nD、3Ds MAX 是三维建模和渲染软件，同样是应用软件。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": [
+        {
+          "score": 1.0,
+          "stemScore": 1.0,
+          "fullScore": 0.5575,
+          "exactStem": false,
+          "questionId": "NEW-SPLIT-0026",
+          "chapter": "第二章计算机系统基本组成",
+          "stem": "2. 以下 （） 是系统软件。"
+        },
+        {
+          "score": 1.0,
+          "stemScore": 1.0,
+          "fullScore": 1.0,
+          "exactStem": false,
+          "questionId": "NEW-SPLIT-0447",
+          "chapter": "第一章计算机基础",
+          "stem": "116 以下 （是系统软件。"
+        }
+      ]
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "117",
+      "questionText": "数据处理软件有两类，通用应用软件和________。其中，学生选课系统属于 ________。",
+      "answer": "专用应用软件，专用应用软件",
+      "analysis": "根据考纲书中的描述，应用软件分为两类：“通用应用软件”和“专用应用\n软件”。其中，“专用应用软件”是指为完成某一类或某一单位特定任务而\n开发的软件，如各单位的管理信息系统等”。学生选课系统正是服务于学校\n教务管理的特定功能，因此属于专用应用软件。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": [
+        {
+          "score": 0.5585,
+          "stemScore": 0.5585,
+          "fullScore": 0.5585,
+          "exactStem": false,
+          "questionId": "NEW-SPLIT-0211",
+          "chapter": "第一章计算机基础",
+          "stem": "95. 数据处理软件有两类， 学生选课系统属于 .， . . . . . 用 . . . . . . . .， . . . 一软件。 96， 没有软件的计算机称为"
+        }
+      ]
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "120",
+      "questionText": "计算机能直接执行的程序是（ ）。",
+      "answer": "B",
+      "analysis": "根据考纲书，计算机只能直接识别和执行机器语言编写的程序。机器语言由\n二进制代码（0 和 1）组成，每条指令对应计算机硬件可以直接执行的操作。\n相比于高级语言（如 C、Java）和汇编语言，机器语言不需要翻译，可以被\n计算机的 CPU 直接识别并执行。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": [
+        {
+          "score": 0.7627,
+          "stemScore": 0.7627,
+          "fullScore": 0.7119,
+          "exactStem": true,
+          "questionId": "COMP-0007",
+          "chapter": "第一章计算机基础",
+          "stem": "7. 计算机能直接执行 ( )。"
+        },
+        {
+          "score": 0.7343,
+          "stemScore": 0.7343,
+          "fullScore": 0.6846,
+          "exactStem": true,
+          "questionId": "NEW-SPLIT-0186",
+          "chapter": "第一章计算机基础",
+          "stem": "42. 计算机能直接执行的程序是 （c. 高级语言程序"
+        },
+        {
+          "score": 0.5667,
+          "stemScore": 0.5667,
+          "fullScore": 0.2276,
+          "exactStem": false,
+          "questionId": "NEW-SPLIT-0228",
+          "chapter": "第二章计算机系统基本组成",
+          "stem": "129. 程序在计算机中执行的正确流程是 （）。"
+        }
+      ]
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "125",
+      "questionText": "计算机高级程序设计语言翻译为机器语言的方式有编译方式和________方 式",
+      "answer": "解释",
+      "analysis": "根据考纲书中的描述，高级语言不能被计算机直接识别执行，必须通过“编\n译方式或解释方式”翻译为机器语言程序。编译方式是将整个源程序一次性\n翻译成可执行的目标代码，而解释方式则是边翻译边执行，每次执行时都需\n要解释器对源代码逐行翻译。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "131",
+      "questionText": "下图中①处应填写________。",
+      "answer": "汇编程序",
+      "analysis": "根据考纲书，汇编语言源程序需要经过汇编程序的翻译，才能转换为机器语\n言程序，供计算机直接执行。\n图中①的作用是将汇编语言转换为机器语言，这一过程由汇编程序完成。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "132",
+      "questionText": "下图中①处应填写________。",
+      "answer": "解释程序",
+      "analysis": "根据考纲书，图示流程表示高级语言源程序直接执行，并产生计算结果，这符\n合解释程序（Interpreter）的工作方式。\n解释程序的特点：\n① 逐行翻译并立即执行，不会生成目标程序和可执行文件。\n② 适用于 Python、JavaScript、BASIC 等语言。\n③ 每次运行时都需要解释器，因此执行速度通常比编译程序慢。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "133",
+      "questionText": "下图中①和②处应填写（ ）。",
+      "answer": "C",
+      "analysis": "根据考纲书，该图示表示 C 语言程序的编译和执行过程，涉及两个关键步骤：\n源程序（.c）→ 目标程序（.obj）\n① 由编译程序完成，将高级语言转换为机器语言的目标文件（.obj）；\n② 目标程序（.obj）→ 可执行程序（.exe）\n由连接程序完成，它负责将多个目标文件（如 .obj 文件）与库文件链接生成\n最终的可执行程序（.exe）。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": [
+        {
+          "score": 0.7393,
+          "stemScore": 0.3489,
+          "fullScore": 0.7393,
+          "exactStem": false,
+          "questionId": "NEW-SPLIT-0459",
+          "chapter": "第一章计算机基础",
+          "stem": "133 下图中 . 和@处应填写 （计算结果源程序 . c 目标程序 . obj 可执行程序， e №"
+        }
+      ]
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "137",
+      "questionText": "Python是一种面向对象的（ ）。",
+      "answer": "B",
+      "analysis": "根据考纲书，Python 是一种面向对象的解释型语言，其代码逐行解释执行，\n不需要编译成二进制机器码。Python 代码由 Python 解释器直接运行，适\n用于快速开发、数据分析、人工智能等领域。\n★第三章 综合应用题",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "139",
+      "questionText": "冯·诺依曼机的结构如下图所示： 程序和数据通过输入设备，以同等地位存放在 ① 中，并按 ④ 寻访。程序 和数据以二进制表示，因此数据存储的最小单位为一个二进制位（比特，bit）， 基本单位为 ⑤ 。 ② 是计算机中进行数据加工的部件，主要由算术逻辑单元（Arithmetic and Logic Unit，ALU）、浮点运算部件（Floating Point Unit，FPU，用来 提高浮点运算速度）和各种寄存器组成。“②”的主要功能是执行数值数据的 算术加、减、乘、除等运算，执行逻辑数据的与、或、非等逻辑运算，以及移 位（左移、右移）运算。 ③ 是计算机的指挥中枢，用于控制计算机各个部件按照指令的功能要求协 同工作。其基本功能是从“①”处取指令、分析指令和向其它部件发出控制信 号。“③”的主要部件由程序计数器（PC）、指令寄存器（IR）、指令译码器 （ID）、时序控制电路以及微操作控制电路等组成。 70多年来，虽然计算机系统从性能指标、运算速度、工作方式、应用领域和 价格等方面与早期计算机存在很大差别，但基本结构没有变，仍然属于冯·诺 依曼计算机。 ①_________ ②_________ ③_________ ④_________ ⑤ ________",
+      "answer": "① 内存 ② 运算器 ③ 控制器 ④ 地址 ⑤ 字节",
+      "analysis": "根据考纲书中的描述，冯·诺依曼机的基本结构包括五大部分：存储器、输入\n设备、输出设备、运算器和控制器。图中的①②③分别对应这五大部件中的关\n键组成部分：\n① 是内存储器的一部分，程序和数据通过输入设备送入并“以同等地位存放\n在存储器中”，因此①应为 内存储器；\n② 是负责数据加工的部件，为运算器；\n③ 是指挥中枢，用于控制各部件协同工作的，为控制器；\n④ 描述的是“按地址寻访”程序和数据；\n⑤ 数据存储的基本单位是字节（Byte）。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "141",
+      "questionText": "疫情期间，小小唐打算 DIY 一台计算机，以满足学习的需要。她通过京东， 在线购买了CPU、内存条、SATA 接口的固态硬盘、PCI-E x16接口的显卡 和一块主板。装机时，她需要将这些硬件设备安装在主板上，如下图所示： Ⅰ 编号处的接口与小小唐购买的硬件之间的对应关系： ①_________ ②_________ ③_________ ④_________ Ⅱ 编号为⑤的位置，散热风扇下的芯片是________。",
+      "answer": "① CPU ② 内存条 ③ 显卡 ④ 固态硬盘 ⑤ PCH芯片",
+      "analysis": "根据考纲书中对主板结构的介绍和常识性硬件知识：\n① 为主板中央的 CPU 插槽，形状和位置正是安装处理器的位置；\n② 为 内存插槽（DIMM），用于插入内存条，通常为长条形，多个并排排列；\n③ 为 PCI-E x16 插槽，是专门为 显卡设计的高速插槽，一般位于主板中部\n偏左；\n④ 为 SATA 接口区域，SATA 固态硬盘连接到这里；\n⑤ 位于主板南桥区域，有主动散热设计，该芯片为 PCH（Platform\nController Hub）芯片，主要负责 I/O 接口、存储控制等，是现代主板的核\n心控制组件之一。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "144",
+      "questionText": "简述机器语言、汇编语言、高级语言的特点。",
+      "answer": "机器语言：计算机唯一能识别和直接执行的语言；低级语言，面向机器。 汇编语言：机器语言的助记符，需要经过“汇编”过程翻译成机器语言代码； 低级语言，面向机器。 高级语言：接近人类自然语言，大多具有平台无关性。 低级语言的可读性差、开发效率低、可移植性差，但执行效率高；高级语言的 可读性高、开发效率高、可移植性好，但执行效率低。",
+      "analysis": "根据考纲书中的描述：\n机器语言 是“计算机唯一能直接识别和执行的语言”，“由二进制代码组\n成”，操作效率高，但“难以理解和编写”，属于低级语言，面向机器。\n汇编语言 是“使用助记符代替机器指令”的语言，也属于低级语言。“汇编\n语言需要通过汇编程序翻译成机器语言后才能执行”，仍然面向底层硬件，\n但可读性略高于机器语言。\n高级语言 是“接近自然语言，具有良好的可读性和易用性”，如 C、Python、\nJava 等，面向人类用户，具有平台无关性，需要通过编译或解释才能运行。\n总结比较：低级语言（机器语言和汇编语言）执行效率高但开发效率低、可读\n性差；高级语言可移植性好、开发效率高，但执行效率低。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "145",
+      "questionText": "高级语言的翻译程序有两种工作方式，如下图所示，回答问题。 Ⅰ Ⅱ Ⅲ ① 图（上）描述的过程是________；图（下）描述的过程是________； ② 图中标识为“Ⅰ、Ⅱ、Ⅲ”处对应的是： Ⅰ ________，Ⅱ ________，Ⅲ ________。",
+      "answer": "① 解释、编译，② 解释程序、编译程序、连接程序",
+      "analysis": "根据考纲书中的描述，高级语言的翻译程序有两种工作方式：解释方式和编\n译方式。\n① 图（上）中，程序边解释边执行，不生成中间目标文件，这是典型的解释\n过程；\n图（下）中，源程序 .c 被先编译成目标程序 .obj，再通过连接程序生成可\n执行文件 .exe，这是典型的编译过程。\n② 对应图中的模块：\nⅠ 是负责直接读取源程序并边翻译边执行的，称为 解释程序；\nⅡ 是将源程序一次性翻译为目标代码的，是 编译程序；\nⅢ 是将目标代码和库函数链接生成最终可执行程序的，是 连接程序。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "2026-重庆-第3章-同步练习（答案+解析）校对版",
+      "pdfNumber": "146",
+      "questionText": "简述解释和编译两种模式的区别。",
+      "answer": "---（必答）--- 解释方式由解释程序完成，逐条翻译，不生成目标代码文件；每次执行都需要 再次解释。 编译方式由编译程序完成，整体翻译，会生成目标代码文件和可执行文件；编 译一次后可以多次运行。 ---（可选）--- 解释方式效率低，安全性低； 编译方式效率高，安全性也更高，是大多数高级语言采用的转换方式。",
+      "analysis": "根据考纲书中的描述，高级语言的翻译方式分为两种：解释方式和编译方式，\n两者区别如下：\n解释方式：由解释程序完成，“逐句地将源程序翻译成机器语言并立即执行”，\n不生成目标代码文件，且“每次运行都需要重新解释”，因此效率较低，适合\n调试和教学使用。\n编译方式：由编译程序完成，“将整个源程序一次性翻译为目标程序”，并通\n过连接程序生成可执行文件，之后可重复运行而无需再次翻译，执行效率高、\n保密性也较强，是工业界主流采用的方式。",
+      "reason": "题库中未找到高置信匹配，已暂存，之后新增题目再匹配",
+      "topCandidates": []
+    },
+    {
+      "source": "D:\\Desktop\\我的代码库\\(1)--2026-重庆-第1章-同步练习（答案+解析）校对版.pdf",
+      "subject": "计算机",
+      "reason": "前4页未抽取到可匹配文字，疑似扫描版",
+      "status": "未自动导入，需要 OCR 或后续提供文字题后再匹配"
+    },
+    {
+      "source": "D:\\Desktop\\我的代码库\\(1)--2026-重庆-第2章-同步练习（答案+解析）校对版.pdf",
+      "subject": "计算机",
+      "reason": "抽取文字极少且公式为主，不能稳定拆题匹配",
+      "status": "未自动导入，需要 OCR 或后续提供文字题后再匹配"
+    },
+    {
+      "source": "D:\\Desktop\\我的代码库\\(1)--2026届-《大学英语》-基础课程-代词+数词练习题答案.pdf",
+      "subject": "英语",
+      "reason": "前4页未抽取到可匹配文字，疑似扫描版",
+      "status": "未自动导入，需要 OCR 或后续提供文字题后再匹配"
+    },
+    {
+      "source": "D:\\Desktop\\我的代码库\\(1)--2026届-《大学英语》-基础课程-名词及冠词练习题答案_扫描版.pdf",
+      "subject": "英语",
+      "reason": "扫描版，未抽取到可匹配文字",
+      "status": "未自动导入，需要 OCR 或后续提供文字题后再匹配"
+    }
+  ]
+}

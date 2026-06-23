@@ -140,6 +140,49 @@ function repairWrongBookOptionsFromProgress() {
   }
 }
 
+function normalizeDedupeText(value) {
+  return String(value || "")
+    .normalize("NFKC")
+    .replace(/^[\s*]*\d+[.．、]\s*/, "")
+    .replace(/[（）]/g, (char) => (char === "（" ? "(" : ")"))
+    .replace(/\s+/g, "")
+    .toLowerCase();
+}
+
+function questionContentKey(question) {
+  const normalized = QuestionBankCore.normalizeQuestion(question);
+  const optionKey = (normalized.options || []).map(normalizeDedupeText).join("||");
+  return `${normalizeDedupeText(normalized.stem)}||${optionKey}`;
+}
+
+function mergeQuestionsPreferBundled(localQuestions, bundledQuestions) {
+  const merged = [];
+  const seenIds = new Set();
+  const seenContent = new Set();
+
+  function addMany(list) {
+    (list || []).forEach((item) => {
+      const question = QuestionBankCore.normalizeQuestion(item);
+      if (!question.id || !question.stem) {
+        return;
+      }
+      const idKey = question.id;
+      const contentKey = questionContentKey(question);
+      if (seenIds.has(idKey) || seenContent.has(contentKey)) {
+        return;
+      }
+      seenIds.add(idKey);
+      seenContent.add(contentKey);
+      merged.push(question);
+    });
+  }
+
+  // 内置题库优先，保证已补答案/图片的题能覆盖旧内置题；再追加用户本地已有题。
+  addMany(bundledQuestions);
+  addMany(localQuestions);
+  return merged;
+}
+
 async function ensureBundledQuestionsCurrent() {
   const bundled = await loadBundledQuestions();
   if (!bundled.length) {
@@ -152,14 +195,13 @@ async function ensureBundledQuestionsCurrent() {
     return true;
   }
 
+  const merged = mergeQuestionsPreferBundled(state.questions, bundled);
   const localIds = new Set(state.questions.map((question) => question.id));
-  const localLooksLikeBundled = state.questions.some((question) =>
-    question.id.startsWith("COMP-") || question.id.startsWith("MATH-BASIC1-")
-  );
-  const bundledHasNewTextEnglish = bundled.some((question) => question.id === "ENG-TEXT-001") && !localIds.has("ENG-TEXT-001");
-  if (localLooksLikeBundled && (bundled.length > state.questions.length || bundledHasNewTextEnglish)) {
-    await replaceQuestions(bundled, { silent: true });
-    showToast(`内置题库已更新到 ${bundled.length} 道，已保留做题记录`);
+  const hasNewBundledQuestion = bundled.some((question) => !localIds.has(question.id));
+
+  if (merged.length !== state.questions.length || hasNewBundledQuestion) {
+    await replaceQuestions(merged, { silent: true });
+    showToast(`题库已合并更新到 ${merged.length} 道，已保留本地原有题和做题记录`);
     return true;
   }
 
@@ -313,12 +355,32 @@ function scrollDetailPanelIntoView() {
   }
   window.requestAnimationFrame(() => {
     els.detailPanel.scrollIntoView({ behavior: "smooth", block: "start" });
-    const firstAction = els.detailPanel.querySelector(".detail-actions button");
+    const firstAction = els.detailPanel.querySelector(".detail-action-dock button");
     if (firstAction) {
       firstAction.focus({ preventScroll: true });
     }
   });
 }
+
+function getSelectedQuestionPosition() {
+  const index = state.filtered.findIndex((question) => question.id === state.selectedId);
+  return {
+    index,
+    total: state.filtered.length
+  };
+}
+
+function selectAdjacentQuestion(direction) {
+  const position = getSelectedQuestionPosition();
+  const nextIndex = position.index + direction;
+  if (nextIndex < 0 || nextIndex >= position.total) {
+    return;
+  }
+  const nextQuestion = state.filtered[nextIndex];
+  state.page = Math.floor(nextIndex / PAGE_SIZE) + 1;
+  selectQuestion(nextQuestion.id);
+}
+
 function renderStatusBadges(progress) {
   const badges = [];
   if (!progress || !progress.attempts) {
@@ -350,6 +412,10 @@ function renderDetail() {
   const progress = getProgress(question.id);
   const visible = QuestionBankCore.isSolutionVisible(progress);
   const inWrongBook = Boolean(progress.addedToWrongBookAt);
+  const position = getSelectedQuestionPosition();
+  const currentPosition = position.index >= 0 ? position.index + 1 : 0;
+  const canGoPrev = position.index > 0;
+  const canGoNext = position.index >= 0 && position.index < position.total - 1;
   els.detailPanel.innerHTML = `
     <article class="question-detail">
       <header class="detail-header">
@@ -370,11 +436,18 @@ function renderDetail() {
         ${renderOptions(question.options)}
       </section>
 
-      <div class="detail-actions">
-        <button class="secondary-button" id="revealButton" type="button">${visible ? "隐藏答案解析" : "查看答案解析"}</button>
-        <button class="primary-button" id="correctButton" type="button">做对了</button>
-        <button class="secondary-button" id="wrongButton" type="button">做错了</button>
-        <button class="secondary-button" id="addWrongBookButton" type="button">${inWrongBook ? "取消错题本" : "加入错题本"}</button>
+      <div class="detail-action-dock">
+        <div class="detail-nav-actions">
+          <button class="secondary-button nav-button" id="prevQuestionButton" type="button" aria-label="上一题"${canGoPrev ? "" : " disabled"}>←</button>
+          <span class="detail-position">${currentPosition} / ${position.total}</span>
+          <button class="secondary-button nav-button" id="nextQuestionButton" type="button" aria-label="下一题"${canGoNext ? "" : " disabled"}>→</button>
+        </div>
+        <div class="detail-actions">
+          <button class="secondary-button" id="revealButton" type="button">${visible ? "隐藏答案解析" : "查看答案解析"}</button>
+          <button class="primary-button" id="correctButton" type="button">做对了</button>
+          <button class="secondary-button" id="wrongButton" type="button">做错了</button>
+          <button class="secondary-button" id="addWrongBookButton" type="button">${inWrongBook ? "取消错题本" : "加入错题本"}</button>
+        </div>
       </div>
 
       ${visible ? renderSolution(question) : `<div class="hidden-solution">答案与解析已隐藏</div>`}
@@ -382,6 +455,8 @@ function renderDetail() {
     </article>
   `;
 
+  document.querySelector("#prevQuestionButton").addEventListener("click", () => selectAdjacentQuestion(-1));
+  document.querySelector("#nextQuestionButton").addEventListener("click", () => selectAdjacentQuestion(1));
   document.querySelector("#revealButton").addEventListener("click", () => toggleSolution(question.id));
   document.querySelector("#correctButton").addEventListener("click", () => saveAttempt(question.id, "correct"));
   document.querySelector("#wrongButton").addEventListener("click", () => saveAttempt(question.id, "wrong"));
