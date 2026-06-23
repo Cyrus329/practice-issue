@@ -500,7 +500,21 @@ h3 {
     flex-direction: column;
   }
 
+  .question-detail {
+    padding-bottom: 88px;
+  }
+
   .detail-actions {
-    grid-template-columns: 1fr;
+    position: sticky;
+    bottom: max(10px, env(safe-area-inset-bottom));
+    z-index: 6;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 10px;
+    margin: 14px -4px 12px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
   }
 }

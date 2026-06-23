@@ -287,8 +287,7 @@ function renderList(page) {
       </div>
     `;
     button.addEventListener("click", () => {
-      state.selectedId = question.id;
-      render();
+      selectQuestion(question.id);
     });
     fragment.append(button);
   });
@@ -298,6 +297,28 @@ function renderList(page) {
   }
 }
 
+function selectQuestion(questionId) {
+  state.selectedId = questionId;
+  render();
+  scrollDetailPanelIntoView();
+}
+
+function isMobileStudyLayout() {
+  return window.matchMedia && window.matchMedia("(max-width: 980px)").matches;
+}
+
+function scrollDetailPanelIntoView() {
+  if (!isMobileStudyLayout() || !els.detailPanel) {
+    return;
+  }
+  window.requestAnimationFrame(() => {
+    els.detailPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    const firstAction = els.detailPanel.querySelector(".detail-actions button");
+    if (firstAction) {
+      firstAction.focus({ preventScroll: true });
+    }
+  });
+}
 function renderStatusBadges(progress) {
   const badges = [];
   if (!progress || !progress.attempts) {
@@ -349,14 +370,15 @@ function renderDetail() {
         ${renderOptions(question.options)}
       </section>
 
-      ${visible ? renderSolution(question) : `<div class="hidden-solution">答案与解析已隐藏</div>`}
-
       <div class="detail-actions">
         <button class="secondary-button" id="revealButton" type="button">${visible ? "隐藏答案解析" : "查看答案解析"}</button>
         <button class="primary-button" id="correctButton" type="button">做对了</button>
         <button class="secondary-button" id="wrongButton" type="button">做错了</button>
         <button class="secondary-button" id="addWrongBookButton" type="button">${inWrongBook ? "取消错题本" : "加入错题本"}</button>
       </div>
+
+      ${visible ? renderSolution(question) : `<div class="hidden-solution">答案与解析已隐藏</div>`}
+
     </article>
   `;
 

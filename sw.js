@@ -1,10 +1,10 @@
-const CACHE_NAME = "question-bank-trainer-cache-v4";
+const CACHE_NAME = "question-bank-trainer-20260623-mobile-flow";
 const ASSETS = [
   "./",
   "./index.html",
-  "./styles.css",
+  "./styles.css?v=20260623-mobile-flow",
   "./core.js",
-  "./app.js",
+  "./app.js?v=20260623-mobile-flow",
   "./question-bank-data.js",
   "./question-bank-data.json",
   "./manifest.webmanifest",
