@@ -1,12 +1,12 @@
-const CACHE_NAME = "question-bank-trainer-20260623-sequence-answer-analysis-1570-v1";
+const CACHE_NAME = "question-bank-trainer-20260625-selected-features-v4";
 const ASSETS = [
   "./",
   "./index.html",
-  "./styles.css?v=20260623-sequence-answer-analysis-1570-v1",
+  "./styles.css?v=20260625-selected-features-v4",
   "./core.js",
-  "./app.js?v=20260623-sequence-answer-analysis-1570-v1",
-  "./question-bank-data.js?v=20260623-sequence-answer-analysis-1570-v1",
-  "./question-bank-data.json?v=20260623-sequence-answer-analysis-1570-v1",
+  "./app.js?v=20260625-selected-features-v4",
+  "./question-bank-data.js?v=20260625-selected-features-v4",
+  "./question-bank-data.json?v=20260625-selected-features-v4",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png"

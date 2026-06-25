@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#147a7e">
   <title>专升本题库训练中心</title>
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=20260623-sequence-answer-analysis-1570-v1">
+  <link rel="stylesheet" href="styles.css?v=20260625-selected-features-v4">
 </head>
 <body>
   <div class="app-shell">
@@ -16,6 +16,18 @@
         <h1>专升本题库训练中心</h1>
       </div>
       <div class="top-actions">
+        <button class="icon-button" id="reviewQueueButton" type="button" title="只刷今天该复习的题" aria-label="今日复习队列">
+          <span aria-hidden="true">↻</span><span>今日复习</span>
+        </button>
+        <button class="icon-button secondary" id="studyModeButton" type="button" title="切换单题学习模式" aria-label="单题模式">
+          <span aria-hidden="true">□</span><span>单题模式</span>
+        </button>
+        <button class="icon-button secondary" id="autoHideMasteredButton" type="button" title="连续做对3次的题自动隐藏" aria-label="隐藏熟练题">
+          <span aria-hidden="true">✓</span><span>隐藏熟练题</span>
+        </button>
+        <button class="icon-button secondary" id="timerButton" type="button" title="倒计时刷题" aria-label="倒计时刷题">
+          <span aria-hidden="true">⏱</span><span>倒计时</span>
+        </button>
         <button class="icon-button" id="sampleButton" type="button" title="载入示例题" aria-label="载入示例题">
           <span aria-hidden="true">＋</span><span>示例</span>
         </button>
@@ -54,10 +66,24 @@
         <span>状态</span>
         <select id="statusFilter">
           <option value="all">全部</option>
+          <option value="dueReview">今日复习</option>
+          <option value="weakChapter">薄弱章节</option>
+          <option value="mastered">熟练题</option>
           <option value="unseen">未做</option>
           <option value="wrong">最近做错</option>
           <option value="correct">最近做对</option>
           <option value="wrongBook">已进错题本</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>难度</span>
+        <select id="difficultyFilter">
+          <option value="all">全部</option>
+          <option value="1">难度 1</option>
+          <option value="2">难度 2</option>
+          <option value="3">难度 3</option>
+          <option value="4">难度 4</option>
+          <option value="5">难度 5</option>
         </select>
       </label>
     </section>
@@ -79,7 +105,25 @@
         <span>已进错题本</span>
         <strong id="wrongBookCount">0</strong>
       </div>
+      <div class="stat-tile">
+        <span>今日复习</span>
+        <strong id="dueReviewCount">0</strong>
+      </div>
+      <div class="stat-tile">
+        <span>连续打卡</span>
+        <strong id="streakCount">0</strong>
+      </div>
+      <div class="stat-tile">
+        <span>今日完成</span>
+        <strong id="dailyProgressCount">0/80</strong>
+      </div>
+      <div class="stat-tile">
+        <span>熟练题</span>
+        <strong id="masteredCount">0</strong>
+      </div>
     </section>
+
+    <section class="dashboard-panel" id="dashboardPanel" aria-label="学习分析"></section>
 
     <main class="workspace">
       <section class="list-panel" aria-label="题目列表">
@@ -107,8 +151,15 @@
     </main>
   </div>
 
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
+      chtml: { scale: 1 }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
   <script src="core.js"></script>
-  <script src="question-bank-data.js?v=20260623-sequence-answer-analysis-1570-v1"></script>
-  <script src="app.js?v=20260623-sequence-answer-analysis-1570-v1"></script>
+  <script src="question-bank-data.js?v=20260625-selected-features-v4"></script>
+  <script src="app.js?v=20260625-selected-features-v4"></script>
 </body>
 </html>

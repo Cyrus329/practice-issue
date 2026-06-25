@@ -16,11 +16,53 @@
     const safeSubject = String(subject || "").trim();
     const safeChapter = String(chapter || "未分章").trim();
 
+    if (safeSubject === "高数") {
+      if (["第一章 函数、极限与连续", "第二章 导数与微分", "第三章 导数的应用", "综合题"].includes(safeChapter)) {
+        return safeChapter;
+      }
+      if (/单调有界/.test(safeChapter)) {
+        return "第一章 函数、极限与连续";
+      }
+      if (/单调性|极值|最值|凹凸|拐点|渐近线|驻点|符号表|函数图像|函数作图|图像与导数|导数应用|函数值比较/.test(safeChapter)) {
+        return "第三章 导数的应用";
+      }
+      if (/导数|求导|可导|微分|切线|法线|相切|参数方程|隐函数|高阶|二阶|链式|商|乘积|三角|反三角|对数求导|幂函数|指定点|竖直切线|切线平行|绝对值求导|根式函数与导数|分式\/指数函数求导/.test(safeChapter)) {
+        return "第二章 导数与微分";
+      }
+      if (/函数|定义域|反函数|复合|换元|奇偶|周期|极限|无穷小|无穷大|连续|间断|零点|介值|夹逼|重要极限|数列极限|构造函数|根式极限|特殊极限|幂指型极限|指数极限|极限概念|阶数/.test(safeChapter)) {
+        return "第一章 函数、极限与连续";
+      }
+      if (/未分配|综合/.test(safeChapter)) {
+        return "综合题";
+      }
+    }
+
+    if (safeSubject === "计算机") {
+      if (["第一章 计算机基础", "第二章 计算机系统组成", "第三章 操作系统", "第四章 办公自动化", "第五章 网络与信息安全"].includes(safeChapter)) {
+        return safeChapter;
+      }
+      if (/第一章|计算机基础(知识)?|基础知识/.test(safeChapter)) {
+        return "第一章 计算机基础";
+      }
+      if (/计算机系统组成|系统基本组成|第二章计算机系统基本组成|第三章计算机系统组成|系统组成/.test(safeChapter)) {
+        return "第二章 计算机系统组成";
+      }
+      if (/操作系统|第二章操作系统|第三章操作系统/.test(safeChapter)) {
+        return "第三章 操作系统";
+      }
+      if (/办公|自动化|Office|Word|Excel|PowerPoint|第四章/i.test(safeChapter)) {
+        return "第四章 办公自动化";
+      }
+      if (/网络|信息安全|第五章/.test(safeChapter)) {
+        return "第五章 网络与信息安全";
+      }
+    }
+
     if (safeSubject === "英语") {
       if (/名词|代词/.test(safeChapter)) {
         return "名词与代词";
       }
-      if (/基础语法|句子结构/.test(safeChapter)) {
+      if (/基础语法|句子结构|句法/.test(safeChapter)) {
         return "基础语法·句子结构";
       }
     }

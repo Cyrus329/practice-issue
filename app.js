@@ -6,22 +6,41 @@ const BUNDLED_DATA_URL = "question-bank-data.json";
 const PAGE_SIZE = QuestionBankCore.PAGE_SIZE;
 
 const FORCE_CLEAN_VERSION_KEY = "zsb-question-bank-trainer:clean-version";
-const FORCE_CLEAN_VERSION = "20260623-sequence-answer-analysis-1570-v1";
+const FORCE_CLEAN_VERSION = "20260625-selected-features-v4";
+const STUDY_MODE_KEY = "zsb-question-bank-trainer:study-mode";
+const STUDY_DAYS_KEY = "zsb-question-bank-trainer:study-days";
+const AUTO_HIDE_MASTERED_KEY = "zsb-question-bank-trainer:auto-hide-mastered";
+const DAILY_GOAL_KEY = "zsb-question-bank-trainer:daily-goal";
+const DAILY_ATTEMPTS_KEY = "zsb-question-bank-trainer:daily-attempts";
+const LAST_BACKUP_KEY = "zsb-question-bank-trainer:last-backup";
+const TIMER_REMAINING_KEY = "zsb-question-bank-trainer:timer-remaining";
+const TIMER_DEFAULT_SECONDS = 25 * 60;
+const REVIEW_INTERVALS = [1, 2, 4, 7, 15, 30, 45, 60];
 
 const els = {
   searchInput: document.querySelector("#searchInput"),
   subjectFilter: document.querySelector("#subjectFilter"),
   chapterFilter: document.querySelector("#chapterFilter"),
   statusFilter: document.querySelector("#statusFilter"),
+  difficultyFilter: document.querySelector("#difficultyFilter"),
   questionsList: document.querySelector("#questionsList"),
   detailPanel: document.querySelector("#detailPanel"),
   totalCount: document.querySelector("#totalCount"),
   filteredCount: document.querySelector("#filteredCount"),
   wrongCount: document.querySelector("#wrongCount"),
   wrongBookCount: document.querySelector("#wrongBookCount"),
+  dueReviewCount: document.querySelector("#dueReviewCount"),
+  streakCount: document.querySelector("#streakCount"),
+  dailyProgressCount: document.querySelector("#dailyProgressCount"),
+  masteredCount: document.querySelector("#masteredCount"),
+  dashboardPanel: document.querySelector("#dashboardPanel"),
   pageInfo: document.querySelector("#pageInfo"),
   prevPageButton: document.querySelector("#prevPageButton"),
   nextPageButton: document.querySelector("#nextPageButton"),
+  reviewQueueButton: document.querySelector("#reviewQueueButton"),
+  studyModeButton: document.querySelector("#studyModeButton"),
+  autoHideMasteredButton: document.querySelector("#autoHideMasteredButton"),
+  timerButton: document.querySelector("#timerButton"),
   sampleButton: document.querySelector("#sampleButton"),
   stressButton: document.querySelector("#stressButton"),
   importButton: document.querySelector("#importButton"),
@@ -35,7 +54,12 @@ const state = {
   progressById: new Map(),
   filtered: [],
   page: 1,
-  selectedId: ""
+  selectedId: "",
+  studyMode: localStorage.getItem(STUDY_MODE_KEY) === "single",
+  autoHideMastered: localStorage.getItem(AUTO_HIDE_MASTERED_KEY) === "1",
+  timerSecondsRemaining: Number(localStorage.getItem(TIMER_REMAINING_KEY) || TIMER_DEFAULT_SECONDS) || TIMER_DEFAULT_SECONDS,
+  timerRunning: false,
+  timerId: 0
 };
 
 function openDatabase() {
@@ -276,13 +300,25 @@ function refillSelect(select, values, allText) {
 }
 
 function applyFilters() {
+  const status = els.statusFilter.value;
+  const coreStatus = ["dueReview", "weakChapter", "mastered"].includes(status) ? "all" : status;
+  const difficulty = els.difficultyFilter ? els.difficultyFilter.value : "all";
+  const weakKeys = new Set(getWeakChapterStats().map((item) => item.key));
+
   state.filtered = QuestionBankCore.filterQuestions(state.questions, {
     keyword: els.searchInput.value,
     subject: els.subjectFilter.value,
     chapter: els.chapterFilter.value,
-    status: els.statusFilter.value,
+    status: coreStatus,
     progressById: state.progressById
-  });
+  })
+    .filter((question) => difficulty === "all" || String(question.difficulty) === difficulty)
+    .filter((question) => status !== "dueReview" || isDueReview(question))
+    .filter((question) => status !== "weakChapter" || weakKeys.has(chapterKey(question)))
+    .filter((question) => status !== "mastered" || isMasteredQuestion(question))
+    .filter((question) => !state.autoHideMastered || status === "mastered" || !isMasteredQuestion(question))
+    .sort((a, b) => sortQuestionsForMode(a, b, status));
+
   const page = QuestionBankCore.paginate(state.filtered, state.page, PAGE_SIZE);
   state.page = page.page;
   if (!state.selectedId || !state.filtered.some((question) => question.id === state.selectedId)) {
@@ -293,12 +329,24 @@ function applyFilters() {
 
 function render() {
   const page = QuestionBankCore.paginate(state.filtered, state.page, PAGE_SIZE);
+  document.body.classList.toggle("study-mode", state.studyMode);
+  if (els.studyModeButton) {
+    els.studyModeButton.classList.toggle("active", state.studyMode);
+    els.studyModeButton.querySelector("span:last-child").textContent = state.studyMode ? "退出单题" : "单题模式";
+  }
+  if (els.autoHideMasteredButton) {
+    els.autoHideMasteredButton.classList.toggle("active", state.autoHideMastered);
+    els.autoHideMasteredButton.querySelector("span:last-child").textContent = state.autoHideMastered ? "已隐藏熟练题" : "隐藏熟练题";
+  }
+  updateTimerUI();
   renderStats();
+  renderDashboard();
   renderList(page);
   renderDetail();
   els.pageInfo.textContent = `${page.page} / ${page.totalPages}`;
   els.prevPageButton.disabled = page.page <= 1;
   els.nextPageButton.disabled = page.page >= page.totalPages;
+  typesetMathSoon();
 }
 
 function renderStats() {
@@ -307,12 +355,170 @@ function renderStats() {
   els.filteredCount.textContent = state.filtered.length;
   els.wrongCount.textContent = progressList.filter((progress) => progress.lastResult === "wrong").length;
   els.wrongBookCount.textContent = progressList.filter((progress) => progress.addedToWrongBookAt).length;
+  if (els.dueReviewCount) {
+    els.dueReviewCount.textContent = state.questions.filter(isDueReview).length;
+  }
+  if (els.streakCount) {
+    els.streakCount.textContent = `${getStudyStreak()}天`;
+  }
+  if (els.dailyProgressCount) {
+    els.dailyProgressCount.textContent = `${getTodayAttemptCount()}/${getDailyGoal()}`;
+  }
+  if (els.masteredCount) {
+    els.masteredCount.textContent = state.questions.filter(isMasteredQuestion).length;
+  }
+}
+
+
+
+function renderDashboard() {
+  if (!els.dashboardPanel) {
+    return;
+  }
+  const mastery = getChapterMasteryStats();
+  const weak = getWeakChapterStats();
+  const due = state.questions.filter(isDueReview).length;
+  const english = getEnglishGrammarStats();
+  const dailyDone = getTodayAttemptCount();
+  const dailyGoal = getDailyGoal();
+  const dailyPercent = Math.min(100, Math.round((dailyDone / Math.max(1, dailyGoal)) * 100));
+  const backup = getBackupStatus();
+  const topMastery = mastery.slice(0, 8);
+  const weakList = weak.slice(0, 5);
+  const englishList = english.slice(0, 8);
+
+  els.dashboardPanel.innerHTML = `
+    <div class="dashboard-card dashboard-summary-card">
+      <div>
+        <p class="eyebrow">Review</p>
+        <h2>今日队列 ${due} 题</h2>
+        <p>按 1、2、4、7、15 天复习间隔推进。今日任务 ${dailyDone}/${dailyGoal} 题。</p>
+      </div>
+      <button class="primary-button" id="dashboardReviewButton" type="button">只刷今日复习</button>
+    </div>
+    <div class="dashboard-card">
+      <div class="dashboard-card-head">
+        <div>
+          <p class="eyebrow">Mastery</p>
+          <h2>章节掌握度</h2>
+        </div>
+        <button class="secondary-button" id="weakOnlyButton" type="button">只刷薄弱章节</button>
+      </div>
+      <div class="mastery-list">
+        ${topMastery.length ? topMastery.map(renderMasteryRow).join("") : `<p class="muted-text">开始做题后这里会显示每章正确率。</p>`}
+      </div>
+      ${weakList.length ? `<div class="weak-tags">${weakList.map((item) => `<button type="button" class="weak-tag" data-subject="${escapeHtml(item.subject)}" data-chapter="${escapeHtml(item.chapter)}">${escapeHtml(item.subject)} · ${escapeHtml(item.chapter)} ${item.accuracy}%</button>`).join("")}</div>` : ""}
+    </div>
+    <div class="dashboard-card">
+      <p class="eyebrow">English</p>
+      <h2>英语语法归类</h2>
+      <div class="grammar-grid">
+        ${englishList.length ? englishList.map((item) => `<button type="button" class="grammar-pill" data-grammar="${escapeHtml(item.name)}"><strong>${escapeHtml(item.name)}</strong><span>${item.total}题</span></button>`).join("") : `<p class="muted-text">当前英语题暂未识别到更多语法分类。</p>`}
+      </div>
+    </div>
+    <div class="dashboard-card daily-card">
+      <div class="dashboard-card-head">
+        <div>
+          <p class="eyebrow">Daily</p>
+          <h2>每日任务 ${dailyDone}/${dailyGoal}</h2>
+        </div>
+        <label class="mini-field">目标 <input id="dailyGoalInput" type="number" min="10" max="500" step="10" value="${dailyGoal}"></label>
+      </div>
+      <div class="mastery-bar daily-bar"><i style="width:${dailyPercent}%"></i></div>
+      <p>${dailyPercent >= 100 ? "今日任务已完成，可以转入错题复盘。" : `还差 ${Math.max(0, dailyGoal - dailyDone)} 题完成今日目标。`}</p>
+    </div>
+    <div class="dashboard-card timer-card">
+      <p class="eyebrow">Timer</p>
+      <h2 id="timerDisplay">${formatTimer(state.timerSecondsRemaining)}</h2>
+      <div class="timer-actions">
+        <button class="primary-button" id="timerStartPauseButton" type="button">${state.timerRunning ? "暂停" : "开始"}</button>
+        <button class="secondary-button" id="timerResetButton" type="button">重置25分钟</button>
+      </div>
+      <p>倒计时适合限时刷题，时间到会提示，不会自动清掉进度。</p>
+    </div>
+    <div class="dashboard-card backup-card ${backup.needsBackup ? "needs-backup" : ""}">
+      <p class="eyebrow">Backup</p>
+      <h2>${backup.title}</h2>
+      <p>${backup.message}</p>
+      <button class="secondary-button" id="backupNowButton" type="button">立即导出备份</button>
+    </div>
+  `;
+
+  const dashboardReviewButton = els.dashboardPanel.querySelector("#dashboardReviewButton");
+  if (dashboardReviewButton) {
+    dashboardReviewButton.addEventListener("click", () => {
+      els.statusFilter.value = "dueReview";
+      state.page = 1;
+      applyFilters();
+    });
+  }
+  const weakOnlyButton = els.dashboardPanel.querySelector("#weakOnlyButton");
+  if (weakOnlyButton) {
+    weakOnlyButton.addEventListener("click", () => {
+      els.statusFilter.value = "weakChapter";
+      state.page = 1;
+      applyFilters();
+    });
+  }
+  const dailyGoalInput = els.dashboardPanel.querySelector("#dailyGoalInput");
+  if (dailyGoalInput) {
+    dailyGoalInput.addEventListener("change", () => {
+      setDailyGoal(dailyGoalInput.value);
+      render();
+    });
+  }
+  const timerStartPauseButton = els.dashboardPanel.querySelector("#timerStartPauseButton");
+  if (timerStartPauseButton) {
+    timerStartPauseButton.addEventListener("click", toggleTimer);
+  }
+  const timerResetButton = els.dashboardPanel.querySelector("#timerResetButton");
+  if (timerResetButton) {
+    timerResetButton.addEventListener("click", resetTimer);
+  }
+  const backupNowButton = els.dashboardPanel.querySelector("#backupNowButton");
+  if (backupNowButton) {
+    backupNowButton.addEventListener("click", exportData);
+  }
+  els.dashboardPanel.querySelectorAll(".weak-tag").forEach((button) => {
+    button.addEventListener("click", () => {
+      els.subjectFilter.value = button.dataset.subject || "all";
+      updateFilters();
+      els.chapterFilter.value = button.dataset.chapter || "all";
+      els.statusFilter.value = "all";
+      state.page = 1;
+      applyFilters();
+    });
+  });
+  els.dashboardPanel.querySelectorAll(".grammar-pill").forEach((button) => {
+    button.addEventListener("click", () => {
+      els.subjectFilter.value = "英语";
+      updateFilters();
+      els.searchInput.value = button.dataset.grammar || "";
+      state.page = 1;
+      applyFilters();
+    });
+  });
+}
+
+function renderMasteryRow(item) {
+  const label = `${item.subject} · ${item.chapter}`;
+  const barWidth = Math.max(3, Math.min(100, item.accuracy));
+  const statusText = item.attempts ? `${item.correct}/${item.attempts} 对` : "未做";
+  return `
+    <div class="mastery-row">
+      <div class="mastery-row-top">
+        <strong>${escapeHtml(label)}</strong>
+        <span>${item.accuracy}% · ${statusText}</span>
+      </div>
+      <div class="mastery-bar"><i style="width:${barWidth}%"></i></div>
+    </div>
+  `;
 }
 
 function renderList(page) {
   const fragment = document.createDocumentFragment();
   page.items.forEach((question) => {
-    const progress = getProgress(question.id);
+    const progress = readProgress(question.id);
     const button = document.createElement("button");
     button.type = "button";
     button.className = `question-row${question.id === state.selectedId ? " active" : ""}`;
@@ -323,7 +529,7 @@ function renderList(page) {
         <span>${escapeHtml(question.chapter)}</span>
         <span>${escapeHtml(question.type)}</span>
       </div>
-      <h3>${escapeHtml(question.id)} ${escapeHtml(question.stem)}</h3>
+      <h3>${escapeHtml(question.id)} ${renderRichText(question.stem)}</h3>
       <div class="tag-line">
         ${renderStatusBadges(progress)}
         <span>难度 ${escapeHtml(question.difficulty)}</span>
@@ -394,6 +600,9 @@ function renderStatusBadges(progress) {
   if (progress && progress.addedToWrongBookAt) {
     badges.push(`<span class="badge book">已进错题本</span>`);
   }
+  if (progress && isProgressMastered(progress)) {
+    badges.push(`<span class="badge mastered">熟练</span>`);
+  }
   return badges.join("");
 }
 
@@ -417,6 +626,7 @@ function renderDetail() {
   const currentPosition = position.index >= 0 ? position.index + 1 : 0;
   const canGoPrev = position.index > 0;
   const canGoNext = position.index >= 0 && position.index < position.total - 1;
+  const grammar = getEnglishGrammarCategory(question);
   els.detailPanel.innerHTML = `
     <article class="question-detail">
       <header class="detail-header">
@@ -424,15 +634,18 @@ function renderDetail() {
         <h2>${escapeHtml(question.id)} ${escapeHtml(question.type)}</h2>
         <div class="meta-line">
           ${renderStatusBadges(progress)}
+          ${isDueReview(question) ? `<span class="badge review">今日复习</span>` : ""}
+          ${grammar ? `<span class="badge grammar">${escapeHtml(grammar)}</span>` : ""}
           <span>已做 ${progress.attempts} 次</span>
           <span>对 ${progress.correct} 次</span>
           <span>错 ${progress.wrong} 次</span>
+          ${progress.nextReviewAt ? `<span>下次 ${escapeHtml(progress.nextReviewAt)}</span>` : ""}
         </div>
       </header>
 
       <section class="stem-box">
         <strong>题目</strong>
-        <p>${escapeHtml(question.stem)}</p>
+        <p>${renderRichText(question.stem)}</p>
         ${renderImages(question.images)}
         ${renderOptions(question.options)}
       </section>
@@ -444,6 +657,7 @@ function renderDetail() {
           <button class="secondary-button nav-button" id="nextQuestionButton" type="button" aria-label="下一题"${canGoNext ? "" : " disabled"}>→</button>
         </div>
         <div class="detail-actions">
+          <button class="secondary-button" id="hintButton" type="button">${progress.hintVisible ? "隐藏公式提示" : "公式提示"}</button>
           <button class="secondary-button" id="revealButton" type="button">${visible ? "隐藏答案解析" : "查看答案解析"}</button>
           <button class="primary-button" id="correctButton" type="button">做对了</button>
           <button class="secondary-button" id="wrongButton" type="button">做错了</button>
@@ -451,13 +665,16 @@ function renderDetail() {
         </div>
       </div>
 
-      ${visible ? renderSolution(question) : `<div class="hidden-solution">答案与解析已隐藏</div>`}
+      ${progress.hintVisible ? renderFormulaHint(question) : ""}
+      ${visible ? renderSolution(question, progress) : `<div class="hidden-solution">答案与解析已隐藏</div>`}
+      ${renderSimilarQuestions(question)}
 
     </article>
   `;
 
   document.querySelector("#prevQuestionButton").addEventListener("click", () => selectAdjacentQuestion(-1));
   document.querySelector("#nextQuestionButton").addEventListener("click", () => selectAdjacentQuestion(1));
+  document.querySelector("#hintButton").addEventListener("click", () => toggleHint(question.id));
   document.querySelector("#revealButton").addEventListener("click", () => toggleSolution(question.id));
   document.querySelector("#correctButton").addEventListener("click", () => saveAttempt(question.id, "correct"));
   document.querySelector("#wrongButton").addEventListener("click", () => saveAttempt(question.id, "wrong"));
@@ -468,13 +685,19 @@ function renderDetail() {
     }
     addToWrongBook(question.id);
   });
+  els.detailPanel.querySelectorAll("[data-solution-level]").forEach((button) => {
+    button.addEventListener("click", () => setSolutionLevel(question.id, button.dataset.solutionLevel));
+  });
+  els.detailPanel.querySelectorAll("[data-similar-id]").forEach((button) => {
+    button.addEventListener("click", () => selectQuestion(button.dataset.similarId));
+  });
 }
 
 function renderOptions(options) {
   if (!options.length) {
     return "";
   }
-  return `<ul class="options-list">${options.map((option) => `<li>${escapeHtml(option)}</li>`).join("")}</ul>`;
+  return `<ul class="options-list">${options.map((option) => `<li>${renderRichText(option)}</li>`).join("")}</ul>`;
 }
 
 function renderImages(images) {
@@ -492,45 +715,96 @@ function renderImages(images) {
   `;
 }
 
-function renderSolution(question) {
+function renderSolution(question, progress) {
+  const level = progress.solutionLevel || "answer";
+  const showAnalysis = ["analysis", "mistake"].includes(level);
+  const showMistake = level === "mistake";
   return `
+    <section class="solution-tabs" aria-label="分层答案">
+      <button type="button" class="secondary-button ${level === "answer" ? "active" : ""}" data-solution-level="answer">只看答案</button>
+      <button type="button" class="secondary-button ${level === "analysis" ? "active" : ""}" data-solution-level="analysis">再看解析</button>
+      <button type="button" class="secondary-button ${level === "mistake" ? "active" : ""}" data-solution-level="mistake">最后看易错点</button>
+    </section>
     <section class="solution-box">
       <strong>答案</strong>
-      <p>${escapeHtml(question.answer || "未填写")}</p>
+      <p>${renderRichText(question.answer || "未填写")}</p>
     </section>
-    <section class="analysis-box">
-      <strong>解析</strong>
-      <p>${escapeHtml(question.analysis || "未填写")}</p>
-    </section>
+    ${showAnalysis ? renderEnglishOptionAnalysis(question) : ""}
+    ${showAnalysis ? `<section class="analysis-box"><strong>解析</strong><p>${renderRichText(question.analysis || "未填写")}</p></section>` : ""}
+    ${showMistake ? renderMistakePoint(question) : ""}
   `;
+}
+
+function enrichProgress(progress, questionId) {
+  const base = QuestionBankCore.normalizeProgress(progress, questionId);
+  return {
+    ...base,
+    reviewLevel: Number(progress && progress.reviewLevel || 0),
+    nextReviewAt: String(progress && progress.nextReviewAt || ""),
+    hintVisible: Boolean(progress && progress.hintVisible),
+    solutionLevel: String(progress && progress.solutionLevel || "answer"),
+    correctStreak: Number(progress && progress.correctStreak || 0)
+  };
+}
+
+
+function readProgress(questionId) {
+  return enrichProgress(state.progressById.get(questionId), questionId);
 }
 
 function getProgress(questionId) {
   if (!state.progressById.has(questionId)) {
-    state.progressById.set(questionId, QuestionBankCore.createProgress(questionId));
+    state.progressById.set(questionId, enrichProgress(QuestionBankCore.createProgress(questionId), questionId));
   }
-  return state.progressById.get(questionId);
+  const progress = enrichProgress(state.progressById.get(questionId), questionId);
+  state.progressById.set(questionId, progress);
+  return progress;
 }
 
 async function saveProgress(progress) {
-  state.progressById.set(progress.questionId, progress);
-  await putOne(PROGRESS_STORE, progress);
+  const next = enrichProgress(progress, progress.questionId);
+  state.progressById.set(next.questionId, next);
+  await putOne(PROGRESS_STORE, next);
+}
+
+async function toggleHint(questionId) {
+  const progress = getProgress(questionId);
+  await saveProgress({ ...progress, hintVisible: !progress.hintVisible });
+  render();
+}
+
+async function setSolutionLevel(questionId, level) {
+  const safeLevel = ["answer", "analysis", "mistake"].includes(level) ? level : "answer";
+  await saveProgress({ ...getProgress(questionId), solutionLevel: safeLevel, solutionVisible: true });
+  render();
 }
 
 async function toggleSolution(questionId) {
-  const progress = QuestionBankCore.setSolutionVisible(getProgress(questionId), !QuestionBankCore.isSolutionVisible(getProgress(questionId)));
-  await saveProgress(progress);
+  const progress = getProgress(questionId);
+  const visible = !QuestionBankCore.isSolutionVisible(progress);
+  const next = QuestionBankCore.setSolutionVisible(progress, visible);
+  await saveProgress({ ...next, solutionLevel: progress.solutionLevel || "answer" });
   render();
 }
 
 async function saveAttempt(questionId, result) {
-  const progress = QuestionBankCore.recordAttempt(getProgress(questionId), result);
+  markStudyToday();
+  markDailyAttempt();
+  const before = getProgress(questionId);
+  let progress = QuestionBankCore.recordAttempt(before, result);
+  progress = {
+    ...progress,
+    correctStreak: result === "correct" ? Number(before.correctStreak || 0) + 1 : 0
+  };
+  progress = scheduleNextReview(progress, result);
   await saveProgress(progress);
   if (result === "wrong") {
     await addToWrongBook(questionId, { silent: true });
-    showToast("已记录做错，并加入错题本");
+    showToast("已记录做错，已排入明天复习");
+  } else if (isProgressMastered(progress)) {
+    showToast("已连续做对3次，已归为熟练题");
   } else {
-    showToast("已记录做对");
+    showToast(progress.nextReviewAt ? `已记录做对，下次复习 ${progress.nextReviewAt}` : "已记录做对");
   }
   applyFilters();
 }
@@ -546,7 +820,7 @@ async function addToWrongBook(questionId, options = {}) {
   const existing = QuestionBankCore.loadWrongBookRecords();
   const next = QuestionBankCore.upsertWrongBookRecord(existing, record);
   QuestionBankCore.saveWrongBookRecords(next);
-  await saveProgress(QuestionBankCore.markAddedToWrongBook(progress, today));
+  await saveProgress({ ...progress, addedToWrongBookAt: today });
   if (!options.silent) {
     showToast("已加入错题本");
     applyFilters();
@@ -557,11 +831,832 @@ async function removeFromWrongBook(questionId, options = {}) {
   const existing = QuestionBankCore.loadWrongBookRecords();
   const next = QuestionBankCore.removeWrongBookRecord(existing, questionId);
   QuestionBankCore.saveWrongBookRecords(next);
-  await saveProgress(QuestionBankCore.clearAddedToWrongBook(getProgress(questionId)));
+  await saveProgress({ ...getProgress(questionId), addedToWrongBookAt: "" });
   if (!options.silent) {
     showToast("已取消错题本");
     applyFilters();
   }
+}
+
+
+function todayISO() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function addDaysISO(dateISO, days) {
+  const date = new Date(`${dateISO}T00:00:00`);
+  date.setDate(date.getDate() + Number(days || 0));
+  return date.toISOString().slice(0, 10);
+}
+
+function readStudyDays() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(STUDY_DAYS_KEY) || "[]");
+    return Array.isArray(parsed) ? [...new Set(parsed.filter(Boolean))].sort() : [];
+  } catch (error) {
+    return [];
+  }
+}
+
+function saveStudyDays(days) {
+  localStorage.setItem(STUDY_DAYS_KEY, JSON.stringify([...new Set(days)].sort()));
+}
+
+function markStudyToday() {
+  const days = readStudyDays();
+  days.push(todayISO());
+  saveStudyDays(days);
+}
+
+function getStudyStreak() {
+  const days = new Set(readStudyDays());
+  let date = new Date(`${todayISO()}T00:00:00`);
+  let streak = 0;
+  while (days.has(date.toISOString().slice(0, 10))) {
+    streak += 1;
+    date.setDate(date.getDate() - 1);
+  }
+  return streak;
+}
+
+function readJsonMap(key) {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(key) || "{}");
+    return parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
+  } catch (error) {
+    return {};
+  }
+}
+
+function writeJsonMap(key, value) {
+  localStorage.setItem(key, JSON.stringify(value || {}));
+}
+
+function getDailyGoal() {
+  const raw = Number(localStorage.getItem(DAILY_GOAL_KEY) || 80);
+  return Math.min(500, Math.max(10, Number.isFinite(raw) ? raw : 80));
+}
+
+function setDailyGoal(value) {
+  const next = Math.min(500, Math.max(10, Number(value || 80)));
+  localStorage.setItem(DAILY_GOAL_KEY, String(next));
+  showToast(`每日目标已设为 ${next} 题`);
+}
+
+function getTodayAttemptCount() {
+  const map = readJsonMap(DAILY_ATTEMPTS_KEY);
+  return Number(map[todayISO()] || 0);
+}
+
+function markDailyAttempt() {
+  const map = readJsonMap(DAILY_ATTEMPTS_KEY);
+  const today = todayISO();
+  map[today] = Number(map[today] || 0) + 1;
+  writeJsonMap(DAILY_ATTEMPTS_KEY, map);
+}
+
+function daysBetweenISO(startISO, endISO = todayISO()) {
+  if (!startISO) {
+    return Infinity;
+  }
+  const start = new Date(`${startISO}T00:00:00`).getTime();
+  const end = new Date(`${endISO}T00:00:00`).getTime();
+  if (!Number.isFinite(start) || !Number.isFinite(end)) {
+    return Infinity;
+  }
+  return Math.floor((end - start) / 86400000);
+}
+
+function getBackupStatus() {
+  const last = localStorage.getItem(LAST_BACKUP_KEY) || "";
+  const attempted = [...state.progressById.values()].some((progress) => Number(progress.attempts || 0) > 0);
+  const days = daysBetweenISO(last);
+  if (!attempted) {
+    return { needsBackup: false, title: "暂不需要备份", message: "开始做题后，建议每隔几天导出一次备份，避免浏览器缓存丢进度。" };
+  }
+  if (!last) {
+    return { needsBackup: true, title: "还没有备份", message: "你已经有做题记录，建议现在导出一次备份。" };
+  }
+  if (days >= 3) {
+    return { needsBackup: true, title: `上次备份 ${days} 天前`, message: "建议导出备份。换浏览器、清缓存或手机系统清理都可能影响本地进度。" };
+  }
+  return { needsBackup: false, title: "备份状态正常", message: `上次备份：${last}。继续刷题即可。` };
+}
+
+function isProgressMastered(progress) {
+  return Boolean(progress && progress.lastResult === "correct" && (Number(progress.correctStreak || 0) >= 3 || (Number(progress.correct || 0) >= 3 && Number(progress.wrong || 0) === 0)));
+}
+
+function isMasteredQuestion(question) {
+  const progress = readProgress(question.id);
+  return isProgressMastered(progress) && !isDueReview(question);
+}
+
+function formatTimer(seconds) {
+  const safe = Math.max(0, Number(seconds || 0));
+  const minutes = Math.floor(safe / 60);
+  const rest = safe % 60;
+  return `${String(minutes).padStart(2, "0")}:${String(rest).padStart(2, "0")}`;
+}
+
+function updateTimerUI() {
+  if (els.timerButton) {
+    els.timerButton.classList.toggle("active", state.timerRunning);
+    const label = els.timerButton.querySelector("span:last-child");
+    if (label) {
+      label.textContent = state.timerRunning ? formatTimer(state.timerSecondsRemaining) : "倒计时";
+    }
+  }
+  const display = document.querySelector("#timerDisplay");
+  if (display) {
+    display.textContent = formatTimer(state.timerSecondsRemaining);
+  }
+  const button = document.querySelector("#timerStartPauseButton");
+  if (button) {
+    button.textContent = state.timerRunning ? "暂停" : "开始";
+  }
+}
+
+function startTimer() {
+  if (state.timerRunning) {
+    return;
+  }
+  if (state.timerSecondsRemaining <= 0) {
+    state.timerSecondsRemaining = TIMER_DEFAULT_SECONDS;
+  }
+  state.timerRunning = true;
+  state.timerId = window.setInterval(() => {
+    state.timerSecondsRemaining = Math.max(0, state.timerSecondsRemaining - 1);
+    localStorage.setItem(TIMER_REMAINING_KEY, String(state.timerSecondsRemaining));
+    updateTimerUI();
+    if (state.timerSecondsRemaining <= 0) {
+      pauseTimer();
+      showToast("倒计时结束，建议先核对本轮错题");
+    }
+  }, 1000);
+  updateTimerUI();
+}
+
+function pauseTimer() {
+  state.timerRunning = false;
+  if (state.timerId) {
+    window.clearInterval(state.timerId);
+    state.timerId = 0;
+  }
+  updateTimerUI();
+}
+
+function toggleTimer() {
+  if (state.timerRunning) {
+    pauseTimer();
+  } else {
+    startTimer();
+  }
+}
+
+function resetTimer() {
+  pauseTimer();
+  state.timerSecondsRemaining = TIMER_DEFAULT_SECONDS;
+  localStorage.setItem(TIMER_REMAINING_KEY, String(state.timerSecondsRemaining));
+  updateTimerUI();
+  showToast("倒计时已重置为25分钟");
+}
+
+function scheduleNextReview(progress, result) {
+  const today = todayISO();
+  const next = enrichProgress(progress, progress.questionId);
+  if (result === "wrong") {
+    next.reviewLevel = 0;
+    next.nextReviewAt = addDaysISO(today, REVIEW_INTERVALS[0]);
+    return next;
+  }
+  const level = Math.min(Number(next.reviewLevel || 0) + 1, REVIEW_INTERVALS.length - 1);
+  next.reviewLevel = level;
+  next.nextReviewAt = addDaysISO(today, REVIEW_INTERVALS[level]);
+  return next;
+}
+
+function isDueReview(question) {
+  const progress = readProgress(question.id);
+  if (!progress.attempts && !progress.addedToWrongBookAt) {
+    return false;
+  }
+  const due = progress.nextReviewAt || progress.addedToWrongBookAt || progress.lastAt;
+  if (!due) {
+    return progress.lastResult === "wrong";
+  }
+  return due <= todayISO();
+}
+
+function sortQuestionsForMode(a, b, status) {
+  if (status === "dueReview") {
+    const pa = readProgress(a.id);
+    const pb = readProgress(b.id);
+    const da = pa.nextReviewAt || pa.lastAt || "9999-12-31";
+    const db = pb.nextReviewAt || pb.lastAt || "9999-12-31";
+    if (da !== db) {
+      return da.localeCompare(db);
+    }
+    return Number(pb.wrong || 0) - Number(pa.wrong || 0);
+  }
+  if (status === "weakChapter") {
+    const pa = readProgress(a.id);
+    const pb = readProgress(b.id);
+    return Number(pb.wrong || 0) - Number(pa.wrong || 0);
+  }
+  return 0;
+}
+
+function chapterKey(question) {
+  return `${question.subject}||${question.chapter}`;
+}
+
+function getChapterMasteryStats() {
+  const groups = new Map();
+  state.questions.forEach((question) => {
+    const key = chapterKey(question);
+    if (!groups.has(key)) {
+      groups.set(key, { key, subject: question.subject, chapter: question.chapter, total: 0, attempts: 0, correct: 0, wrong: 0, unseen: 0, accuracy: 0 });
+    }
+    const item = groups.get(key);
+    const progress = readProgress(question.id);
+    item.total += 1;
+    item.attempts += Number(progress.attempts || 0);
+    item.correct += Number(progress.correct || 0);
+    item.wrong += Number(progress.wrong || 0);
+    if (!progress.attempts) {
+      item.unseen += 1;
+    }
+  });
+  return [...groups.values()].map((item) => ({
+    ...item,
+    accuracy: item.attempts ? Math.round((item.correct / item.attempts) * 100) : 0
+  })).sort((a, b) => {
+    if (a.attempts && b.attempts && a.accuracy !== b.accuracy) {
+      return a.accuracy - b.accuracy;
+    }
+    if (a.wrong !== b.wrong) {
+      return b.wrong - a.wrong;
+    }
+    return b.total - a.total;
+  });
+}
+
+function getWeakChapterStats() {
+  return getChapterMasteryStats().filter((item) => {
+    if (!item.attempts) {
+      return false;
+    }
+    return item.accuracy < 70 || item.wrong >= 2;
+  });
+}
+
+function normalizeSearchText(value) {
+  return String(value || "").toLowerCase().replace(/\s+/g, "");
+}
+
+function getEnglishGrammarCategory(question) {
+  if (question.subject !== "英语") {
+    return "";
+  }
+  const text = normalizeSearchText([question.chapter, question.stem, question.answer, question.analysis, ...(question.tags || [])].join(" "));
+  const rules = [
+    ["名词", /名词|noun|可数|不可数|复数|单数/],
+    ["代词", /代词|pronoun|物主|反身|指示|不定代词|it用法/],
+    ["冠词", /冠词|article|\ba\b|\ban\b|\bthe\b/],
+    ["介词", /介词|preposition|in|on|at|of|for|with|from|to/],
+    ["时态", /时态|现在时|过去时|完成时|进行时|将来时|tense/],
+    ["从句", /从句|定语从句|宾语从句|状语从句|主语从句|clause|which|that|who|where|when/],
+    ["非谓语", /非谓语|动名词|不定式|分词|todo|doing|done/],
+    ["主谓一致", /主谓一致|就近原则|谓语单复数|therebe/],
+    ["句子结构", /句子结构|句型|倒装|强调句|祈使句|感叹句/]
+  ];
+  const found = rules.find(([, pattern]) => pattern.test(text));
+  return found ? found[0] : "基础语法";
+}
+
+function getEnglishGrammarStats() {
+  const map = new Map();
+  state.questions.filter((question) => question.subject === "英语").forEach((question) => {
+    const name = getEnglishGrammarCategory(question) || "基础语法";
+    map.set(name, (map.get(name) || 0) + 1);
+  });
+  return [...map.entries()].map(([name, total]) => ({ name, total })).sort((a, b) => b.total - a.total);
+}
+
+function getFormulaHints(question) {
+  const text = [question.chapter, question.stem, question.analysis].join(" ");
+  if (question.subject === "高数") {
+    if (/定义域|根号|分母|对数|ln|lg/.test(text)) {
+      return ["根号内：被开方数 ≥ 0", "分母：分母 ≠ 0", "对数：真数 > 0", "偶次根号在分母：被开方数 > 0"];
+    }
+    if (/极限|无穷小|无穷大/.test(text)) {
+      return ["先代入，能直接算先直接算", "0/0 型：因式分解、约分、等价无穷小", "常用：sinx ~ x，1-cosx ~ x²/2，ln(1+x) ~ x"];
+    }
+    if (/导数|求导|微分|切线|法线/.test(text)) {
+      return ["(u±v)'=u'±v'", "(uv)'=u'v+uv'", "(u/v)'=(u'v-uv')/v²", "复合函数：外层导数 × 内层导数"];
+    }
+    if (/单调|极值|最值|凹凸|拐点/.test(text)) {
+      return ["单调性看 f'(x) 的正负", "极值点通常先找 f'(x)=0 或不可导点", "凹凸性看 f''(x) 的正负", "拐点要求凹凸性发生改变"];
+    }
+    return ["先判断题型，再找对应条件：定义域、连续、可导、单调、极值。"];
+  }
+  if (question.subject === "英语") {
+    const grammar = getEnglishGrammarCategory(question);
+    return [`本题归类：${grammar || "基础语法"}`, "先看空格位置，再判断词性、单复数、时态或从句连接词。"];
+  }
+  if (question.subject === "计算机") {
+    return ["先抓关键词，再定位概念：硬件、系统软件、Office、网络、安全。", "概念题优先背定义，操作题优先背菜单/快捷键/步骤。"];
+  }
+  return ["先看考点，再按固定步骤检查条件。"];
+}
+
+function renderFormulaHint(question) {
+  const hints = getFormulaHints(question);
+  return `
+    <section class="hint-box">
+      <strong>公式 / 思路提示</strong>
+      <ul>${hints.map((item) => `<li>${renderRichText(item)}</li>`).join("")}</ul>
+    </section>
+  `;
+}
+
+function normalizeAnswerLetters(answer) {
+  const text = String(answer || "").toUpperCase();
+  const letters = new Set();
+  const compact = text.replace(/\s+/g, "");
+  const answerLike = compact.match(/(?:答案|选|正确答案|为|是|：|:)?([A-D](?:[、,，/和及]*[A-D]){0,3})(?:$|[^A-Z])/);
+  if (answerLike) {
+    answerLike[1].replace(/[A-D]/g, (letter) => {
+      letters.add(letter);
+      return letter;
+    });
+    return letters;
+  }
+  text.replace(/(^|[^A-Z])([A-D])([^A-Z]|$)/g, (_, before, letter) => {
+    letters.add(letter);
+    return `${before}${letter}`;
+  });
+  return letters;
+}
+
+function extractOptionLetter(option, index) {
+  const text = String(option || "").trim();
+  const match = text.match(/^([A-D])\s*[.．、)]/i);
+  return match ? match[1].toUpperCase() : String.fromCharCode(65 + index);
+}
+
+function englishDistractorReason(grammar) {
+  const map = {
+    "名词": "重点检查可数/不可数、单复数和名词所有格。",
+    "代词": "重点检查指代对象、人称、物主代词和反身代词。",
+    "冠词": "重点检查泛指/特指，以及 a、an、the 的搭配。",
+    "介词": "重点检查固定搭配、时间地点介词和动词介词搭配。",
+    "时态": "重点检查时间标志词、主谓一致和动作先后。",
+    "从句": "重点检查连接词在从句中充当的成分。",
+    "非谓语": "重点检查主动/被动、to do/doing/done 的区别。",
+    "主谓一致": "重点检查真正主语、就近原则和单复数。",
+    "句子结构": "重点检查句子成分是否完整，以及是否缺谓语或连接词。"
+  };
+  return map[grammar] || "重点检查词性、搭配、句子结构和中文直译陷阱。";
+}
+
+function renderEnglishOptionAnalysis(question) {
+  if (question.subject !== "英语" || !Array.isArray(question.options) || !question.options.length) {
+    return "";
+  }
+  const letters = normalizeAnswerLetters(question.answer);
+  const grammar = getEnglishGrammarCategory(question) || "基础语法";
+  const reason = englishDistractorReason(grammar);
+  const rows = question.options.map((option, index) => {
+    const letter = extractOptionLetter(option, index);
+    const isRight = letters.has(letter);
+    return `
+      <li class="${isRight ? "right" : ""}">
+        <strong>${escapeHtml(letter)} ${isRight ? "✓" : ""}</strong>
+        <span>${isRight ? `答案项：优先按“${escapeHtml(grammar)}”考点核对，和题干语法位置更匹配。` : `排除项：${escapeHtml(reason)}`}</span>
+      </li>
+    `;
+  }).join("");
+  return `
+    <section class="english-options-box">
+      <strong>英语选项辨析</strong>
+      <p>这是辅助排除提示；具体原因仍以原解析为准。</p>
+      <ul>${rows}</ul>
+    </section>
+  `;
+}
+
+function renderMistakePoint(question) {
+  const points = getMistakePoints(question);
+  return `
+    <section class="mistake-box">
+      <strong>易错点</strong>
+      <ul>${points.map((item) => `<li>${renderRichText(item)}</li>`).join("")}</ul>
+    </section>
+  `;
+}
+
+function getMistakePoints(question) {
+  const text = [question.chapter, question.stem, question.analysis].join(" ");
+  if (question.subject === "高数") {
+    if (/定义域|根号|分母|对数/.test(text)) {
+      return ["不要只看根号，分母和对数真数也要一起限制。", "最后结果要取交集，不是并集。"];
+    }
+    if (/导数|求导|切线|法线/.test(text)) {
+      return ["复合函数求导容易漏乘内层导数。", "切线斜率用 f'(x₀)，法线斜率是 -1/f'(x₀)。"];
+    }
+    if (/极值|单调|最值/.test(text)) {
+      return ["f'(x)=0 只是候选点，不一定就是极值点。", "闭区间最值要比较端点和驻点。"];
+    }
+    return ["先补全限制条件，再计算；最后检查答案是否落在定义域内。"];
+  }
+  if (question.subject === "英语") {
+    return ["不要只凭中文意思选，先判断空格需要的词性。", "名词题注意单复数，代词题注意指代对象和格。"];
+  }
+  if (question.subject === "计算机") {
+    return ["相近概念要区分：内存/外存、系统软件/应用软件、RAM/ROM。", "缩写题不要只背中文，还要记清英文全称或作用。"];
+  }
+  return ["先定位考点，再按步骤排除干扰项。"];
+}
+
+function textTokens(question) {
+  return new Set(normalizeSearchText([question.chapter, question.type, question.stem, ...(question.tags || [])].join(" ")).match(/[a-z0-9]+|[\u4e00-\u9fa5]{2,}/g) || []);
+}
+
+function getSimilarQuestions(question, limit = 5) {
+  const baseTokens = textTokens(question);
+  const baseTags = new Set(question.tags || []);
+  return state.questions
+    .filter((item) => item.id !== question.id)
+    .map((item) => {
+      let score = 0;
+      if (item.subject === question.subject) score += 8;
+      if (item.chapter === question.chapter) score += 10;
+      if (String(item.difficulty) === String(question.difficulty)) score += 2;
+      (item.tags || []).forEach((tag) => { if (baseTags.has(tag)) score += 3; });
+      textTokens(item).forEach((token) => { if (baseTokens.has(token)) score += 1; });
+      return { item, score };
+    })
+    .filter((entry) => entry.score >= 8)
+    .sort((a, b) => b.score - a.score || a.item.id.localeCompare(b.item.id))
+    .slice(0, limit)
+    .map((entry) => entry.item);
+}
+
+function renderSimilarQuestions(question) {
+  const similar = getSimilarQuestions(question, 5);
+  if (!similar.length) {
+    return "";
+  }
+  return `
+    <section class="similar-box">
+      <div class="similar-head">
+        <strong>同类题推荐</strong>
+        <span>从现有题库里找 5 道，不是凭空新编</span>
+      </div>
+      <div class="similar-list">
+        ${similar.map((item) => `<button type="button" class="similar-item" data-similar-id="${escapeHtml(item.id)}"><b>${escapeHtml(item.id)}</b><span>${escapeHtml(item.chapter)}</span><small>${escapeHtml(String(item.stem || "").slice(0, 80))}</small></button>`).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function typesetMathSoon() {
+  if (!window.MathJax || !window.MathJax.typesetPromise) {
+    return;
+  }
+  window.clearTimeout(typesetMathSoon.timer);
+  typesetMathSoon.timer = window.setTimeout(() => {
+    window.MathJax.typesetPromise([els.detailPanel, els.questionsList]).catch(() => {});
+  }, 60);
+}
+
+
+function renderRichText(value) {
+  let html = escapeHtml(value);
+  html = prettifyMathHtml(html);
+  return html.replace(/\r?\n/g, "<br>");
+}
+
+function prettifyMathHtml(html, depth = 0) {
+  let output = String(html || "");
+  if (depth > 5) {
+    return output;
+  }
+
+  const placeholders = [];
+  const placeholderPattern = /\uE000(\d+)\uE001/g;
+  const makePlaceholder = (value) => {
+    const token = `\uE000${placeholders.length}\uE001`;
+    placeholders.push(value);
+    return token;
+  };
+  const restorePlaceholders = (value) => String(value || "").replace(placeholderPattern, (_, index) => placeholders[Number(index)] || "");
+  const hasPlaceholder = (value) => {
+    placeholderPattern.lastIndex = 0;
+    return placeholderPattern.test(String(value || ""));
+  };
+  const formatOperand = (value) => {
+    const text = String(value || "");
+    if (hasPlaceholder(text)) {
+      placeholderPattern.lastIndex = 0;
+      return restorePlaceholders(text);
+    }
+    return prettifyMathHtml(text, depth + 1);
+  };
+  const makeFraction = (top, bottom) => makePlaceholder(`<span class="math-frac"><span>${formatOperand(top)}</span><span>${formatOperand(bottom)}</span></span>`);
+  const makeRoot = (symbol, radicand, degree = 2) => makePlaceholder(
+    `<span class="math-root ${degree === 3 ? "cube-root" : "square-root"}"><span class="math-root-sign">${symbol}</span><span class="math-radicand">${prettifyMathHtml(radicand, depth + 1)}</span></span>`
+  );
+
+  function findMatching(text, start, openChar, closeChar) {
+    let level = 0;
+    for (let index = start; index < text.length; index += 1) {
+      const char = text[index];
+      if (char === openChar) {
+        level += 1;
+      } else if (char === closeChar) {
+        level -= 1;
+        if (level === 0) {
+          return index;
+        }
+      }
+    }
+    return -1;
+  }
+
+  function readGrouped(text, start) {
+    const openChar = text[start];
+    const closeChar = openChar === "(" ? ")" : (openChar === "[" ? "]" : "}");
+    const end = findMatching(text, start, openChar, closeChar);
+    if (end < 0) {
+      return null;
+    }
+    return {
+      value: text.slice(start + 1, end),
+      end: end + 1
+    };
+  }
+
+  function readRadicand(text, start) {
+    let index = start;
+    while (text[index] === " ") {
+      index += 1;
+    }
+    if (text[index] === "(" || text[index] === "[" || text[index] === "{") {
+      return readGrouped(text, index);
+    }
+
+    const atomStart = index;
+    while (index < text.length) {
+      const char = text[index];
+      if (/^[\s,，;；。:：=<>≤≥+\-*\/\\|&\)\]\}]$/.test(char)) {
+        break;
+      }
+      if (char === "^" && (text[index + 1] === "(" || text[index + 1] === "[")) {
+        const grouped = readGrouped(text, index + 1);
+        if (!grouped) {
+          index += 1;
+        } else {
+          index = grouped.end;
+        }
+        continue;
+      }
+      index += 1;
+    }
+
+    if (index <= atomStart) {
+      return null;
+    }
+    return {
+      value: text.slice(atomStart, index),
+      end: index
+    };
+  }
+
+  function convertRadicals(text) {
+    let result = "";
+    for (let index = 0; index < text.length;) {
+      const tail = text.slice(index);
+      const sqrtMatch = tail.match(/^sqrt\s*(?=[\(\[\{])/i);
+      let symbol = "";
+      let degree = 2;
+      let radicandStart = -1;
+
+      if (sqrtMatch) {
+        symbol = "√";
+        degree = 2;
+        radicandStart = index + sqrtMatch[0].length;
+      } else if (text.startsWith("根号", index)) {
+        symbol = "√";
+        degree = 2;
+        radicandStart = index + 2;
+      } else if (text.startsWith("³√", index)) {
+        symbol = "∛";
+        degree = 3;
+        radicandStart = index + 2;
+      } else if (text[index] === "∛") {
+        symbol = "∛";
+        degree = 3;
+        radicandStart = index + 1;
+      } else if (text[index] === "√") {
+        symbol = "√";
+        degree = 2;
+        radicandStart = index + 1;
+      }
+
+      if (!symbol) {
+        result += text[index];
+        index += 1;
+        continue;
+      }
+
+      const radicand = readRadicand(text, radicandStart);
+      if (!radicand) {
+        result += symbol;
+        index = radicandStart;
+        continue;
+      }
+
+      result += makeRoot(symbol, radicand.value, degree);
+      index = radicand.end;
+    }
+    return result;
+  }
+
+
+  function findMatchingBackward(text, closeIndex, openChar, closeChar) {
+    let level = 0;
+    for (let index = closeIndex; index >= 0; index -= 1) {
+      const char = text[index];
+      if (char === closeChar) {
+        level += 1;
+      } else if (char === openChar) {
+        level -= 1;
+        if (level === 0) {
+          return index;
+        }
+      }
+    }
+    return -1;
+  }
+
+  function readPlaceholderForward(text, start) {
+    if (text[start] !== "\uE000") {
+      return null;
+    }
+    const end = text.indexOf("\uE001", start + 1);
+    if (end < 0) {
+      return null;
+    }
+    return { start, end: end + 1, value: text.slice(start, end + 1) };
+  }
+
+  function readPlaceholderBackward(text, end) {
+    if (text[end - 1] !== "\uE001") {
+      return null;
+    }
+    const start = text.lastIndexOf("\uE000", end - 2);
+    if (start < 0) {
+      return null;
+    }
+    return { start, end, value: text.slice(start, end) };
+  }
+
+  function extendLeftCoefficient(text, start) {
+    let index = start;
+    while (index > 0 && /[A-Za-z0-9π∞φθξαβγ]/.test(text[index - 1])) {
+      index -= 1;
+    }
+    return index;
+  }
+
+  function readLeftOperand(text, slashIndex) {
+    let end = slashIndex;
+    while (end > 0 && text[end - 1] === " ") {
+      end -= 1;
+    }
+    if (end <= 0) {
+      return null;
+    }
+
+    const placeholder = readPlaceholderBackward(text, end);
+    if (placeholder) {
+      const start = extendLeftCoefficient(text, placeholder.start);
+      return { start, end, value: text.slice(start, end) };
+    }
+
+    const closeChar = text[end - 1];
+    if (closeChar === ")" || closeChar === "]") {
+      const openChar = closeChar === ")" ? "(" : "[";
+      const groupStart = findMatchingBackward(text, end - 1, openChar, closeChar);
+      if (groupStart >= 0) {
+        const start = extendLeftCoefficient(text, groupStart);
+        return { start, end, value: text.slice(start, end) };
+      }
+    }
+
+    let start = end;
+    while (start > 0 && /[A-Za-z0-9π∞φθξαβγ₀₁₂₃₄₅₆₇₈₉ₙₖ₊₋⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺]/.test(text[start - 1])) {
+      start -= 1;
+    }
+    if (start === end) {
+      return null;
+    }
+    return { start, end, value: text.slice(start, end) };
+  }
+
+  function readRightOperand(text, slashIndex) {
+    let start = slashIndex + 1;
+    while (start < text.length && text[start] === " ") {
+      start += 1;
+    }
+    if (start >= text.length) {
+      return null;
+    }
+
+    let end = start;
+    while (end < text.length && /[A-Za-z0-9π∞φθξαβγ]/.test(text[end])) {
+      end += 1;
+    }
+    const placeholder = readPlaceholderForward(text, end);
+    if (placeholder) {
+      return { start, end: placeholder.end, value: text.slice(start, placeholder.end) };
+    }
+
+    const directPlaceholder = readPlaceholderForward(text, start);
+    if (directPlaceholder) {
+      return directPlaceholder;
+    }
+
+    const openChar = text[start];
+    if (openChar === "(" || openChar === "[" || openChar === "{") {
+      const grouped = readGrouped(text, start);
+      if (grouped) {
+        return { start, end: grouped.end, value: text.slice(start, grouped.end) };
+      }
+    }
+
+    end = start;
+    while (end < text.length && /[A-Za-z0-9π∞φθξαβγ₀₁₂₃₄₅₆₇₈₉ₙₖ₊₋⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺]/.test(text[end])) {
+      end += 1;
+    }
+    if (end === start) {
+      return null;
+    }
+    return { start, end, value: text.slice(start, end) };
+  }
+
+  function looksLikeMathOperand(value) {
+    const text = String(value || "");
+    return /[A-Za-z0-9π∞φθξαβγ\uE000⁰¹²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉]/.test(text) && !/[\u4e00-\u9fa5]/.test(text);
+  }
+
+  function convertBalancedFractions(text) {
+    let result = String(text || "");
+    let index = 0;
+    while (index < result.length) {
+      if (result[index] !== "/") {
+        index += 1;
+        continue;
+      }
+      const left = readLeftOperand(result, index);
+      const right = readRightOperand(result, index);
+      if (!left || !right || !looksLikeMathOperand(left.value) || !looksLikeMathOperand(right.value)) {
+        index += 1;
+        continue;
+      }
+      const replacement = makeFraction(left.value, right.value);
+      result = result.slice(0, left.start) + replacement + result.slice(right.end);
+      index = left.start + replacement.length;
+    }
+    return result;
+  }
+
+  output = convertRadicals(output);
+
+  // Powers first, so x^(3/2) becomes a compact exponent instead of a stacked fraction.
+  output = output.replace(/([A-Za-z0-9πφθξαβγ]|\)|\])\^\(([^()<>\n]{1,60})\)/g, (_, base, exponent) => `${base}<sup>${String(exponent).replace(/\//g, "⁄")}</sup>`);
+  output = output.replace(/([A-Za-z0-9πφθξαβγ]|\)|\])\^\[([^\[\]<>\n]{1,60})\]/g, (_, base, exponent) => `${base}<sup>${String(exponent).replace(/\//g, "⁄")}</sup>`);
+  output = output.replace(/([A-Za-z0-9πφθξαβγ]|\)|\])\^([A-Za-z0-9πφθξαβγ]|-?\d+)/g, "$1<sup>$2</sup>");
+
+  // Common differential quotients such as dy/dx, dy/dt, dx/dt.
+  output = output.replace(/\b(d[xyzt])\s*\/\s*(d[xyzt])\b/g, (_, top, bottom) => makeFraction(top, bottom));
+
+  // Fractions after radicals: supports 1/√(...), 3√2/2, (dy/dt)/(dx/dt), x/(x-1)².
+  const placeholderAtom = "\\uE000\\d+\\uE001";
+  const placeholderWithCoeff = `(?:[A-Za-z0-9π∞φθξαβγ]*${placeholderAtom})`;
+  const roundGroup = "(?:\\([^()<>]{1,90}\\)|\\[[^\\[\\]<>]{1,90}\\])(?:[⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺]+|\\^[A-Za-z0-9πφθξαβγ+-]+)?";
+  const plainAtom = "[A-Za-z0-9π∞φθξαβγ]+[₀₁₂₃₄₅₆₇₈₉ₙₖ₊₋]*(?:[⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺]+|\\^[A-Za-z0-9πφθξαβγ+-]+)?";
+  const atom = `(?:${placeholderWithCoeff}|${placeholderAtom}|${roundGroup}|${plainAtom})`;
+  const fractionPattern = new RegExp(`(${atom})\\s*\\/\\s*(${atom})`, "g");
+  output = convertBalancedFractions(output);
+  output = output.replace(fractionPattern, (_, top, bottom) => makeFraction(top, bottom));
+
+
+
+  return restorePlaceholders(output);
 }
 
 function escapeHtml(value) {
@@ -605,6 +1700,7 @@ async function exportData() {
     questions: state.questions,
     progress: [...state.progressById.values()]
   };
+  localStorage.setItem(LAST_BACKUP_KEY, todayISO());
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
@@ -614,6 +1710,8 @@ async function exportData() {
   link.click();
   link.remove();
   URL.revokeObjectURL(url);
+  showToast("已导出备份");
+  render();
 }
 
 function bindEvents() {
@@ -628,12 +1726,37 @@ function bindEvents() {
     state.page = 1;
     applyFilters();
   });
-  [els.chapterFilter, els.statusFilter].forEach((select) => {
+  [els.chapterFilter, els.statusFilter, els.difficultyFilter].filter(Boolean).forEach((select) => {
     select.addEventListener("change", () => {
       state.page = 1;
       applyFilters();
     });
   });
+  if (els.reviewQueueButton) {
+    els.reviewQueueButton.addEventListener("click", () => {
+      els.statusFilter.value = "dueReview";
+      state.page = 1;
+      applyFilters();
+    });
+  }
+  if (els.studyModeButton) {
+    els.studyModeButton.addEventListener("click", () => {
+      state.studyMode = !state.studyMode;
+      localStorage.setItem(STUDY_MODE_KEY, state.studyMode ? "single" : "list");
+      render();
+    });
+  }
+  if (els.autoHideMasteredButton) {
+    els.autoHideMasteredButton.addEventListener("click", () => {
+      state.autoHideMastered = !state.autoHideMastered;
+      localStorage.setItem(AUTO_HIDE_MASTERED_KEY, state.autoHideMastered ? "1" : "0");
+      state.page = 1;
+      applyFilters();
+    });
+  }
+  if (els.timerButton) {
+    els.timerButton.addEventListener("click", toggleTimer);
+  }
   els.prevPageButton.addEventListener("click", () => {
     state.page -= 1;
     applyFilters();
