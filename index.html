@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#147a7e">
   <title>专升本题库训练中心</title>
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=20260625-selected-features-v4">
+  <link rel="stylesheet" href="styles.css?v=20260625-mobile-ab-v1">
 </head>
 <body>
   <div class="app-shell">
@@ -44,6 +44,17 @@
     </header>
 
     <input id="importInput" type="file" accept=".json,application/json" hidden>
+
+    <header class="mobile-app-top" aria-label="手机端顶部导航">
+      <div>
+        <p id="mobileScreenTitle" class="mobile-screen-title">刷题</p>
+        <strong>专升本题库</strong>
+      </div>
+      <div class="mobile-top-actions">
+        <button class="mobile-pill" id="mobileFilterToggle" type="button">筛选</button>
+        <button class="mobile-pill timer-pill" id="mobileTimerPill" type="button">25:00</button>
+      </div>
+    </header>
 
     <section class="toolbar" aria-label="题库筛选">
       <label class="field search-field">
@@ -125,6 +136,35 @@
 
     <section class="dashboard-panel" id="dashboardPanel" aria-label="学习分析"></section>
 
+
+    <section class="mobile-me-panel" id="mobileMePanel" aria-label="我的">
+      <div class="mobile-me-card">
+        <p class="eyebrow">Data</p>
+        <h2>题库与备份</h2>
+        <p class="mobile-me-muted">当前题库 <strong id="mobileTotalCount">0</strong> 道，当前筛选 <strong id="mobileFilteredCount">0</strong> 道。</p>
+        <div class="mobile-me-grid">
+          <button class="primary-button" id="mobileImportButton" type="button">导入题库</button>
+          <button class="secondary-button" id="mobileExportButton" type="button">导出备份</button>
+          <button class="secondary-button" id="mobileSampleButton" type="button">示例题</button>
+          <button class="secondary-button" id="mobileStressButton" type="button">1万演示</button>
+        </div>
+      </div>
+      <div class="mobile-me-card">
+        <p class="eyebrow">Settings</p>
+        <h2>学习设置</h2>
+        <label class="mobile-setting-row">
+          <span>每日目标</span>
+          <input id="mobileDailyGoalInput" type="number" min="10" max="500" step="10" value="80">
+        </label>
+        <div class="mobile-me-grid">
+          <button class="secondary-button" id="mobileMeStudyModeButton" type="button">单题模式</button>
+          <button class="secondary-button" id="mobileMeAutoHideMasteredButton" type="button">隐藏熟练题</button>
+          <button class="secondary-button" id="mobileMeTimerButton" type="button">开始倒计时</button>
+          <button class="secondary-button" id="mobileBackupButton" type="button">立即备份</button>
+        </div>
+      </div>
+    </section>
+
     <main class="workspace">
       <section class="list-panel" aria-label="题目列表">
         <div class="panel-head">
@@ -151,6 +191,13 @@
     </main>
   </div>
 
+  <nav class="mobile-tabbar" aria-label="手机端底部导航">
+    <button class="mobile-tab-button active" type="button" data-mobile-tab="quiz"><span>刷题</span></button>
+    <button class="mobile-tab-button" type="button" data-mobile-tab="review"><span>复习</span></button>
+    <button class="mobile-tab-button" type="button" data-mobile-tab="stats"><span>统计</span></button>
+    <button class="mobile-tab-button" type="button" data-mobile-tab="me"><span>我的</span></button>
+  </nav>
+
   <script>
     window.MathJax = {
       tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
@@ -159,7 +206,7 @@
   </script>
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
   <script src="core.js"></script>
-  <script src="question-bank-data.js?v=20260625-selected-features-v4"></script>
-  <script src="app.js?v=20260625-selected-features-v4"></script>
+  <script src="question-bank-data.js?v=20260625-mobile-ab-v1"></script>
+  <script src="app.js?v=20260625-mobile-ab-v1"></script>
 </body>
 </html>

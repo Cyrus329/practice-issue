@@ -1,12 +1,12 @@
-const CACHE_NAME = "question-bank-trainer-20260625-selected-features-v4";
+const CACHE_NAME = "question-bank-trainer-20260625-mobile-ab-v1";
 const ASSETS = [
   "./",
   "./index.html",
-  "./styles.css?v=20260625-selected-features-v4",
+  "./styles.css?v=20260625-mobile-ab-v1",
   "./core.js",
-  "./app.js?v=20260625-selected-features-v4",
-  "./question-bank-data.js?v=20260625-selected-features-v4",
-  "./question-bank-data.json?v=20260625-selected-features-v4",
+  "./app.js?v=20260625-mobile-ab-v1",
+  "./question-bank-data.js?v=20260625-mobile-ab-v1",
+  "./question-bank-data.json?v=20260625-mobile-ab-v1",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png"

@@ -6,7 +6,7 @@ const BUNDLED_DATA_URL = "question-bank-data.json";
 const PAGE_SIZE = QuestionBankCore.PAGE_SIZE;
 
 const FORCE_CLEAN_VERSION_KEY = "zsb-question-bank-trainer:clean-version";
-const FORCE_CLEAN_VERSION = "20260625-selected-features-v4";
+const FORCE_CLEAN_VERSION = "20260625-mobile-ab-v1";
 const STUDY_MODE_KEY = "zsb-question-bank-trainer:study-mode";
 const STUDY_DAYS_KEY = "zsb-question-bank-trainer:study-days";
 const AUTO_HIDE_MASTERED_KEY = "zsb-question-bank-trainer:auto-hide-mastered";
@@ -15,6 +15,7 @@ const DAILY_ATTEMPTS_KEY = "zsb-question-bank-trainer:daily-attempts";
 const LAST_BACKUP_KEY = "zsb-question-bank-trainer:last-backup";
 const TIMER_REMAINING_KEY = "zsb-question-bank-trainer:timer-remaining";
 const TIMER_DEFAULT_SECONDS = 25 * 60;
+const MOBILE_TAB_KEY = "zsb-question-bank-trainer:mobile-tab";
 const REVIEW_INTERVALS = [1, 2, 4, 7, 15, 30, 45, 60];
 
 const els = {
@@ -34,6 +35,22 @@ const els = {
   dailyProgressCount: document.querySelector("#dailyProgressCount"),
   masteredCount: document.querySelector("#masteredCount"),
   dashboardPanel: document.querySelector("#dashboardPanel"),
+  mobileFilterToggle: document.querySelector("#mobileFilterToggle"),
+  mobileTimerPill: document.querySelector("#mobileTimerPill"),
+  mobileScreenTitle: document.querySelector("#mobileScreenTitle"),
+  mobileTabButtons: [...document.querySelectorAll("[data-mobile-tab]")],
+  mobileMePanel: document.querySelector("#mobileMePanel"),
+  mobileTotalCount: document.querySelector("#mobileTotalCount"),
+  mobileFilteredCount: document.querySelector("#mobileFilteredCount"),
+  mobileImportButton: document.querySelector("#mobileImportButton"),
+  mobileExportButton: document.querySelector("#mobileExportButton"),
+  mobileSampleButton: document.querySelector("#mobileSampleButton"),
+  mobileStressButton: document.querySelector("#mobileStressButton"),
+  mobileDailyGoalInput: document.querySelector("#mobileDailyGoalInput"),
+  mobileMeStudyModeButton: document.querySelector("#mobileMeStudyModeButton"),
+  mobileMeAutoHideMasteredButton: document.querySelector("#mobileMeAutoHideMasteredButton"),
+  mobileMeTimerButton: document.querySelector("#mobileMeTimerButton"),
+  mobileBackupButton: document.querySelector("#mobileBackupButton"),
   pageInfo: document.querySelector("#pageInfo"),
   prevPageButton: document.querySelector("#prevPageButton"),
   nextPageButton: document.querySelector("#nextPageButton"),
@@ -57,6 +74,8 @@ const state = {
   selectedId: "",
   studyMode: localStorage.getItem(STUDY_MODE_KEY) === "single",
   autoHideMastered: localStorage.getItem(AUTO_HIDE_MASTERED_KEY) === "1",
+  mobileTab: localStorage.getItem(MOBILE_TAB_KEY) || "quiz",
+  filtersOpen: false,
   timerSecondsRemaining: Number(localStorage.getItem(TIMER_REMAINING_KEY) || TIMER_DEFAULT_SECONDS) || TIMER_DEFAULT_SECONDS,
   timerRunning: false,
   timerId: 0
@@ -327,6 +346,53 @@ function applyFilters() {
   render();
 }
 
+
+function renderMobileChrome() {
+  const tabTitles = { quiz: "刷题", review: "复习", stats: "统计", me: "我的" };
+  const safeTab = tabTitles[state.mobileTab] ? state.mobileTab : "quiz";
+  state.mobileTab = safeTab;
+  ["quiz", "review", "stats", "me"].forEach((tab) => {
+    document.body.classList.toggle(`mobile-tab-${tab}`, safeTab === tab);
+  });
+  document.body.classList.toggle("filters-open", Boolean(state.filtersOpen));
+  if (els.mobileScreenTitle) {
+    els.mobileScreenTitle.textContent = tabTitles[safeTab];
+  }
+  els.mobileTabButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.mobileTab === safeTab);
+  });
+  if (els.mobileTotalCount) {
+    els.mobileTotalCount.textContent = state.questions.length;
+  }
+  if (els.mobileFilteredCount) {
+    els.mobileFilteredCount.textContent = state.filtered.length;
+  }
+  if (els.mobileDailyGoalInput) {
+    els.mobileDailyGoalInput.value = getDailyGoal();
+  }
+  if (els.mobileMeStudyModeButton) {
+    els.mobileMeStudyModeButton.classList.toggle("active", state.studyMode);
+    els.mobileMeStudyModeButton.textContent = state.studyMode ? "已开单题模式" : "单题模式";
+  }
+  if (els.mobileMeAutoHideMasteredButton) {
+    els.mobileMeAutoHideMasteredButton.classList.toggle("active", state.autoHideMastered);
+    els.mobileMeAutoHideMasteredButton.textContent = state.autoHideMastered ? "已隐藏熟练题" : "隐藏熟练题";
+  }
+  if (els.mobileMeTimerButton) {
+    els.mobileMeTimerButton.classList.toggle("active", state.timerRunning);
+    els.mobileMeTimerButton.textContent = state.timerRunning ? `暂停 ${formatTimer(state.timerSecondsRemaining)}` : "开始倒计时";
+  }
+}
+
+function setMobileTab(tab) {
+  const safe = ["quiz", "review", "stats", "me"].includes(tab) ? tab : "quiz";
+  state.mobileTab = safe;
+  state.filtersOpen = false;
+  localStorage.setItem(MOBILE_TAB_KEY, safe);
+  render();
+  window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
+}
+
 function render() {
   const page = QuestionBankCore.paginate(state.filtered, state.page, PAGE_SIZE);
   document.body.classList.toggle("study-mode", state.studyMode);
@@ -339,6 +405,7 @@ function render() {
     els.autoHideMasteredButton.querySelector("span:last-child").textContent = state.autoHideMastered ? "已隐藏熟练题" : "隐藏熟练题";
   }
   updateTimerUI();
+  renderMobileChrome();
   renderStats();
   renderDashboard();
   renderList(page);
@@ -388,15 +455,22 @@ function renderDashboard() {
   const englishList = english.slice(0, 8);
 
   els.dashboardPanel.innerHTML = `
-    <div class="dashboard-card dashboard-summary-card">
+    <div class="dashboard-card dashboard-summary-card review-card">
       <div>
         <p class="eyebrow">Review</p>
         <h2>今日队列 ${due} 题</h2>
         <p>按 1、2、4、7、15 天复习间隔推进。今日任务 ${dailyDone}/${dailyGoal} 题。</p>
       </div>
       <button class="primary-button" id="dashboardReviewButton" type="button">只刷今日复习</button>
+      <div class="mobile-review-actions" aria-label="复习入口">
+        <button type="button" class="review-action" id="mobileDueReviewButton"><strong>${due}</strong><span>今日复习</span></button>
+        <button type="button" class="review-action" id="mobileWeakChapterButton"><strong>${weak.length}</strong><span>薄弱章节</span></button>
+        <button type="button" class="review-action" id="mobileWrongRecentButton"><strong>${[...state.progressById.values()].filter((progress) => progress.lastResult === "wrong").length}</strong><span>最近做错</span></button>
+        <button type="button" class="review-action" id="mobileWrongBookReviewButton"><strong>${[...state.progressById.values()].filter((progress) => progress.addedToWrongBookAt).length}</strong><span>错题本</span></button>
+        <button type="button" class="review-action" id="mobileMasteredReviewButton"><strong>${state.questions.filter(isMasteredQuestion).length}</strong><span>熟练回顾</span></button>
+      </div>
     </div>
-    <div class="dashboard-card">
+    <div class="dashboard-card mastery-card">
       <div class="dashboard-card-head">
         <div>
           <p class="eyebrow">Mastery</p>
@@ -409,7 +483,7 @@ function renderDashboard() {
       </div>
       ${weakList.length ? `<div class="weak-tags">${weakList.map((item) => `<button type="button" class="weak-tag" data-subject="${escapeHtml(item.subject)}" data-chapter="${escapeHtml(item.chapter)}">${escapeHtml(item.subject)} · ${escapeHtml(item.chapter)} ${item.accuracy}%</button>`).join("")}</div>` : ""}
     </div>
-    <div class="dashboard-card">
+    <div class="dashboard-card english-card">
       <p class="eyebrow">English</p>
       <h2>英语语法归类</h2>
       <div class="grammar-grid">
@@ -452,6 +526,27 @@ function renderDashboard() {
       applyFilters();
     });
   }
+
+  const mobileReviewFilters = {
+    mobileDueReviewButton: "dueReview",
+    mobileWeakChapterButton: "weakChapter",
+    mobileWrongRecentButton: "wrong",
+    mobileWrongBookReviewButton: "wrongBook",
+    mobileMasteredReviewButton: "mastered"
+  };
+  Object.entries(mobileReviewFilters).forEach(([buttonId, status]) => {
+    const button = els.dashboardPanel.querySelector(`#${buttonId}`);
+    if (!button) {
+      return;
+    }
+    button.addEventListener("click", () => {
+      els.statusFilter.value = status;
+      state.mobileTab = "quiz";
+      localStorage.setItem(MOBILE_TAB_KEY, "quiz");
+      state.page = 1;
+      applyFilters();
+    });
+  });
   const weakOnlyButton = els.dashboardPanel.querySelector("#weakOnlyButton");
   if (weakOnlyButton) {
     weakOnlyButton.addEventListener("click", () => {
@@ -631,7 +726,12 @@ function renderDetail() {
     <article class="question-detail">
       <header class="detail-header">
         <p class="eyebrow">${escapeHtml(question.subject)} · ${escapeHtml(question.chapter)}</p>
-        <h2>${escapeHtml(question.id)} ${escapeHtml(question.type)}</h2>
+        <h2><span class="desktop-question-title">${escapeHtml(question.id)} ${escapeHtml(question.type)}</span><span class="mobile-question-title">第 ${currentPosition} 题</span></h2>
+        <div class="mobile-question-topnav">
+          <button class="secondary-button nav-button" id="mobilePrevQuestionButton" type="button" aria-label="上一题"${canGoPrev ? "" : " disabled"}>←</button>
+          <span class="detail-position">${currentPosition} / ${position.total}</span>
+          <button class="secondary-button nav-button" id="mobileNextQuestionButton" type="button" aria-label="下一题"${canGoNext ? "" : " disabled"}>→</button>
+        </div>
         <div class="meta-line">
           ${renderStatusBadges(progress)}
           ${isDueReview(question) ? `<span class="badge review">今日复习</span>` : ""}
@@ -674,6 +774,14 @@ function renderDetail() {
 
   document.querySelector("#prevQuestionButton").addEventListener("click", () => selectAdjacentQuestion(-1));
   document.querySelector("#nextQuestionButton").addEventListener("click", () => selectAdjacentQuestion(1));
+  const mobilePrevQuestionButton = document.querySelector("#mobilePrevQuestionButton");
+  const mobileNextQuestionButton = document.querySelector("#mobileNextQuestionButton");
+  if (mobilePrevQuestionButton) {
+    mobilePrevQuestionButton.addEventListener("click", () => selectAdjacentQuestion(-1));
+  }
+  if (mobileNextQuestionButton) {
+    mobileNextQuestionButton.addEventListener("click", () => selectAdjacentQuestion(1));
+  }
   document.querySelector("#hintButton").addEventListener("click", () => toggleHint(question.id));
   document.querySelector("#revealButton").addEventListener("click", () => toggleSolution(question.id));
   document.querySelector("#correctButton").addEventListener("click", () => saveAttempt(question.id, "correct"));
@@ -966,6 +1074,10 @@ function updateTimerUI() {
     if (label) {
       label.textContent = state.timerRunning ? formatTimer(state.timerSecondsRemaining) : "倒计时";
     }
+  }
+  if (els.mobileTimerPill) {
+    els.mobileTimerPill.textContent = state.timerRunning ? formatTimer(state.timerSecondsRemaining) : formatTimer(state.timerSecondsRemaining);
+    els.mobileTimerPill.classList.toggle("active", state.timerRunning);
   }
   const display = document.querySelector("#timerDisplay");
   if (display) {
@@ -1756,6 +1868,58 @@ function bindEvents() {
   }
   if (els.timerButton) {
     els.timerButton.addEventListener("click", toggleTimer);
+  }
+
+  if (els.mobileFilterToggle) {
+    els.mobileFilterToggle.addEventListener("click", () => {
+      state.filtersOpen = !state.filtersOpen;
+      renderMobileChrome();
+    });
+  }
+  if (els.mobileTimerPill) {
+    els.mobileTimerPill.addEventListener("click", toggleTimer);
+  }
+  els.mobileTabButtons.forEach((button) => {
+    button.addEventListener("click", () => setMobileTab(button.dataset.mobileTab));
+  });
+  if (els.mobileImportButton) {
+    els.mobileImportButton.addEventListener("click", () => els.importInput.click());
+  }
+  if (els.mobileExportButton) {
+    els.mobileExportButton.addEventListener("click", exportData);
+  }
+  if (els.mobileBackupButton) {
+    els.mobileBackupButton.addEventListener("click", exportData);
+  }
+  if (els.mobileSampleButton) {
+    els.mobileSampleButton.addEventListener("click", () => replaceQuestions(createSampleQuestions(120)));
+  }
+  if (els.mobileStressButton) {
+    els.mobileStressButton.addEventListener("click", () => replaceQuestions(createSampleQuestions(10000)));
+  }
+  if (els.mobileDailyGoalInput) {
+    els.mobileDailyGoalInput.addEventListener("change", () => {
+      setDailyGoal(els.mobileDailyGoalInput.value);
+      render();
+    });
+  }
+  if (els.mobileMeStudyModeButton) {
+    els.mobileMeStudyModeButton.addEventListener("click", () => {
+      state.studyMode = !state.studyMode;
+      localStorage.setItem(STUDY_MODE_KEY, state.studyMode ? "single" : "list");
+      render();
+    });
+  }
+  if (els.mobileMeAutoHideMasteredButton) {
+    els.mobileMeAutoHideMasteredButton.addEventListener("click", () => {
+      state.autoHideMastered = !state.autoHideMastered;
+      localStorage.setItem(AUTO_HIDE_MASTERED_KEY, state.autoHideMastered ? "1" : "0");
+      state.page = 1;
+      applyFilters();
+    });
+  }
+  if (els.mobileMeTimerButton) {
+    els.mobileMeTimerButton.addEventListener("click", toggleTimer);
   }
   els.prevPageButton.addEventListener("click", () => {
     state.page -= 1;
