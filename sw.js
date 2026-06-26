@@ -1,12 +1,12 @@
-const CACHE_NAME = "question-bank-trainer-20260626-cloud-save-unified-v1";
+const CACHE_NAME = "question-bank-loose-order-audit-v3";
 const ASSETS = [
   "./",
   "./index.html",
   "./styles.css?v=20260626-cloud-save-unified-v1",
   "./core.js",
   "./app.js?v=20260626-cloud-save-unified-v1",
-  "./question-bank-data.js?v=20260626-cloud-save-unified-v1",
-  "./question-bank-data.json?v=20260626-cloud-save-unified-v1",
+  "./question-bank-loose-order-audit-v3",
+  "./question-bank-loose-order-audit-v3",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png"

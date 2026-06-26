@@ -6,7 +6,7 @@ const BUNDLED_DATA_URL = "question-bank-data.json";
 const PAGE_SIZE = QuestionBankCore.PAGE_SIZE;
 
 const FORCE_CLEAN_VERSION_KEY = "zsb-question-bank-trainer:clean-version";
-const FORCE_CLEAN_VERSION = "20260626-cloud-save-unified-v1";
+const FORCE_CLEAN_VERSION = "20260626-official-existing-sections-v5";
 const STUDY_MODE_KEY = "zsb-question-bank-trainer:study-mode";
 const STUDY_DAYS_KEY = "zsb-question-bank-trainer:study-days";
 const AUTO_HIDE_MASTERED_KEY = "zsb-question-bank-trainer:auto-hide-mastered";
@@ -31,6 +31,7 @@ const els = {
   searchInput: document.querySelector("#searchInput"),
   subjectFilter: document.querySelector("#subjectFilter"),
   chapterFilter: document.querySelector("#chapterFilter"),
+  sourceFilter: document.querySelector("#sourceFilter"),
   statusFilter: document.querySelector("#statusFilter"),
   difficultyFilter: document.querySelector("#difficultyFilter"),
   questionsList: document.querySelector("#questionsList"),
@@ -288,6 +289,14 @@ function updateFilters() {
   refillSelect(els.subjectFilter, ["all", ...QuestionBankCore.uniqueValues(state.questions.map((question) => question.subject))], "全部");
   const selectedSubject = els.subjectFilter.value || "all";
   refillSelect(els.chapterFilter, ["all", ...QuestionBankCore.availableChapters(state.questions, selectedSubject)], "全部");
+  const selectedChapter = els.chapterFilter.value || "all";
+  const sourceValues = state.questions
+    .filter((question) => selectedSubject === "all" || question.subject === selectedSubject)
+    .filter((question) => selectedChapter === "all" || question.chapter === selectedChapter)
+    .map((question) => question.source || "题库");
+  if (els.sourceFilter) {
+    refillSelect(els.sourceFilter, ["all", ...QuestionBankCore.uniqueValues(sourceValues)], "全部题源");
+  }
 }
 
 function refillSelect(select, values, allText) {
@@ -306,6 +315,7 @@ function applyFilters() {
   const status = els.statusFilter.value;
   const coreStatus = ["dueReview", "weakChapter", "mastered", "answerReview"].includes(status) ? "all" : status;
   const difficulty = els.difficultyFilter ? els.difficultyFilter.value : "all";
+  const source = els.sourceFilter ? els.sourceFilter.value : "all";
   const weakKeys = new Set(getWeakChapterStats().map((item) => item.key));
 
   state.filtered = QuestionBankCore.filterQuestions(state.questions, {
@@ -315,6 +325,7 @@ function applyFilters() {
     status: coreStatus,
     progressById: state.progressById
   })
+    .filter((question) => source === "all" || String(question.source || "题库") === source)
     .filter((question) => difficulty === "all" || String(question.difficulty) === difficulty)
     .filter((question) => status === "answerReview" ? isUnverifiedAnswer(question) : !isUnverifiedAnswer(question))
     .filter((question) => status !== "dueReview" || isDueReview(question))
@@ -848,7 +859,6 @@ function renderSolution(question, progress) {
       <strong>答案</strong>
       <p>${renderRichText(question.answer || "未填写")}</p>
     </section>
-    ${showAnalysis ? renderEnglishOptionAnalysis(question) : ""}
     ${showAnalysis ? `<section class="analysis-box"><strong>解析</strong><p>${renderRichText(question.analysis || "未填写")}</p></section>` : ""}
     ${showMistake ? renderMistakePoint(question) : ""}
   `;
@@ -1649,39 +1659,11 @@ function englishDistractorReason(grammar) {
 }
 
 function renderEnglishOptionAnalysis(question) {
-  if (question.subject !== "英语" || !Array.isArray(question.options) || !question.options.length) {
-    return "";
-  }
-  const letters = normalizeAnswerLetters(question.answer);
-  const grammar = getEnglishGrammarCategory(question) || "基础语法";
-  const reason = englishDistractorReason(grammar);
-  const rows = question.options.map((option, index) => {
-    const letter = extractOptionLetter(option, index);
-    const isRight = letters.has(letter);
-    return `
-      <li class="${isRight ? "right" : ""}">
-        <strong>${escapeHtml(letter)} ${isRight ? "✓" : ""}</strong>
-        <span>${isRight ? `答案项：优先按“${escapeHtml(grammar)}”考点核对，和题干语法位置更匹配。` : `排除项：${escapeHtml(reason)}`}</span>
-      </li>
-    `;
-  }).join("");
-  return `
-    <section class="english-options-box">
-      <strong>英语选项辨析</strong>
-      <p>这是辅助排除提示；具体原因仍以原解析为准。</p>
-      <ul>${rows}</ul>
-    </section>
-  `;
+  return "";
 }
 
 function renderMistakePoint(question) {
-  const points = getMistakePoints(question);
-  return `
-    <section class="mistake-box">
-      <strong>易错点</strong>
-      <ul>${points.map((item) => `<li>${renderRichText(item)}</li>`).join("")}</ul>
-    </section>
-  `;
+  return "";
 }
 
 function getMistakePoints(question) {
@@ -2164,7 +2146,7 @@ function bindEvents() {
     state.page = 1;
     applyFilters();
   });
-  [els.chapterFilter, els.statusFilter, els.difficultyFilter].filter(Boolean).forEach((select) => {
+  [els.chapterFilter, els.sourceFilter, els.statusFilter, els.difficultyFilter].filter(Boolean).forEach((select) => {
     select.addEventListener("change", () => {
       state.page = 1;
       applyFilters();
