@@ -6,17 +6,26 @@ const BUNDLED_DATA_URL = "question-bank-data.json";
 const PAGE_SIZE = QuestionBankCore.PAGE_SIZE;
 
 const FORCE_CLEAN_VERSION_KEY = "zsb-question-bank-trainer:clean-version";
-const FORCE_CLEAN_VERSION = "20260625-mobile-ab-v1";
+const FORCE_CLEAN_VERSION = "20260626-cloud-save-unified-v1";
 const STUDY_MODE_KEY = "zsb-question-bank-trainer:study-mode";
 const STUDY_DAYS_KEY = "zsb-question-bank-trainer:study-days";
 const AUTO_HIDE_MASTERED_KEY = "zsb-question-bank-trainer:auto-hide-mastered";
 const DAILY_GOAL_KEY = "zsb-question-bank-trainer:daily-goal";
 const DAILY_ATTEMPTS_KEY = "zsb-question-bank-trainer:daily-attempts";
-const LAST_BACKUP_KEY = "zsb-question-bank-trainer:last-backup";
 const TIMER_REMAINING_KEY = "zsb-question-bank-trainer:timer-remaining";
+const STUDY_TOTAL_SECONDS_KEY = "zsb-question-bank-trainer:study-total-seconds";
+const STUDY_DAILY_SECONDS_KEY = "zsb-question-bank-trainer:study-daily-seconds";
 const TIMER_DEFAULT_SECONDS = 25 * 60;
 const MOBILE_TAB_KEY = "zsb-question-bank-trainer:mobile-tab";
 const REVIEW_INTERVALS = [1, 2, 4, 7, 15, 30, 45, 60];
+const SUPABASE_URL = "https://fsizdxkwrxzopkoouipr.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_BfWyJfb6c4GrV0JYLXejUg_QnkuhPvw";
+const CLOUD_SLUG_KEY = "zsb-question-bank-trainer:cloud-slug";
+const CLOUD_PIN_KEY = "zsb-question-bank-trainer:cloud-pin";
+const CLOUD_DISPLAY_NAME_KEY = "zsb-question-bank-trainer:cloud-display-name";
+const CLOUD_LAST_SYNC_KEY = "zsb-question-bank-trainer:cloud-last-sync";
+const CLOUD_RECORD_ID = "question_bank_progress";
+const CLOUD_SYNC_DELAY_MS = 2500;
 
 const els = {
   searchInput: document.querySelector("#searchInput"),
@@ -34,18 +43,19 @@ const els = {
   streakCount: document.querySelector("#streakCount"),
   dailyProgressCount: document.querySelector("#dailyProgressCount"),
   masteredCount: document.querySelector("#masteredCount"),
+  totalStudyTimeCount: document.querySelector("#totalStudyTimeCount"),
+  mobileTotalStudyTime: document.querySelector("#mobileTotalStudyTime"),
+  mobileTodayStudyTime: document.querySelector("#mobileTodayStudyTime"),
   dashboardPanel: document.querySelector("#dashboardPanel"),
   mobileFilterToggle: document.querySelector("#mobileFilterToggle"),
   mobileTimerPill: document.querySelector("#mobileTimerPill"),
   mobileScreenTitle: document.querySelector("#mobileScreenTitle"),
   mobileTabButtons: [...document.querySelectorAll("[data-mobile-tab]")],
   mobileMePanel: document.querySelector("#mobileMePanel"),
+  mobileSimilarPanel: document.querySelector("#mobileSimilarPanel"),
   mobileTotalCount: document.querySelector("#mobileTotalCount"),
   mobileFilteredCount: document.querySelector("#mobileFilteredCount"),
-  mobileImportButton: document.querySelector("#mobileImportButton"),
-  mobileExportButton: document.querySelector("#mobileExportButton"),
-  mobileSampleButton: document.querySelector("#mobileSampleButton"),
-  mobileStressButton: document.querySelector("#mobileStressButton"),
+  mobileCloudButton: document.querySelector("#mobileCloudButton"),
   mobileDailyGoalInput: document.querySelector("#mobileDailyGoalInput"),
   mobileMeStudyModeButton: document.querySelector("#mobileMeStudyModeButton"),
   mobileMeAutoHideMasteredButton: document.querySelector("#mobileMeAutoHideMasteredButton"),
@@ -58,11 +68,7 @@ const els = {
   studyModeButton: document.querySelector("#studyModeButton"),
   autoHideMasteredButton: document.querySelector("#autoHideMasteredButton"),
   timerButton: document.querySelector("#timerButton"),
-  sampleButton: document.querySelector("#sampleButton"),
-  stressButton: document.querySelector("#stressButton"),
-  importButton: document.querySelector("#importButton"),
-  importInput: document.querySelector("#importInput"),
-  exportButton: document.querySelector("#exportButton")
+  cloudButton: document.querySelector("#cloudButton")
 };
 
 const state = {
@@ -78,7 +84,11 @@ const state = {
   filtersOpen: false,
   timerSecondsRemaining: Number(localStorage.getItem(TIMER_REMAINING_KEY) || TIMER_DEFAULT_SECONDS) || TIMER_DEFAULT_SECONDS,
   timerRunning: false,
-  timerId: 0
+  timerId: 0,
+  studyTimeTickerId: 0,
+  studyTimeUnsavedSeconds: 0,
+  cloudSyncTimer: 0,
+  cloudSaving: false
 };
 
 function openDatabase() {
@@ -152,7 +162,8 @@ async function loadState() {
     return;
   }
   if (!state.questions.length) {
-    await replaceQuestions(createSampleQuestions(36));
+    updateFilters();
+    applyFilters();
     return;
   }
   state.selectedId = state.questions[0].id;
@@ -245,7 +256,7 @@ async function ensureBundledQuestionsCurrent() {
   if (savedCleanVersion !== FORCE_CLEAN_VERSION || !sameQuestionSet) {
     await replaceQuestions(bundled, { silent: true });
     localStorage.setItem(FORCE_CLEAN_VERSION_KEY, FORCE_CLEAN_VERSION);
-    showToast(`题库已重置为干净版 ${bundled.length} 道，已清掉本地重复/乱码题`);
+    showToast(`题库已更新：默认只显示已核对题，答案待核对题已单独放到筛选里`);
     return true;
   }
 
@@ -273,33 +284,6 @@ async function loadBundledQuestions() {
   }
 }
 
-function createSampleQuestions(count) {
-  const subjects = ["高数", "英语", "计算机"];
-  const chapters = {
-    高数: ["函数与极限", "导数", "积分"],
-    英语: ["语法", "阅读", "词汇"],
-    计算机: ["基础知识", "网络", "Office"]
-  };
-  return Array.from({ length: count }, (_, index) => {
-    const number = index + 1;
-    const subject = subjects[index % subjects.length];
-    const chapter = chapters[subject][index % chapters[subject].length];
-    const isChoice = index % 2 === 0;
-    return {
-      id: `DEMO-${String(number).padStart(5, "0")}`,
-      subject,
-      chapter,
-      type: isChoice ? "选择题" : "解答题",
-      stem: `${subject} ${chapter} 示例题 ${number}：请完成本题并核对答案。`,
-      options: isChoice ? ["A. 选项一", "B. 选项二", "C. 选项三", "D. 选项四"] : [],
-      answer: isChoice ? "B" : "按步骤写出关键过程",
-      analysis: `示例解析 ${number}：先判断考点，再按固定步骤计算或排除选项。`,
-      difficulty: String((index % 5) + 1),
-      tags: ["示例题", chapter]
-    };
-  });
-}
-
 function updateFilters() {
   refillSelect(els.subjectFilter, ["all", ...QuestionBankCore.uniqueValues(state.questions.map((question) => question.subject))], "全部");
   const selectedSubject = els.subjectFilter.value || "all";
@@ -320,7 +304,7 @@ function refillSelect(select, values, allText) {
 
 function applyFilters() {
   const status = els.statusFilter.value;
-  const coreStatus = ["dueReview", "weakChapter", "mastered"].includes(status) ? "all" : status;
+  const coreStatus = ["dueReview", "weakChapter", "mastered", "answerReview"].includes(status) ? "all" : status;
   const difficulty = els.difficultyFilter ? els.difficultyFilter.value : "all";
   const weakKeys = new Set(getWeakChapterStats().map((item) => item.key));
 
@@ -332,6 +316,7 @@ function applyFilters() {
     progressById: state.progressById
   })
     .filter((question) => difficulty === "all" || String(question.difficulty) === difficulty)
+    .filter((question) => status === "answerReview" ? isUnverifiedAnswer(question) : !isUnverifiedAnswer(question))
     .filter((question) => status !== "dueReview" || isDueReview(question))
     .filter((question) => status !== "weakChapter" || weakKeys.has(chapterKey(question)))
     .filter((question) => status !== "mastered" || isMasteredQuestion(question))
@@ -348,10 +333,10 @@ function applyFilters() {
 
 
 function renderMobileChrome() {
-  const tabTitles = { quiz: "刷题", review: "复习", stats: "统计", me: "我的" };
+  const tabTitles = { quiz: "刷题", similar: "同类", review: "复习", stats: "统计", me: "我的" };
   const safeTab = tabTitles[state.mobileTab] ? state.mobileTab : "quiz";
   state.mobileTab = safeTab;
-  ["quiz", "review", "stats", "me"].forEach((tab) => {
+  ["quiz", "similar", "review", "stats", "me"].forEach((tab) => {
     document.body.classList.toggle(`mobile-tab-${tab}`, safeTab === tab);
   });
   document.body.classList.toggle("filters-open", Boolean(state.filtersOpen));
@@ -385,7 +370,7 @@ function renderMobileChrome() {
 }
 
 function setMobileTab(tab) {
-  const safe = ["quiz", "review", "stats", "me"].includes(tab) ? tab : "quiz";
+  const safe = ["quiz", "similar", "review", "stats", "me"].includes(tab) ? tab : "quiz";
   state.mobileTab = safe;
   state.filtersOpen = false;
   localStorage.setItem(MOBILE_TAB_KEY, safe);
@@ -410,6 +395,7 @@ function render() {
   renderDashboard();
   renderList(page);
   renderDetail();
+  renderSimilarPanel();
   els.pageInfo.textContent = `${page.page} / ${page.totalPages}`;
   els.prevPageButton.disabled = page.page <= 1;
   els.nextPageButton.disabled = page.page >= page.totalPages;
@@ -434,6 +420,7 @@ function renderStats() {
   if (els.masteredCount) {
     els.masteredCount.textContent = state.questions.filter(isMasteredQuestion).length;
   }
+  updateStudyTimeUI();
 }
 
 
@@ -453,6 +440,8 @@ function renderDashboard() {
   const topMastery = mastery.slice(0, 8);
   const weakList = weak.slice(0, 5);
   const englishList = english.slice(0, 8);
+  const totalStudySeconds = getTotalStudySeconds();
+  const todayStudySeconds = getTodayStudySeconds();
 
   els.dashboardPanel.innerHTML = `
     <div class="dashboard-card dashboard-summary-card review-card">
@@ -501,6 +490,11 @@ function renderDashboard() {
       <div class="mastery-bar daily-bar"><i style="width:${dailyPercent}%"></i></div>
       <p>${dailyPercent >= 100 ? "今日任务已完成，可以转入错题复盘。" : `还差 ${Math.max(0, dailyGoal - dailyDone)} 题完成今日目标。`}</p>
     </div>
+    <div class="dashboard-card study-time-card">
+      <p class="eyebrow">Study Time</p>
+      <h2>累计学习 ${formatStudyDuration(totalStudySeconds)}</h2>
+      <p>今日学习 ${formatStudyDuration(todayStudySeconds)}。只要页面处于打开状态，就会自动累计；切到后台会暂停计时。</p>
+    </div>
     <div class="dashboard-card timer-card">
       <p class="eyebrow">Timer</p>
       <h2 id="timerDisplay">${formatTimer(state.timerSecondsRemaining)}</h2>
@@ -514,7 +508,7 @@ function renderDashboard() {
       <p class="eyebrow">Backup</p>
       <h2>${backup.title}</h2>
       <p>${backup.message}</p>
-      <button class="secondary-button" id="backupNowButton" type="button">立即导出备份</button>
+      <button class="secondary-button" id="backupNowButton" type="button">立即保存到云端</button>
     </div>
   `;
 
@@ -572,7 +566,7 @@ function renderDashboard() {
   }
   const backupNowButton = els.dashboardPanel.querySelector("#backupNowButton");
   if (backupNowButton) {
-    backupNowButton.addEventListener("click", exportData);
+    backupNowButton.addEventListener("click", () => saveCloudState({ interactive: true }));
   }
   els.dashboardPanel.querySelectorAll(".weak-tag").forEach((button) => {
     button.addEventListener("click", () => {
@@ -767,7 +761,6 @@ function renderDetail() {
 
       ${progress.hintVisible ? renderFormulaHint(question) : ""}
       ${visible ? renderSolution(question, progress) : `<div class="hidden-solution">答案与解析已隐藏</div>`}
-      ${renderSimilarQuestions(question)}
 
     </article>
   `;
@@ -823,6 +816,23 @@ function renderImages(images) {
   `;
 }
 
+
+function isUnverifiedAnswer(question) {
+  return String(question && question.answerStatus || "") === "unverified" || (question && Array.isArray(question.tags) && question.tags.includes("答案待核对"));
+}
+
+function renderAnswerQualityNotice(question) {
+  if (!isUnverifiedAnswer(question)) {
+    return "";
+  }
+  return `
+    <section class="answer-quality-box">
+      <strong>答案待核对</strong>
+      <p>这题题目还保留，但答案和解析暂不作为可背内容；已从默认刷题、今日复习和同类推荐中移出。需要核对原答案后再恢复。</p>
+    </section>
+  `;
+}
+
 function renderSolution(question, progress) {
   const level = progress.solutionLevel || "answer";
   const showAnalysis = ["analysis", "mistake"].includes(level);
@@ -833,7 +843,8 @@ function renderSolution(question, progress) {
       <button type="button" class="secondary-button ${level === "analysis" ? "active" : ""}" data-solution-level="analysis">再看解析</button>
       <button type="button" class="secondary-button ${level === "mistake" ? "active" : ""}" data-solution-level="mistake">最后看易错点</button>
     </section>
-    <section class="solution-box">
+    ${renderAnswerQualityNotice(question)}
+    <section class="solution-box ${isUnverifiedAnswer(question) ? "unverified-solution" : ""}">
       <strong>答案</strong>
       <p>${renderRichText(question.answer || "未填写")}</p>
     </section>
@@ -873,6 +884,7 @@ async function saveProgress(progress) {
   const next = enrichProgress(progress, progress.questionId);
   state.progressById.set(next.questionId, next);
   await putOne(PROGRESS_STORE, next);
+  queueCloudSync();
 }
 
 async function toggleHint(questionId) {
@@ -947,6 +959,309 @@ async function removeFromWrongBook(questionId, options = {}) {
 }
 
 
+
+
+function createSupabaseClient() {
+  async function rpc(functionName, payload) {
+    const response = await fetch(`${SUPABASE_URL}/rest/v1/rpc/${functionName}`, {
+      method: "POST",
+      headers: {
+        apikey: SUPABASE_PUBLISHABLE_KEY,
+        Authorization: `Bearer ${SUPABASE_PUBLISHABLE_KEY}`,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+    const text = await response.text();
+    const data = text ? JSON.parse(text) : null;
+    if (!response.ok) {
+      const message = data && (data.message || data.error_description || data.error) || text || "云端请求失败";
+      throw new Error(message);
+    }
+    return data;
+  }
+  return { rpc };
+}
+
+const cloudClient = createSupabaseClient();
+
+function readCloudProfile(interactive = false) {
+  const params = new URLSearchParams(window.location.search);
+  const urlSlug = (params.get("edit") || params.get("view") || "").trim().toLowerCase();
+  let slug = (urlSlug || localStorage.getItem(CLOUD_SLUG_KEY) || "").trim().toLowerCase();
+  let pin = localStorage.getItem(CLOUD_PIN_KEY) || "";
+  let displayName = localStorage.getItem(CLOUD_DISPLAY_NAME_KEY) || "";
+  if (interactive) {
+    slug = (window.prompt("公开编号，例如 cyrus329", slug) || "").trim().toLowerCase();
+    if (!slug) {
+      return null;
+    }
+    pin = window.prompt("编辑密码，至少4位", pin) || "";
+    if (pin.length < 4) {
+      showToast("编辑密码至少4位");
+      return null;
+    }
+    displayName = window.prompt("显示名称，可留空", displayName) || "";
+  }
+  if (!slug) {
+    return null;
+  }
+  localStorage.setItem(CLOUD_SLUG_KEY, slug);
+  if (pin) {
+    localStorage.setItem(CLOUD_PIN_KEY, pin);
+  }
+  if (displayName) {
+    localStorage.setItem(CLOUD_DISPLAY_NAME_KEY, displayName);
+  }
+  return { slug, pin, displayName };
+}
+
+function buildCloudRecord() {
+  return {
+    id: CLOUD_RECORD_ID,
+    app: "question-bank",
+    version: FORCE_CLEAN_VERSION,
+    updatedAt: new Date().toISOString(),
+    progress: [...state.progressById.values()].map((progress) => enrichProgress(progress, progress.questionId)),
+    wrongBookRecords: QuestionBankCore.loadWrongBookRecords(),
+    settings: {
+      studyMode: state.studyMode,
+      autoHideMastered: state.autoHideMastered,
+      dailyGoal: getDailyGoal(),
+      mobileTab: state.mobileTab,
+      timerSecondsRemaining: state.timerSecondsRemaining
+    },
+    study: {
+      studyDays: readStudyDays(),
+      dailyAttempts: readJsonMap(DAILY_ATTEMPTS_KEY),
+      totalStudySeconds: getTotalStudySeconds(),
+      dailyStudySeconds: getDailyStudySecondsMap()
+    }
+  };
+}
+
+async function readCloudRecords(profile) {
+  try {
+    const records = await cloudClient.rpc("load_study_cloud", {
+      p_slug: profile.slug,
+      p_pin: profile.pin || null
+    });
+    return Array.isArray(records) ? records : [];
+  } catch (error) {
+    if (/not found|profile/i.test(error.message || "")) {
+      return [];
+    }
+    throw error;
+  }
+}
+
+async function saveCloudState(options = {}) {
+  const profile = readCloudProfile(Boolean(options.interactive));
+  if (!profile || !profile.pin) {
+    if (options.interactive) {
+      showToast("请先填写公开编号和编辑密码");
+    }
+    return false;
+  }
+  if (state.cloudSaving) {
+    return false;
+  }
+  state.cloudSaving = true;
+  try {
+    const existingRecords = await readCloudRecords(profile);
+    const keptRecords = existingRecords.filter((record) => record && record.id !== CLOUD_RECORD_ID);
+    const records = [...keptRecords, buildCloudRecord()];
+    await cloudClient.rpc("save_study_cloud", {
+      p_slug: profile.slug,
+      p_pin: profile.pin,
+      p_records: records,
+      p_display_name: profile.displayName || profile.slug,
+      p_is_public: true
+    });
+    localStorage.setItem(CLOUD_LAST_SYNC_KEY, new Date().toISOString());
+    if (!options.silent) {
+      showToast(`已保存到云端：${profile.slug}`);
+    }
+    return true;
+  } catch (error) {
+    if (!options.silent) {
+      showToast(error.message || "云端保存失败");
+    }
+    return false;
+  } finally {
+    state.cloudSaving = false;
+  }
+}
+
+async function applyCloudRecord(record) {
+  if (!record || typeof record !== "object") {
+    throw new Error("云端没有题库进度");
+  }
+  const progressList = Array.isArray(record.progress) ? record.progress.map((progress) => enrichProgress(progress, progress.questionId)).filter((progress) => progress.questionId) : [];
+  await clearStore(PROGRESS_STORE);
+  await putMany(PROGRESS_STORE, progressList);
+  state.progressById = new Map(progressList.map((progress) => [progress.questionId, progress]));
+  if (Array.isArray(record.wrongBookRecords)) {
+    QuestionBankCore.saveWrongBookRecords(record.wrongBookRecords);
+  }
+  if (record.settings && typeof record.settings === "object") {
+    state.studyMode = Boolean(record.settings.studyMode);
+    state.autoHideMastered = Boolean(record.settings.autoHideMastered);
+    state.mobileTab = record.settings.mobileTab || state.mobileTab;
+    state.timerSecondsRemaining = Number(record.settings.timerSecondsRemaining || state.timerSecondsRemaining);
+    localStorage.setItem(STUDY_MODE_KEY, state.studyMode ? "single" : "list");
+    localStorage.setItem(AUTO_HIDE_MASTERED_KEY, state.autoHideMastered ? "1" : "0");
+    localStorage.setItem(MOBILE_TAB_KEY, state.mobileTab);
+    localStorage.setItem(TIMER_REMAINING_KEY, String(state.timerSecondsRemaining));
+    if (record.settings.dailyGoal) {
+      localStorage.setItem(DAILY_GOAL_KEY, String(record.settings.dailyGoal));
+    }
+  }
+  if (record.study && typeof record.study === "object") {
+    if (Array.isArray(record.study.studyDays)) {
+      saveStudyDays(record.study.studyDays);
+    }
+    if (record.study.dailyAttempts) {
+      writeJsonMap(DAILY_ATTEMPTS_KEY, record.study.dailyAttempts);
+    }
+    if (record.study.dailyStudySeconds) {
+      writeJsonMap(STUDY_DAILY_SECONDS_KEY, record.study.dailyStudySeconds);
+    }
+    if (Number.isFinite(Number(record.study.totalStudySeconds))) {
+      setTotalStudySeconds(Number(record.study.totalStudySeconds));
+    }
+  }
+  updateFilters();
+  applyFilters();
+  updateStudyTimeUI();
+  updateTimerUI();
+}
+
+async function loadCloudState(options = {}) {
+  const profile = readCloudProfile(Boolean(options.interactive));
+  if (!profile) {
+    if (options.interactive) {
+      showToast("请先填写公开编号");
+    }
+    return false;
+  }
+  try {
+    const records = await readCloudRecords(profile);
+    const record = records.find((item) => item && item.id === CLOUD_RECORD_ID);
+    await applyCloudRecord(record);
+    if (!options.silent) {
+      showToast(`已从云端加载：${profile.slug}`);
+    }
+    return true;
+  } catch (error) {
+    if (!options.silent) {
+      showToast(error.message || "云端加载失败");
+    }
+    return false;
+  }
+}
+
+function queueCloudSync() {
+  const profile = readCloudProfile(false);
+  if (!profile || !profile.pin) {
+    return;
+  }
+  window.clearTimeout(state.cloudSyncTimer);
+  state.cloudSyncTimer = window.setTimeout(() => {
+    saveCloudState({ silent: true });
+  }, CLOUD_SYNC_DELAY_MS);
+}
+
+async function openCloudPanel() {
+  const profile = readCloudProfile(true);
+  if (!profile) {
+    return;
+  }
+  const shouldSave = window.confirm("确定：保存本机进度到云端\n取消：从云端加载进度");
+  if (shouldSave) {
+    await saveCloudState({ interactive: false });
+  } else {
+    await loadCloudState({ interactive: false });
+  }
+}
+
+function getTotalStudySeconds() {
+  const raw = Number(localStorage.getItem(STUDY_TOTAL_SECONDS_KEY) || 0);
+  return Number.isFinite(raw) && raw > 0 ? Math.floor(raw) : 0;
+}
+
+function setTotalStudySeconds(seconds) {
+  localStorage.setItem(STUDY_TOTAL_SECONDS_KEY, String(Math.max(0, Math.floor(Number(seconds || 0)))));
+}
+
+function getDailyStudySecondsMap() {
+  return readJsonMap(STUDY_DAILY_SECONDS_KEY);
+}
+
+function getTodayStudySeconds() {
+  const map = getDailyStudySecondsMap();
+  return Math.floor(Number(map[todayISO()] || 0));
+}
+
+function addStudySeconds(seconds) {
+  const add = Math.max(0, Math.floor(Number(seconds || 0)));
+  if (!add) {
+    return;
+  }
+  setTotalStudySeconds(getTotalStudySeconds() + add);
+  const map = getDailyStudySecondsMap();
+  const today = todayISO();
+  map[today] = Math.floor(Number(map[today] || 0)) + add;
+  writeJsonMap(STUDY_DAILY_SECONDS_KEY, map);
+  if (getTotalStudySeconds() % 60 === 0) {
+    queueCloudSync();
+  }
+}
+
+function formatStudyDuration(seconds) {
+  const safe = Math.max(0, Math.floor(Number(seconds || 0)));
+  const hours = Math.floor(safe / 3600);
+  const minutes = Math.floor((safe % 3600) / 60);
+  if (hours <= 0) {
+    return `${minutes}分钟`;
+  }
+  return `${hours}小时${String(minutes).padStart(2, "0")}分钟`;
+}
+
+function updateStudyTimeUI() {
+  const total = getTotalStudySeconds();
+  const today = getTodayStudySeconds();
+  if (els.totalStudyTimeCount) {
+    els.totalStudyTimeCount.textContent = formatStudyDuration(total);
+  }
+  if (els.mobileTotalStudyTime) {
+    els.mobileTotalStudyTime.textContent = formatStudyDuration(total);
+  }
+  if (els.mobileTodayStudyTime) {
+    els.mobileTodayStudyTime.textContent = formatStudyDuration(today);
+  }
+}
+
+function startStudyTimeCounter() {
+  if (state.studyTimeTickerId) {
+    return;
+  }
+  state.studyTimeTickerId = window.setInterval(() => {
+    if (document.visibilityState === "hidden") {
+      return;
+    }
+    addStudySeconds(1);
+    state.studyTimeUnsavedSeconds += 1;
+    if (state.studyTimeUnsavedSeconds >= 10) {
+      state.studyTimeUnsavedSeconds = 0;
+      updateStudyTimeUI();
+    }
+  }, 1000);
+  document.addEventListener("visibilitychange", updateStudyTimeUI);
+  window.addEventListener("beforeunload", updateStudyTimeUI);
+  updateStudyTimeUI();
+}
+
 function todayISO() {
   return new Date().toISOString().slice(0, 10);
 }
@@ -1009,6 +1324,7 @@ function setDailyGoal(value) {
   const next = Math.min(500, Math.max(10, Number(value || 80)));
   localStorage.setItem(DAILY_GOAL_KEY, String(next));
   showToast(`每日目标已设为 ${next} 题`);
+  queueCloudSync();
 }
 
 function getTodayAttemptCount() {
@@ -1036,21 +1352,20 @@ function daysBetweenISO(startISO, endISO = todayISO()) {
 }
 
 function getBackupStatus() {
-  const last = localStorage.getItem(LAST_BACKUP_KEY) || "";
+  const last = localStorage.getItem(CLOUD_LAST_SYNC_KEY) || "";
   const attempted = [...state.progressById.values()].some((progress) => Number(progress.attempts || 0) > 0);
-  const days = daysBetweenISO(last);
+  const days = daysBetweenISO(last ? last.slice(0, 10) : "");
   if (!attempted) {
-    return { needsBackup: false, title: "暂不需要备份", message: "开始做题后，建议每隔几天导出一次备份，避免浏览器缓存丢进度。" };
+    return { needsBackup: false, title: "暂不需要云端保存", message: "开始做题后，系统会自动把进度保存到云端。" };
   }
   if (!last) {
-    return { needsBackup: true, title: "还没有备份", message: "你已经有做题记录，建议现在导出一次备份。" };
+    return { needsBackup: true, title: "还没有云端保存", message: "你已经有做题记录，建议现在保存一次到云端。" };
   }
   if (days >= 3) {
-    return { needsBackup: true, title: `上次备份 ${days} 天前`, message: "建议导出备份。换浏览器、清缓存或手机系统清理都可能影响本地进度。" };
+    return { needsBackup: true, title: `上次云端保存 ${days} 天前`, message: "建议点一次云端保存，避免手机或浏览器缓存变化影响进度。" };
   }
-  return { needsBackup: false, title: "备份状态正常", message: `上次备份：${last}。继续刷题即可。` };
+  return { needsBackup: false, title: "云端保存正常", message: `上次云端保存：${last.slice(0, 10)}。继续刷题即可。` };
 }
-
 function isProgressMastered(progress) {
   return Boolean(progress && progress.lastResult === "correct" && (Number(progress.correctStreak || 0) >= 3 || (Number(progress.correct || 0) >= 3 && Number(progress.wrong || 0) === 0)));
 }
@@ -1396,42 +1711,83 @@ function textTokens(question) {
   return new Set(normalizeSearchText([question.chapter, question.type, question.stem, ...(question.tags || [])].join(" ")).match(/[a-z0-9]+|[\u4e00-\u9fa5]{2,}/g) || []);
 }
 
+function questionSignature(question) {
+  return normalizeSearchText(String(question && question.stem || ""))
+    .replace(/^\d+[\.、．]/, "")
+    .replace(/[abcd][\.、．][^abcd]+/gi, "")
+    .replace(/[（）()\s，。,.；;：:？！?]/g, "");
+}
+
 function getSimilarQuestions(question, limit = 5) {
   const baseTokens = textTokens(question);
   const baseTags = new Set(question.tags || []);
-  return state.questions
+  const baseSignature = questionSignature(question);
+  const seen = new Set([baseSignature]);
+  const ranked = state.questions
     .filter((item) => item.id !== question.id)
+    .filter((item) => !isUnverifiedAnswer(item))
+    .filter((item) => !((item.tags || []).includes("不进同类推荐")))
     .map((item) => {
       let score = 0;
-      if (item.subject === question.subject) score += 8;
-      if (item.chapter === question.chapter) score += 10;
+      if (item.subject === question.subject) score += 10;
+      if (item.chapter === question.chapter) score += 14;
+      if (String(item.type || "") === String(question.type || "")) score += 3;
       if (String(item.difficulty) === String(question.difficulty)) score += 2;
-      (item.tags || []).forEach((tag) => { if (baseTags.has(tag)) score += 3; });
+      (item.tags || []).forEach((tag) => { if (baseTags.has(tag)) score += 4; });
       textTokens(item).forEach((token) => { if (baseTokens.has(token)) score += 1; });
-      return { item, score };
+      return { item, score, signature: questionSignature(item) };
     })
-    .filter((entry) => entry.score >= 8)
-    .sort((a, b) => b.score - a.score || a.item.id.localeCompare(b.item.id))
-    .slice(0, limit)
-    .map((entry) => entry.item);
+    .filter((entry) => entry.signature && entry.signature !== baseSignature)
+    .filter((entry) => entry.score >= 10)
+    .sort((a, b) => b.score - a.score || a.item.id.localeCompare(b.item.id));
+  const unique = [];
+  for (const entry of ranked) {
+    if (seen.has(entry.signature)) continue;
+    seen.add(entry.signature);
+    unique.push(entry.item);
+    if (unique.length >= limit) break;
+  }
+  return unique;
+}
+
+function renderSimilarPanel() {
+  if (!els.mobileSimilarPanel) {
+    return;
+  }
+  const question = state.questions.find((item) => item.id === state.selectedId);
+  if (!question) {
+    els.mobileSimilarPanel.innerHTML = `<div class="mobile-similar-card"><h2>同类题</h2><p>先选择一道题，再查看同类题。</p></div>`;
+    return;
+  }
+  const similar = getSimilarQuestions(question, 5);
+  els.mobileSimilarPanel.innerHTML = `
+    <div class="mobile-similar-card">
+      <p class="mobile-similar-kicker">当前题</p>
+      <h2>${escapeHtml(question.subject || "")} · ${escapeHtml(question.chapter || "")}</h2>
+      <p class="mobile-similar-current">${escapeHtml(String(question.stem || "").slice(0, 120))}</p>
+      <p class="mobile-similar-note">同类题只从现有题库里挑，不新编；已排除当前题、重复题干和答案待核对题。</p>
+    </div>
+    <div class="mobile-similar-card">
+      <h2>同类题推荐</h2>
+      ${similar.length ? `<div class="similar-list standalone">${similar.map((item, index) => `
+        <button type="button" class="similar-item" data-similar-id="${escapeHtml(item.id)}">
+          <b>同类 ${index + 1}</b>
+          <span>${escapeHtml(item.subject || "")} · ${escapeHtml(item.chapter || "")}</span>
+          <small>${escapeHtml(String(item.stem || "").slice(0, 90))}</small>
+        </button>
+      `).join("")}</div>` : `<p class="mobile-similar-note">这道题暂时没有足够可靠的同类题。可以换同章节其它题再看。</p>`}
+    </div>
+  `;
+  els.mobileSimilarPanel.querySelectorAll("[data-similar-id]").forEach((button) => {
+    button.addEventListener("click", () => {
+      selectQuestion(button.dataset.similarId);
+      setMobileTab("quiz");
+    });
+  });
 }
 
 function renderSimilarQuestions(question) {
-  const similar = getSimilarQuestions(question, 5);
-  if (!similar.length) {
-    return "";
-  }
-  return `
-    <section class="similar-box">
-      <div class="similar-head">
-        <strong>同类题推荐</strong>
-        <span>从现有题库里找 5 道，不是凭空新编</span>
-      </div>
-      <div class="similar-list">
-        ${similar.map((item) => `<button type="button" class="similar-item" data-similar-id="${escapeHtml(item.id)}"><b>${escapeHtml(item.id)}</b><span>${escapeHtml(item.chapter)}</span><small>${escapeHtml(String(item.stem || "").slice(0, 80))}</small></button>`).join("")}
-      </div>
-    </section>
-  `;
+  return "";
 }
 
 function typesetMathSoon() {
@@ -1796,36 +2152,6 @@ function showToast(message) {
   setTimeout(() => toast.remove(), 1800);
 }
 
-async function handleImport(file) {
-  const text = await file.text();
-  const parsed = JSON.parse(text);
-  const questions = Array.isArray(parsed) ? parsed : parsed.questions;
-  if (!Array.isArray(questions)) {
-    throw new Error("题库 JSON 需要是数组，或包含 questions 数组。");
-  }
-  await replaceQuestions(questions);
-}
-
-async function exportData() {
-  const payload = {
-    exportedAt: new Date().toISOString(),
-    questions: state.questions,
-    progress: [...state.progressById.values()]
-  };
-  localStorage.setItem(LAST_BACKUP_KEY, todayISO());
-  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
-  const url = URL.createObjectURL(blob);
-  const link = document.createElement("a");
-  link.href = url;
-  link.download = "专升本题库训练中心备份.json";
-  document.body.append(link);
-  link.click();
-  link.remove();
-  URL.revokeObjectURL(url);
-  showToast("已导出备份");
-  render();
-}
-
 function bindEvents() {
   const debouncedFilter = debounce(() => {
     state.page = 1;
@@ -1855,6 +2181,7 @@ function bindEvents() {
     els.studyModeButton.addEventListener("click", () => {
       state.studyMode = !state.studyMode;
       localStorage.setItem(STUDY_MODE_KEY, state.studyMode ? "single" : "list");
+      queueCloudSync();
       render();
     });
   }
@@ -1862,6 +2189,7 @@ function bindEvents() {
     els.autoHideMasteredButton.addEventListener("click", () => {
       state.autoHideMastered = !state.autoHideMastered;
       localStorage.setItem(AUTO_HIDE_MASTERED_KEY, state.autoHideMastered ? "1" : "0");
+      queueCloudSync();
       state.page = 1;
       applyFilters();
     });
@@ -1882,20 +2210,8 @@ function bindEvents() {
   els.mobileTabButtons.forEach((button) => {
     button.addEventListener("click", () => setMobileTab(button.dataset.mobileTab));
   });
-  if (els.mobileImportButton) {
-    els.mobileImportButton.addEventListener("click", () => els.importInput.click());
-  }
-  if (els.mobileExportButton) {
-    els.mobileExportButton.addEventListener("click", exportData);
-  }
-  if (els.mobileBackupButton) {
-    els.mobileBackupButton.addEventListener("click", exportData);
-  }
-  if (els.mobileSampleButton) {
-    els.mobileSampleButton.addEventListener("click", () => replaceQuestions(createSampleQuestions(120)));
-  }
-  if (els.mobileStressButton) {
-    els.mobileStressButton.addEventListener("click", () => replaceQuestions(createSampleQuestions(10000)));
+  if (els.mobileCloudButton) {
+    els.mobileCloudButton.addEventListener("click", openCloudPanel);
   }
   if (els.mobileDailyGoalInput) {
     els.mobileDailyGoalInput.addEventListener("change", () => {
@@ -1907,6 +2223,7 @@ function bindEvents() {
     els.mobileMeStudyModeButton.addEventListener("click", () => {
       state.studyMode = !state.studyMode;
       localStorage.setItem(STUDY_MODE_KEY, state.studyMode ? "single" : "list");
+      queueCloudSync();
       render();
     });
   }
@@ -1914,6 +2231,7 @@ function bindEvents() {
     els.mobileMeAutoHideMasteredButton.addEventListener("click", () => {
       state.autoHideMastered = !state.autoHideMastered;
       localStorage.setItem(AUTO_HIDE_MASTERED_KEY, state.autoHideMastered ? "1" : "0");
+      queueCloudSync();
       state.page = 1;
       applyFilters();
     });
@@ -1929,23 +2247,9 @@ function bindEvents() {
     state.page += 1;
     applyFilters();
   });
-  els.sampleButton.addEventListener("click", () => replaceQuestions(createSampleQuestions(120)));
-  els.stressButton.addEventListener("click", () => replaceQuestions(createSampleQuestions(10000)));
-  els.importButton.addEventListener("click", () => els.importInput.click());
-  els.importInput.addEventListener("change", async (event) => {
-    const file = event.target.files && event.target.files[0];
-    if (!file) {
-      return;
-    }
-    try {
-      await handleImport(file);
-    } catch (error) {
-      showToast(error.message || "导入失败");
-    } finally {
-      els.importInput.value = "";
-    }
-  });
-  els.exportButton.addEventListener("click", exportData);
+  if (els.cloudButton) {
+    els.cloudButton.addEventListener("click", openCloudPanel);
+  }
 }
 
 async function registerServiceWorker() {
@@ -1963,6 +2267,10 @@ async function init() {
   state.db = await openDatabase();
   await loadState();
   repairWrongBookOptionsFromProgress();
+  if (new URLSearchParams(window.location.search).has("view")) {
+    await loadCloudState({ silent: true });
+  }
+  startStudyTimeCounter();
   await registerServiceWorker();
 }
 

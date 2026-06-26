@@ -1,0 +1,6 @@
+{
+  "manualCorrections": 42,
+  "isolatedUnverifiedAnswers": 549,
+  "version": "20260626-quality-similar-v2",
+  "note": "旧计算机答案 OCR 批次发现错位；未人工校对的同批答案已隔离为待核对，避免继续显示错误答案。"
+}

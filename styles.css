@@ -1476,3 +1476,113 @@ sup {
     grid-template-columns: 1fr;
   }
 }
+
+/* 20260626: 答案质检 + 同类题独立页 */
+.answer-quality-box {
+  border: 1px solid rgba(204, 120, 30, 0.28);
+  background: #fff8ec;
+  color: #6b3b00;
+  border-radius: 16px;
+  padding: 14px 16px;
+  margin-top: 12px;
+  font-weight: 800;
+  line-height: 1.65;
+}
+.answer-quality-box strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #8a4b00;
+}
+.unverified-solution {
+  background: #fffaf0 !important;
+}
+.mobile-similar-panel {
+  display: none;
+}
+.mobile-similar-card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel);
+  padding: 16px;
+}
+.mobile-similar-card + .mobile-similar-card {
+  margin-top: 12px;
+}
+.mobile-similar-kicker {
+  margin: 0 0 4px;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 900;
+}
+.mobile-similar-card h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+.mobile-similar-current,
+.mobile-similar-note {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 800;
+  line-height: 1.7;
+}
+.similar-list.standalone {
+  display: grid;
+  gap: 10px;
+}
+.similar-list.standalone .similar-item {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  color: var(--ink);
+  text-align: left;
+}
+.similar-list.standalone .similar-item b {
+  color: var(--teal);
+}
+.similar-list.standalone .similar-item span,
+.similar-list.standalone .similar-item small {
+  color: var(--muted);
+  font-weight: 800;
+  line-height: 1.55;
+}
+
+@media (max-width: 720px) {
+  .mobile-tabbar {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+  }
+  .mobile-tab-button {
+    font-size: 14px;
+    border-radius: 13px;
+  }
+  .stats-grid,
+  .dashboard-panel,
+  .mobile-me-panel,
+  .mobile-similar-panel,
+  .list-panel,
+  .detail-panel {
+    display: none;
+  }
+  body.mobile-tab-similar .mobile-similar-panel {
+    display: block;
+  }
+  body.mobile-tab-similar .workspace {
+    display: none;
+  }
+  .answer-quality-box {
+    border-radius: 18px;
+    padding: 16px;
+    margin-top: 12px;
+  }
+}
+
+
+/* Study time summary */
+.study-time-card h2 { letter-spacing: -0.02em; }
+#totalStudyTimeCount { white-space: nowrap; font-size: clamp(1.25rem, 2.2vw, 2rem); }
+.mobile-me-card strong#mobileTotalStudyTime,
+.mobile-me-card strong#mobileTodayStudyTime { color: var(--accent); }

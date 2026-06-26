@@ -1,0 +1,14 @@
+{
+  "baseCount": 1290,
+  "incomingCountFromNewMaterials": 280,
+  "addedCount": 280,
+  "skippedDuplicateCount": 0,
+  "finalCount": 1570,
+  "addedBySource": {
+    "2026-重庆计算机同步练习册.pdf": 201,
+    "2026-重庆英语快班练习题.pdf": 25,
+    "2026-重庆高数同步练习册.pdf": 54
+  },
+  "skippedDuplicateBySource": {},
+  "dedupeRule": "题干去开头编号并规范空格/符号 + 选项连续内容完全一致则视为相同题；ID重复也跳过。"
+}

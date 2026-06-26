@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#147a7e">
   <title>专升本题库训练中心</title>
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=20260625-mobile-ab-v1">
+  <link rel="stylesheet" href="styles.css?v=20260626-cloud-save-unified-v1">
 </head>
 <body>
   <div class="app-shell">
@@ -28,24 +28,12 @@
         <button class="icon-button secondary" id="timerButton" type="button" title="倒计时刷题" aria-label="倒计时刷题">
           <span aria-hidden="true">⏱</span><span>倒计时</span>
         </button>
-        <button class="icon-button" id="sampleButton" type="button" title="载入示例题" aria-label="载入示例题">
-          <span aria-hidden="true">＋</span><span>示例</span>
-        </button>
-        <button class="icon-button" id="stressButton" type="button" title="载入1万题演示" aria-label="载入1万题演示">
-          <span aria-hidden="true">≡</span><span>1万演示</span>
-        </button>
-        <button class="icon-button" id="importButton" type="button" title="导入题库" aria-label="导入题库">
-          <span aria-hidden="true">↥</span><span>导入</span>
-        </button>
-        <button class="icon-button secondary" id="exportButton" type="button" title="导出题库" aria-label="导出题库">
-          <span aria-hidden="true">↧</span><span>导出</span>
+        <button class="icon-button" id="cloudButton" type="button" title="云端保存做题进度" aria-label="云端保存">
+          <span aria-hidden="true">☁</span><span>云端保存</span>
         </button>
       </div>
     </header>
-
-    <input id="importInput" type="file" accept=".json,application/json" hidden>
-
-    <header class="mobile-app-top" aria-label="手机端顶部导航">
+<header class="mobile-app-top" aria-label="手机端顶部导航">
       <div>
         <p id="mobileScreenTitle" class="mobile-screen-title">刷题</p>
         <strong>专升本题库</strong>
@@ -64,7 +52,7 @@
       <label class="field">
         <span>科目</span>
         <select id="subjectFilter">
-          <option value="all">全部</option>
+          <option value="all">全部可刷</option>
         </select>
       </label>
       <label class="field">
@@ -80,6 +68,7 @@
           <option value="dueReview">今日复习</option>
           <option value="weakChapter">薄弱章节</option>
           <option value="mastered">熟练题</option>
+          <option value="answerReview">待核对题库</option>
           <option value="unseen">未做</option>
           <option value="wrong">最近做错</option>
           <option value="correct">最近做对</option>
@@ -132,6 +121,10 @@
         <span>熟练题</span>
         <strong id="masteredCount">0</strong>
       </div>
+      <div class="stat-tile">
+        <span>累计时长</span>
+        <strong id="totalStudyTimeCount">0分钟</strong>
+      </div>
     </section>
 
     <section class="dashboard-panel" id="dashboardPanel" aria-label="学习分析"></section>
@@ -143,11 +136,13 @@
         <h2>题库与备份</h2>
         <p class="mobile-me-muted">当前题库 <strong id="mobileTotalCount">0</strong> 道，当前筛选 <strong id="mobileFilteredCount">0</strong> 道。</p>
         <div class="mobile-me-grid">
-          <button class="primary-button" id="mobileImportButton" type="button">导入题库</button>
-          <button class="secondary-button" id="mobileExportButton" type="button">导出备份</button>
-          <button class="secondary-button" id="mobileSampleButton" type="button">示例题</button>
-          <button class="secondary-button" id="mobileStressButton" type="button">1万演示</button>
+          <button class="primary-button" id="mobileCloudButton" type="button">云端保存</button>
         </div>
+      </div>
+      <div class="mobile-me-card">
+        <p class="eyebrow">Study Time</p>
+        <h2>学习时长</h2>
+        <p class="mobile-me-muted">累计 <strong id="mobileTotalStudyTime">0分钟</strong>，今日 <strong id="mobileTodayStudyTime">0分钟</strong>。</p>
       </div>
       <div class="mobile-me-card">
         <p class="eyebrow">Settings</p>
@@ -160,10 +155,13 @@
           <button class="secondary-button" id="mobileMeStudyModeButton" type="button">单题模式</button>
           <button class="secondary-button" id="mobileMeAutoHideMasteredButton" type="button">隐藏熟练题</button>
           <button class="secondary-button" id="mobileMeTimerButton" type="button">开始倒计时</button>
-          <button class="secondary-button" id="mobileBackupButton" type="button">立即备份</button>
+          <button class="secondary-button" id="mobileBackupButton" type="button">立即云端保存</button>
         </div>
       </div>
     </section>
+
+
+    <section class="mobile-similar-panel" id="mobileSimilarPanel" aria-label="同类题"></section>
 
     <main class="workspace">
       <section class="list-panel" aria-label="题目列表">
@@ -193,6 +191,7 @@
 
   <nav class="mobile-tabbar" aria-label="手机端底部导航">
     <button class="mobile-tab-button active" type="button" data-mobile-tab="quiz"><span>刷题</span></button>
+    <button class="mobile-tab-button" type="button" data-mobile-tab="similar"><span>同类</span></button>
     <button class="mobile-tab-button" type="button" data-mobile-tab="review"><span>复习</span></button>
     <button class="mobile-tab-button" type="button" data-mobile-tab="stats"><span>统计</span></button>
     <button class="mobile-tab-button" type="button" data-mobile-tab="me"><span>我的</span></button>
@@ -206,7 +205,7 @@
   </script>
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
   <script src="core.js"></script>
-  <script src="question-bank-data.js?v=20260625-mobile-ab-v1"></script>
-  <script src="app.js?v=20260625-mobile-ab-v1"></script>
+  <script src="question-bank-data.js?v=20260626-cloud-save-unified-v1"></script>
+  <script src="app.js?v=20260626-cloud-save-unified-v1"></script>
 </body>
 </html>

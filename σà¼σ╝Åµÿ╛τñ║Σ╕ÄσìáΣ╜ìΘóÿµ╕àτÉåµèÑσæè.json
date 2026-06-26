@@ -1,0 +1,43 @@
+{
+  "version": "20260625-formula-clean-1540-v1",
+  "formal_question_count": 1540,
+  "removed_placeholder_count": 30,
+  "removed_placeholder_ids": [
+    "MATH-0241",
+    "MATH-0242",
+    "MATH-0243",
+    "MATH-0244",
+    "MATH-0245",
+    "MATH-0246",
+    "MATH-0247",
+    "MATH-0248",
+    "MATH-0249",
+    "MATH-0250",
+    "MATH-0251",
+    "MATH-0252",
+    "MATH-0253",
+    "MATH-0254",
+    "MATH-0255",
+    "MATH-0256",
+    "MATH-0257",
+    "MATH-0258",
+    "MATH-0259",
+    "MATH-0260",
+    "MATH-0261",
+    "MATH-0262",
+    "MATH-0263",
+    "MATH-0264",
+    "MATH-0265",
+    "MATH-0266",
+    "MATH-0267",
+    "MATH-0268",
+    "MATH-0269",
+    "MATH-0270"
+  ],
+  "notes": [
+    "无实际图片的 source-xx-xxx 占位题已从正式训练题库移除。",
+    "保留有实际题面或原题图片的题。",
+    "去掉“以配图为准”“本批新上传 Word 错题”等导入提示。",
+    "页面端用上标和竖式分数显示常见数学公式，减少 / 和 ^ 的视觉干扰。"
+  ]
+}
