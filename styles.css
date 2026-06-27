@@ -1586,3 +1586,211 @@ sup {
 #totalStudyTimeCount { white-space: nowrap; font-size: clamp(1.25rem, 2.2vw, 2rem); }
 .mobile-me-card strong#mobileTotalStudyTime,
 .mobile-me-card strong#mobileTodayStudyTime { color: var(--accent); }
+
+
+/* v6: cleaner answer / source / image zoom */
+.source-card,
+.analysis-image-card,
+.ai-analysis-box {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+.source-line {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.solution-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.answer-authority {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: #eef2ef;
+  color: #42504b;
+  font-size: 12px;
+  font-weight: 900;
+}
+.answer-authority.official { background: #e6f7ef; color: #146444; }
+.answer-authority.ai { background: #fff3cd; color: #8a5a00; }
+.answer-authority.unverified { background: #fdecef; color: #a3334b; }
+.analysis-preview {
+  margin-bottom: 8px;
+}
+.analysis-details {
+  margin-top: 10px;
+}
+.analysis-details summary,
+.analysis-image-card summary {
+  cursor: pointer;
+  font-weight: 900;
+  color: var(--accent);
+}
+.image-zoom-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+.question-image figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+}
+.image-zoom-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(0, 0, 0, 0.72);
+}
+.image-zoom-inner {
+  position: relative;
+  max-width: min(96vw, 1200px);
+  max-height: 92vh;
+  overflow: auto;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 20px 60px rgba(0,0,0,.35);
+}
+.image-zoom-inner img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+.image-zoom-close {
+  position: sticky;
+  top: 10px;
+  float: right;
+  z-index: 2;
+  margin: 10px;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 0;
+  background: #111820;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1;
+}
+@media (max-width: 720px) {
+  .solution-title-row { align-items: flex-start; }
+  .answer-authority { flex-shrink: 0; }
+  .image-zoom-overlay { padding: 10px; }
+  .image-zoom-inner { max-width: 100vw; max-height: 94vh; }
+}
+
+
+/* v13: 官方解析图更清爽，放大时完整显示 */
+.analysis-image-card .question-image {
+  background: #fff;
+  border: 1px solid #d9e3df;
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 0 6px 22px rgba(20, 40, 34, 0.08);
+}
+.analysis-image-card .question-image img {
+  display: block;
+  width: 100%;
+  max-height: none;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #fff;
+}
+.image-zoom-inner {
+  width: min(96vw, 1280px);
+  max-height: 94vh;
+  overflow: auto;
+  padding: 14px;
+}
+.image-zoom-inner img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
+@media (max-width: 720px) {
+  .analysis-image-card .question-image { padding: 6px; }
+  .image-zoom-inner { width: 100vw; max-height: 96vh; padding: 8px; border-radius: 10px; }
+}
+
+
+/* v14: 官方逐题解析卡片更清爽，不裁切 */
+.analysis-image-card .question-image { background:#fff; border:1px solid #d8e3df; border-radius:18px; padding:14px; box-shadow:0 8px 26px rgba(20,40,34,.10); overflow:visible; }
+.analysis-image-card .question-image img { display:block; width:100%; height:auto; max-height:none !important; object-fit:contain; background:#fff; border-radius:12px; }
+.image-zoom-overlay { align-items:start; overflow:auto; }
+.image-zoom-inner { margin:18px auto; width:min(96vw,1320px); max-height:none; overflow:visible; border-radius:18px; }
+.image-zoom-inner img { width:100%; max-width:none; height:auto; }
+.image-zoom-close { position:fixed; top:22px; right:24px; }
+@media (max-width:720px){ .analysis-image-card .question-image{padding:8px;border-radius:14px;} .image-zoom-inner{width:98vw;margin:10px auto;} .image-zoom-close{top:12px;right:12px;} }
+
+/* v15 官方文字解析优先：避免高数/英语被错误切图影响 */
+.official-text-card {
+  background: #f3fbf6;
+  border: 1px solid #d8e9de;
+  border-radius: 16px;
+  padding: 18px 20px;
+  line-height: 1.85;
+}
+.official-text-card > strong {
+  display: block;
+  font-size: 1.08rem;
+  margin-bottom: 10px;
+}
+.official-analysis-full {
+  white-space: pre-wrap;
+  margin: 0.6rem 0 0;
+}
+.analysis-image-card details {
+  margin-top: 6px;
+}
+.analysis-image-card summary {
+  cursor: pointer;
+  font-weight: 800;
+  color: #60706b;
+}
+.official-image-open img, .analysis-image-card img {
+  object-fit: contain;
+  max-height: none;
+}
+
+
+/* v18: make wrongbook math source images visible directly inside the analysis answer card */
+.wrongbook-inline-analysis {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px dashed rgba(42, 80, 74, 0.22);
+}
+.wrongbook-inline-analysis > strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.02rem;
+}
+.wrongbook-inline-analysis .image-grid {
+  margin-top: 8px;
+}
+.wrongbook-inline-analysis img,
+.analysis-image-card img {
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+  border-radius: 14px;
+}

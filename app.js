@@ -6,7 +6,7 @@ const BUNDLED_DATA_URL = "question-bank-data.json";
 const PAGE_SIZE = QuestionBankCore.PAGE_SIZE;
 
 const FORCE_CLEAN_VERSION_KEY = "zsb-question-bank-trainer:clean-version";
-const FORCE_CLEAN_VERSION = "20260626-official-existing-sections-v5";
+const FORCE_CLEAN_VERSION = "20260627-v18-wrongbook-images-visible";
 const STUDY_MODE_KEY = "zsb-question-bank-trainer:study-mode";
 const STUDY_DAYS_KEY = "zsb-question-bank-trainer:study-days";
 const AUTO_HIDE_MASTERED_KEY = "zsb-question-bank-trainer:auto-hide-mastered";
@@ -158,7 +158,7 @@ async function replaceQuestions(questions, options = {}) {
 async function loadState() {
   state.questions = (await getAll(QUESTION_STORE)).map(QuestionBankCore.normalizeQuestion);
   const progressList = await getAll(PROGRESS_STORE);
-  state.progressById = new Map(progressList.map((progress) => [progress.questionId, QuestionBankCore.normalizeProgress(progress, progress.questionId)]));
+  state.progressById = new Map(progressList.map((progress) => [progress.questionId, enrichProgress(progress, progress.questionId)]));
   if (await ensureBundledQuestionsCurrent()) {
     return;
   }
@@ -257,7 +257,7 @@ async function ensureBundledQuestionsCurrent() {
   if (savedCleanVersion !== FORCE_CLEAN_VERSION || !sameQuestionSet) {
     await replaceQuestions(bundled, { silent: true });
     localStorage.setItem(FORCE_CLEAN_VERSION_KEY, FORCE_CLEAN_VERSION);
-    showToast(`题库已更新：默认只显示已核对题，答案待核对题已单独放到筛选里`);
+    showToast(`题库已更新：已强制重载官方答案解析与解析原图`);
     return true;
   }
 
@@ -755,6 +755,9 @@ function renderDetail() {
         ${renderOptions(question.options)}
       </section>
 
+      ${progress.hintVisible ? renderFormulaHint(question) : ""}
+      ${visible ? renderSolution(question, progress) : `<div class="hidden-solution">答案与解析已隐藏</div>`}
+
       <div class="detail-action-dock">
         <div class="detail-nav-actions">
           <button class="secondary-button nav-button" id="prevQuestionButton" type="button" aria-label="上一题"${canGoPrev ? "" : " disabled"}>←</button>
@@ -769,9 +772,6 @@ function renderDetail() {
           <button class="secondary-button" id="addWrongBookButton" type="button">${inWrongBook ? "取消错题本" : "加入错题本"}</button>
         </div>
       </div>
-
-      ${progress.hintVisible ? renderFormulaHint(question) : ""}
-      ${visible ? renderSolution(question, progress) : `<div class="hidden-solution">答案与解析已隐藏</div>`}
 
     </article>
   `;
@@ -803,6 +803,9 @@ function renderDetail() {
   els.detailPanel.querySelectorAll("[data-similar-id]").forEach((button) => {
     button.addEventListener("click", () => selectQuestion(button.dataset.similarId));
   });
+  els.detailPanel.querySelectorAll("[data-zoom-image]").forEach((button) => {
+    button.addEventListener("click", () => openImageZoom(button.dataset.zoomImage));
+  });
 }
 
 function renderOptions(options) {
@@ -812,7 +815,7 @@ function renderOptions(options) {
   return `<ul class="options-list">${options.map((option) => `<li>${renderRichText(option)}</li>`).join("")}</ul>`;
 }
 
-function renderImages(images) {
+function renderImages(images, label = "原题图片") {
   if (!images || !images.length) {
     return "";
   }
@@ -820,7 +823,10 @@ function renderImages(images) {
     <div class="question-images">
       ${images.map((image, index) => `
         <figure class="question-image">
-          <img src="${escapeHtml(image)}" alt="原题图片 ${index + 1}" loading="lazy">
+          <button class="image-zoom-button" type="button" data-zoom-image="${escapeHtml(image)}" aria-label="放大查看${escapeHtml(label)} ${index + 1}">
+            <img src="${escapeHtml(image)}" alt="${escapeHtml(label)} ${index + 1}" loading="lazy">
+          </button>
+          <figcaption>点图放大</figcaption>
         </figure>
       `).join("")}
     </div>
@@ -844,23 +850,97 @@ function renderAnswerQualityNotice(question) {
   `;
 }
 
+function getAnswerAuthorityLabel(question) {
+  const authority = String(question && question.answerAuthority || "");
+  if (authority === "official") return "官方答案";
+  if (authority === "ai") return "AI整理";
+  if (authority === "unverified") return "待核对";
+  if (String(question && question.answerStatus || "").startsWith("official")) return "官方答案";
+  return "";
+}
+
+function getSourceDisplay(question) {
+  const parts = [];
+  if (question.questionSource || question.source) parts.push(`题源：${question.questionSource || question.source}`);
+  if (question.answerSource || question.verifiedSource) parts.push(`答案：${question.answerSource || question.verifiedSource}`);
+  if (question.analysisSource) parts.push(`解析：${question.analysisSource}`);
+  return parts.filter(Boolean).join(" ｜ ");
+}
+
+function compactAnalysisText(text, maxLength = 150) {
+  const clean = String(text || "").replace(/\n+/g, " ").replace(/\s{2,}/g, " ").trim();
+  if (clean.length <= maxLength) return clean;
+  return `${clean.slice(0, maxLength)}……`;
+}
+
+function renderShortAnalysis(title, text, source, className = "analysis-box official-text-card") {
+  const content = String(text || "").trim();
+  if (!content) return "";
+  const normalized = content.replace(/\r\n/g, "\n").replace(/\n{3,}/g, "\n\n");
+  const flat = normalized.replace(/\n+/g, " ").replace(/\s{2,}/g, " ").trim();
+  const needsDetails = flat.length > 520;
+  return `
+    <section class="${className}">
+      <strong>${escapeHtml(title)}</strong>
+      ${source ? `<div class="source-line">${escapeHtml(source)}</div>` : ""}
+      ${needsDetails
+        ? `<p class="analysis-preview">${renderRichText(compactAnalysisText(normalized, 260))}</p><details class="analysis-details"><summary>展开完整解析</summary><p class="official-analysis-full">${renderRichText(normalized)}</p></details>`
+        : `<p class="official-analysis-full">${renderRichText(normalized)}</p>`}
+    </section>
+  `;
+}
+
+function renderSourceCard(question) {
+  const source = getSourceDisplay(question);
+  if (!source) return "";
+  return `<section class="source-card"><strong>来源</strong><p>${escapeHtml(source)}</p></section>`;
+}
+
+function renderAnalysisImageToggle(question, forceOpen = false) {
+  if (!Array.isArray(question.analysisImages) || !question.analysisImages.length) return "";
+  const imageLabel = String(question.analysisImageLabel || "官方解析原图").trim() || "官方解析原图";
+  const summaryLabel = imageLabel === "错题本原图" ? "查看错题本原图" : `查看${imageLabel}`;
+  if (forceOpen) {
+    return `
+      <section class="analysis-image-card official-image-open">
+        <strong>${escapeHtml(imageLabel)}</strong>
+        ${renderImages(question.analysisImages, imageLabel)}
+      </section>
+    `;
+  }
+  return `
+    <section class="analysis-image-card">
+      <strong>${escapeHtml(imageLabel)}</strong>
+      <details>
+        <summary>${escapeHtml(summaryLabel)}</summary>
+        ${renderImages(question.analysisImages, imageLabel)}
+      </details>
+    </section>
+  `;
+}
+
 function renderSolution(question, progress) {
   const level = progress.solutionLevel || "answer";
-  const showAnalysis = ["analysis", "mistake"].includes(level);
-  const showMistake = level === "mistake";
+  const showAnalysis = level === "analysis";
+  const officialAnalysis = String(question.officialAnalysis || "").trim();
+  const hasOfficialImage = Array.isArray(question.analysisImages) && question.analysisImages.length > 0;
+  const imageLabel = String(question.analysisImageLabel || "").trim();
+  const isWrongbookMathImage = imageLabel === "错题本原图" || String(question.source || "").includes("高数270道错题本") || String(question.questionSource || "").includes("高数270道错题本");
+  const sourceLabel = getSourceDisplay(question);
   return `
     <section class="solution-tabs" aria-label="分层答案">
       <button type="button" class="secondary-button ${level === "answer" ? "active" : ""}" data-solution-level="answer">只看答案</button>
-      <button type="button" class="secondary-button ${level === "analysis" ? "active" : ""}" data-solution-level="analysis">再看解析</button>
-      <button type="button" class="secondary-button ${level === "mistake" ? "active" : ""}" data-solution-level="mistake">最后看易错点</button>
+      <button type="button" class="secondary-button ${level === "analysis" ? "active" : ""}" data-solution-level="analysis">查看解析</button>
     </section>
     ${renderAnswerQualityNotice(question)}
     <section class="solution-box ${isUnverifiedAnswer(question) ? "unverified-solution" : ""}">
-      <strong>答案</strong>
+      <div class="solution-title-row"><strong>答案</strong>${getAnswerAuthorityLabel(question) ? `<span class="answer-authority ${escapeHtml(String(question.answerAuthority || ""))}">${escapeHtml(getAnswerAuthorityLabel(question))}</span>` : ""}</div>
       <p>${renderRichText(question.answer || "未填写")}</p>
+      ${sourceLabel ? `<div class="source-line">${escapeHtml(sourceLabel)}</div>` : ""}
+      ${showAnalysis && hasOfficialImage && isWrongbookMathImage ? `<div class="wrongbook-inline-analysis"><strong>${escapeHtml(imageLabel || "错题本原图")}</strong>${renderImages(question.analysisImages, imageLabel || "错题本原图")}</div>` : ""}
     </section>
-    ${showAnalysis ? `<section class="analysis-box"><strong>解析</strong><p>${renderRichText(question.analysis || "未填写")}</p></section>` : ""}
-    ${showMistake ? renderMistakePoint(question) : ""}
+    ${showAnalysis && officialAnalysis ? renderShortAnalysis("官方解析", officialAnalysis, question.analysisSource || question.verifiedSource || "") : ""}
+    ${showAnalysis && hasOfficialImage && !isWrongbookMathImage ? renderAnalysisImageToggle(question, !officialAnalysis) : ""}
   `;
 }
 
@@ -904,7 +984,7 @@ async function toggleHint(questionId) {
 }
 
 async function setSolutionLevel(questionId, level) {
-  const safeLevel = ["answer", "analysis", "mistake"].includes(level) ? level : "answer";
+  const safeLevel = ["answer", "analysis"].includes(level) ? level : "answer";
   await saveProgress({ ...getProgress(questionId), solutionLevel: safeLevel, solutionVisible: true });
   render();
 }
@@ -913,7 +993,7 @@ async function toggleSolution(questionId) {
   const progress = getProgress(questionId);
   const visible = !QuestionBankCore.isSolutionVisible(progress);
   const next = QuestionBankCore.setSolutionVisible(progress, visible);
-  await saveProgress({ ...next, solutionLevel: progress.solutionLevel || "answer" });
+  await saveProgress({ ...next, solutionLevel: visible ? "analysis" : (progress.solutionLevel || "answer") });
   render();
 }
 
@@ -936,7 +1016,13 @@ async function saveAttempt(questionId, result) {
   } else {
     showToast(progress.nextReviewAt ? `已记录做对，下次复习 ${progress.nextReviewAt}` : "已记录做对");
   }
+  const autoNextId = questionId;
   applyFilters();
+  window.setTimeout(() => {
+    if (state.selectedId === autoNextId) {
+      selectAdjacentQuestion(1);
+    }
+  }, 500);
 }
 
 async function addToWrongBook(questionId, options = {}) {
@@ -1616,6 +1702,28 @@ function renderFormulaHint(question) {
       <ul>${hints.map((item) => `<li>${renderRichText(item)}</li>`).join("")}</ul>
     </section>
   `;
+}
+
+
+function openImageZoom(src) {
+  if (!src) return;
+  closeImageZoom();
+  const overlay = document.createElement("div");
+  overlay.className = "image-zoom-overlay";
+  overlay.innerHTML = `
+    <div class="image-zoom-inner">
+      <button class="image-zoom-close" type="button" aria-label="关闭图片">×</button>
+      <img src="${escapeHtml(src)}" alt="放大图片">
+    </div>
+  `;
+  overlay.addEventListener("click", (event) => {
+    if (event.target === overlay || event.target.classList.contains("image-zoom-close")) closeImageZoom();
+  });
+  document.body.appendChild(overlay);
+}
+
+function closeImageZoom() {
+  document.querySelectorAll(".image-zoom-overlay").forEach((node) => node.remove());
 }
 
 function normalizeAnswerLetters(answer) {

@@ -1,0 +1,232 @@
+﻿question_id,origin_id,image_count,source_image_refs,new_image_paths,stem
+MATH-0001,M-001-01,1,question-images/source-04-001.png,question-images/wrongbook-math/MATH-0001-01.png,判断 y=lgx² 与 y=2lgx 等函数是否相同
+MATH-0002,M-001-02,1,question-images/source-04-002.png,question-images/wrongbook-math/MATH-0002-01.png,判断 f(x)=∛(x⁴-x³) 与 g(x)=x∛(x-1) 是否相同
+MATH-0003,M-001-03,1,question-images/source-04-003.png,question-images/wrongbook-math/MATH-0003-01.png,求 y=lg(x+2)+1/√(x²-1) 的定义域
+MATH-0004,M-001-04,1,question-images/source-04-004.png,question-images/wrongbook-math/MATH-0004-01.png,求 y=√(16-x²)+arcsin((2x-1)/7) 的定义域
+MATH-0005,M-001-05,1,question-images/source-04-005.png,question-images/wrongbook-math/MATH-0005-01.png,求 y=√(25-x²)+ln(sin x) 的定义域
+MATH-0006,M-001-06,1,question-images/source-04-006.png,question-images/wrongbook-math/MATH-0006-01.png,"已知 f(x) 定义域[0,1]，求 f(ln x) 定义域"
+MATH-0007,M-001-07,1,question-images/source-04-007.png,question-images/wrongbook-math/MATH-0007-01.png,"已知 f(2x+1) 定义域[3,5]，求 f(x-1) 定义域"
+MATH-0008,M-001-08,2,question-images/source-05-014.png;question-images/source-05-015.png,question-images/wrongbook-math/MATH-0008-01.png;question-images/wrongbook-math/MATH-0008-02.png,求 y=√(4-x²)+1/ln(cos x) 的定义域
+MATH-0009,M-001-09,1,question-images/source-05-016.png,question-images/wrongbook-math/MATH-0009-01.png,"已知 f(x-3)定义域[0,3]，g(x)=f(x)/√(2x+1)，求g定义域"
+MATH-0010,M-001-10,1,question-images/source-05-017.png,question-images/wrongbook-math/MATH-0010-01.png,"已知 f(x)定义域(0,1)，求 f(2^x) 定义域"
+MATH-0011,M-001-11,1,question-images/source-04-015.png,question-images/wrongbook-math/MATH-0011-01.png,求 y=³√(x+1) 的反函数
+MATH-0012,M-001-12,1,question-images/source-05-007.png,question-images/wrongbook-math/MATH-0012-01.png,求 y=2^x/(2^x+1) 的反函数
+MATH-0013,M-001-13,1,question-images/source-05-008.png,question-images/wrongbook-math/MATH-0013-01.png,"求 y=(sin3x)/2，x∈[-π/6,π/6] 的反函数"
+MATH-0014,M-001-14,1,question-images/source-04-012.png,question-images/wrongbook-math/MATH-0014-01.png,已知 f((1-x)/(1+x))=x，求 f(x)
+MATH-0015,M-001-15,1,question-images/source-04-013.png,question-images/wrongbook-math/MATH-0015-01.png,"分段函数 f(x)={2x,x≤0; x²,x≥0}，求 f(f(x))"
+MATH-0016,M-001-16,1,question-images/source-05-018.png,question-images/wrongbook-math/MATH-0016-01.png,设 f(x)=1/(1-x)，求 f{f[f(x)]}
+MATH-0017,M-001-17,1,question-images/source-05-019.png,question-images/wrongbook-math/MATH-0017-01.png,已知 f(x)=e^x，f[φ(x)]=1+2x，求φ(x)
+MATH-0018,M-001-18,1,question-images/source-04-014.png,question-images/wrongbook-math/MATH-0018-01.png,判断 f(x)=ln(√(1+x²)-x) 的奇偶性
+MATH-0019,M-001-19,1,question-images/source-04-022.jpeg,question-images/wrongbook-math/MATH-0019-01.jpeg,判断 f(x)=xcosx+sin x 的奇偶性
+MATH-0020,M-001-20,1,question-images/source-05-009.png,question-images/wrongbook-math/MATH-0020-01.png,判断 f(x)=1/(e^x+1)-1/2 的奇偶性
+MATH-0021,M-001-21,1,question-images/source-04-024.png,question-images/wrongbook-math/MATH-0021-01.png,判断 x→∞ 时 y=e^x、y=arctan x 极限是否存在
+MATH-0029,M-001-29,1,question-images/source-05-020.png,question-images/wrongbook-math/MATH-0029-01.png,求 lim(n→∞)(5^(n+2)-2^n)/(7^n+5^n)
+MATH-0030,M-001-30,1,question-images/source-05-021.png,question-images/wrongbook-math/MATH-0030-01.png,"已知 f(x) 在 [a,b] 上连续，a<x₁<x₂<x₃<b。证明：存在 ξ∈[a,b]，使 f(ξ)=[f(x₁)+2f(x₂)+f(x₃)]/4。"
+MATH-0031,M-001-31,1,question-images/source-05-022.png,question-images/wrongbook-math/MATH-0031-01.png,"证明 x³-2x²-x+1=0 在(0,1)内至少有根"
+MATH-0032,M-001-32,1,question-images/source-05-023.png,question-images/wrongbook-math/MATH-0032-01.png,"f连续且f(0)=0,f(1)=1，证存在ξ使f(ξ)=1-ξ"
+MATH-0033,M-001-33,1,question-images/source-05-024.png,question-images/wrongbook-math/MATH-0033-01.png,证明：lim(n→∞) n[1/(n²+π)+1/(n²+2π)+⋯+1/(n²+nπ)]=1。
+MATH-0034,M-001-34,1,question-images/source-05-025.png,question-images/wrongbook-math/MATH-0034-01.png,证明数列 √2，√(2+√2)，√(2+√(2+√2))，⋯ 的极限存在。令 a₁=√2，aₙ=√(2+aₙ₋₁)（n≥2）。
+MATH-0035,M-001-35,1,question-images/source-05-026.png,question-images/wrongbook-math/MATH-0035-01.png,设f(x)=√x，按定义求f′(4)
+MATH-0036,M-001-36,1,question-images/source-05-027.png,question-images/wrongbook-math/MATH-0036-01.png,判断函数 f(x)={ln(1+2x)，x≤0；sin 2x，x>0} 在 x=0 处是否可导。
+MATH-0037,M-001-37,1,question-images/source-05-028.png,question-images/wrongbook-math/MATH-0037-01.png,确定 a、b 的值，使函数 f(x)={cos x，x≤0；ax+b，x>0} 在 x=0 处可导。
+MATH-0038,M-001-38,1,question-images/source-05-029.png,question-images/wrongbook-math/MATH-0038-01.png,"求y=ln(1+x)在(0,0)处切线与法线"
+MATH-0039,M-001-39,1,question-images/source-05-030.png,question-images/wrongbook-math/MATH-0039-01.png,"求y=e^x过(0,0)的切线方程"
+MATH-0040,M-001-40,1,question-images/source-05-031.png,question-images/wrongbook-math/MATH-0040-01.png,y=a√x 与 y=ln x 相切，求a
+MATH-0041,M-001-41,1,question-images/source-05-032.png,question-images/wrongbook-math/MATH-0041-01.png,已知 f(x)=(2x+sin x)/(1+cos x)，求f′(0)
+MATH-0042,M-002-01,1,question-images/source-01-001.png,question-images/wrongbook-math/MATH-0042-01.png,求f(x)=x²在x=1处的导数f′(1)
+MATH-0043,M-002-02,1,question-images/source-01-002.png,question-images/wrongbook-math/MATH-0043-01.png,已知f在x0可导，求 Δx/[f(x0+3Δx)-f(x0)] 极限
+MATH-0044,M-002-03,1,question-images/source-01-003.png,question-images/wrongbook-math/MATH-0044-01.png,f(x)=x(x+1)…(x+2024)，求f′(0)
+MATH-0045,M-002-04,1,question-images/source-01-004.png,question-images/wrongbook-math/MATH-0045-01.png,分段函数(2/3)x³与x²在x=1处左右导数判断
+MATH-0046,M-002-05,1,question-images/source-01-005.png,question-images/wrongbook-math/MATH-0046-01.png,"f(x)=min{x,x²}在全实数不可导点个数"
+MATH-0047,M-002-06,1,question-images/source-01-006.png,question-images/wrongbook-math/MATH-0047-01.png,sin2x+x²cos(1/x)分段函数在0处性质判断
+MATH-0048,M-002-07,1,question-images/source-01-007.jpeg,question-images/wrongbook-math/MATH-0048-01.jpeg,lim(x→1)[√(4x)-2]/[2-√(5-x)]
+MATH-0049,M-002-08,1,question-images/source-01-008.jpeg,question-images/wrongbook-math/MATH-0049-01.jpeg,求 lim(x→0) [1/(1+x)]^(1/(2x)-1)
+MATH-0050,M-002-09,1,question-images/source-01-009.jpeg,question-images/wrongbook-math/MATH-0050-01.jpeg,lim(x→0)1/x²·sin²(x/√5)
+MATH-0051,M-002-10,1,question-images/source-01-009.jpeg,question-images/wrongbook-math/MATH-0051-01.jpeg,lim(x→0)[xsin(1/x)+(1/x)sin x]
+MATH-0052,M-002-11,1,question-images/source-01-010.jpeg,question-images/wrongbook-math/MATH-0052-01.jpeg,n→∞时与sin²(1/n)等价的无穷小
+MATH-0053,M-002-12,1,question-images/source-01-011.jpeg,question-images/wrongbook-math/MATH-0053-01.jpeg,x→0⁻时 y=e^(1/x) 的极限
+MATH-0054,M-002-13,1,question-images/source-01-012.jpeg,question-images/wrongbook-math/MATH-0054-01.jpeg,分段函数求定义域、函数值、连续区间、lim(x→1)f(x)
+MATH-0055,M-002-14,1,question-images/source-01-013.jpeg,question-images/wrongbook-math/MATH-0055-01.jpeg,f(x)=1/(1-e^x)在x=0附近间断情况
+MATH-0056,M-002-15,1,question-images/source-01-014.jpeg,question-images/wrongbook-math/MATH-0056-01.jpeg,f(x)=1/(1+2^(1/x))在x=0附近间断情况
+MATH-0057,M-002-16,1,question-images/source-01-015.jpeg,question-images/wrongbook-math/MATH-0057-01.jpeg,x arctan(1/x²)分段函数在0处连续与可导
+MATH-0058,M-003-01,1,question-images/source-03-001.png,question-images/wrongbook-math/MATH-0058-01.png,"求y=x^(3/2)通过点(0,-4)的切线方程"
+MATH-0059,M-003-02,1,question-images/source-03-002.png,question-images/wrongbook-math/MATH-0059-01.png,"y=x²+ax+b与y=x³+x在(1,2)处相切，求a,b"
+MATH-0060,M-003-03,2,question-images/source-02-004.png;question-images/source-02-021.png,question-images/wrongbook-math/MATH-0060-01.png;question-images/wrongbook-math/MATH-0060-02.png,"参数方程x=3cost,y=2sint，t=π/4求切线"
+MATH-0061,M-003-04,1,question-images/source-02-005.png,question-images/wrongbook-math/MATH-0061-01.png,"参数方程x=2t²+t,y=ln(1-t)，x=3处切线"
+MATH-0062,M-003-05,1,question-images/source-03-010.png,question-images/wrongbook-math/MATH-0062-01.png,求y=ln|x|的导数
+MATH-0063,M-003-06,1,question-images/source-03-011.png,question-images/wrongbook-math/MATH-0063-01.png,"分段f={cos x,x≤0; e^x,x>0}求f′(x)"
+MATH-0064,M-003-07,1,question-images/source-02-001.png,question-images/wrongbook-math/MATH-0064-01.png,"f(x)=3x²-2,x>0，反函数φ，求φ’(1)"
+MATH-0065,M-003-08,1,question-images/source-02-002.png,question-images/wrongbook-math/MATH-0065-01.png,求y=(x/(1+x))^x的导数
+MATH-0066,M-003-09,1,question-images/source-02-003.png,question-images/wrongbook-math/MATH-0066-01.png,求y=√[(3x-2)/((5-2x)(x-1))]的导数
+MATH-0067,M-003-10,1,question-images/source-02-015.png,question-images/wrongbook-math/MATH-0067-01.png,求y=³√[x(x²+1)/(e^x(x²+5))]的导数
+MATH-0068,M-003-11,1,question-images/source-02-016.png,question-images/wrongbook-math/MATH-0068-01.png,求y=[(1-x)/(1+x)]e^√x在x=4处导数
+MATH-0069,M-003-12,1,question-images/source-02-006.png,question-images/wrongbook-math/MATH-0069-01.png,设y=ln(x-1)，求y^(n)
+MATH-0070,M-003-13,1,question-images/source-02-007.png,question-images/wrongbook-math/MATH-0070-01.png,y=cos²x·ln x，求y’’
+MATH-0071,M-003-14,1,question-images/source-02-017.png,question-images/wrongbook-math/MATH-0071-01.png,lim(x→0)[e^(x²)-1-x²]/[x³sinx]
+MATH-0072,M-003-15,1,question-images/source-02-018.png,question-images/wrongbook-math/MATH-0072-01.png,lim(x→0+)x^(tan x)
+MATH-0073,M-003-16,1,question-images/source-02-019.png,question-images/wrongbook-math/MATH-0073-01.png,"参数方程x=ln√(1+t²),y=arctant，求dy/dx"
+MATH-0074,M-003-17,1,question-images/source-03-003.jpeg,question-images/wrongbook-math/MATH-0074-01.jpeg,"求曲线y=∛x在(0,0)处切线方程"
+MATH-0075,M-003-18,1,question-images/source-03-004.jpeg,question-images/wrongbook-math/MATH-0075-01.jpeg,y=x³-x在M点切线平行于x+y=1，求M
+MATH-0076,M-003-20,1,question-images/source-03-005.jpeg,question-images/wrongbook-math/MATH-0076-01.jpeg,求y=(1-√x)/(1+√x)的导数
+MATH-0077,M-003-21,1,question-images/source-03-006.jpeg,question-images/wrongbook-math/MATH-0077-01.jpeg,求y=3/(5-x)+x²/5的导数
+MATH-0078,M-003-22,1,question-images/source-03-006.jpeg,question-images/wrongbook-math/MATH-0078-01.jpeg,求y=1/x-2√x+x^(3/2)的导数
+MATH-0079,M-003-23,1,question-images/source-03-006.jpeg,question-images/wrongbook-math/MATH-0079-01.jpeg,求y=2^x·x²的导数
+MATH-0080,M-003-24,1,question-images/source-03-006.jpeg,question-images/wrongbook-math/MATH-0080-01.jpeg,求y=(x+1)/(x-2)的导数
+MATH-0081,M-003-25,1,question-images/source-03-007.jpeg,question-images/wrongbook-math/MATH-0081-01.jpeg,求y=1/(1+√x)+1/(1-√x)的导数
+MATH-0082,M-003-26,1,question-images/source-03-007.jpeg,question-images/wrongbook-math/MATH-0082-01.jpeg,求y=(1+cos x)/(1-cos x)的导数
+MATH-0083,M-003-27,1,question-images/source-03-007.jpeg,question-images/wrongbook-math/MATH-0083-01.jpeg,求y=sin x/(1+cos x)的导数
+MATH-0084,M-003-28,1,question-images/source-03-007.jpeg,question-images/wrongbook-math/MATH-0084-01.jpeg,求y=xtanx+secx-1的导数
+MATH-0085,M-003-29,1,question-images/source-02-008.jpeg,question-images/wrongbook-math/MATH-0085-01.jpeg,求y=arccos(1/x)的导数
+MATH-0086,M-003-30,1,question-images/source-02-009.jpeg,question-images/wrongbook-math/MATH-0086-01.jpeg,求y=arctan((x+1)/(x-1))的导数
+MATH-0087,M-003-31,1,question-images/source-02-010.jpeg,question-images/wrongbook-math/MATH-0087-01.jpeg,求y=cos[f(1/x)]的导数
+MATH-0088,M-003-32,1,question-images/source-02-009.jpeg,question-images/wrongbook-math/MATH-0088-01.jpeg,求y=f(e^(x²))sinx的导数
+MATH-0089,M-003-33,1,question-images/source-02-011.jpeg,question-images/wrongbook-math/MATH-0089-01.jpeg,求y=√(4-x²)+x·arcsin(x/2)的导数
+MATH-0090,M-003-34,1,question-images/source-02-012.jpeg,question-images/wrongbook-math/MATH-0090-01.jpeg,求y=e^x arctan(e^x)-ln√(1+e^(2x))在0处导数
+MATH-0091,M-003-35,1,question-images/source-02-013.jpeg,question-images/wrongbook-math/MATH-0091-01.jpeg,求y=1/4ln((1+x)/(1-x))-1/2arctanx的导数
+MATH-0092,M-003-36,1,question-images/source-02-013.jpeg,question-images/wrongbook-math/MATH-0092-01.jpeg,求y=x²sin(1/x)+2x/(1-x²)的导数
+MATH-0093,M-003-37,1,question-images/source-02-014.jpeg,question-images/wrongbook-math/MATH-0093-01.jpeg,"分段f={x²sin(1/x),x≠0;0,x=0}求导"
+MATH-0094,M-003-38,1,question-images/source-02-014.jpeg,question-images/wrongbook-math/MATH-0094-01.jpeg,"分段f={sin x,x<0;ln(1+x),x≥0}求导"
+MATH-0095,M-003-39,1,question-images/source-03-008.png,question-images/wrongbook-math/MATH-0095-01.png,y=a^x+√(1-a^(2x))·arccos(a^x)求导
+MATH-0096,M-003-40,1,question-images/source-03-009.png,question-images/wrongbook-math/MATH-0096-01.png,y=(x/2)√(a²-x²)+(a²/2)arcsin(x/a)，求y’
+MATH-0097,U-001,1,question-images/source-02-020.png,question-images/wrongbook-math/MATH-0097-01.png,设函数 y=y(x) 由参数方程 x=t³+t²，y=t-ln(t+1) 所确定，求 dy/dx|_{t=0}
+MATH-0098,U-002,1,question-images/source-02-022.png,question-images/wrongbook-math/MATH-0098-01.png,已知方程 x=3t²+2t+3，e^(sin t)-y+1=0，由 y=y(x) 所确定，求 dy/dx|_{t=0}
+MATH-0099,U-003,1,question-images/source-04-008.jpeg,question-images/wrongbook-math/MATH-0099-01.jpeg,y=√(9-x²)/lg(x+2)，求定义域
+MATH-0100,U-004,1,question-images/source-04-008.jpeg,question-images/wrongbook-math/MATH-0100-01.jpeg,分段函数 f(x)={x，-1≤x≤0；sin x，0<x≤3；eˣ，x>3}，求定义域
+MATH-0101,U-006,1,question-images/source-04-009.jpeg,question-images/wrongbook-math/MATH-0101-01.jpeg,y=e^(1/√x)+1/(1-ln x)，求定义域
+MATH-0102,U-007,1,question-images/source-04-009.jpeg,question-images/wrongbook-math/MATH-0102-01.jpeg,y=√(3x+2)+1/(1-x²)，求定义域
+MATH-0103,U-008,1,question-images/source-04-010.jpeg,question-images/wrongbook-math/MATH-0103-01.jpeg,y=arcsin(1-x)+1/2·lg((1+x)/(1-x))，求定义域
+MATH-0104,U-009,1,question-images/source-04-011.jpeg,question-images/wrongbook-math/MATH-0104-01.jpeg,"已知 f[lg(1+x)] 的定义域为 [0,9]，求 f(2x+1) 的定义域"
+MATH-0105,U-010,1,question-images/source-04-016.png,question-images/wrongbook-math/MATH-0105-01.png,求 y=2ˣ/(2ˣ+1) 的反函数
+MATH-0107,U-012,1,question-images/source-04-019.jpeg,question-images/wrongbook-math/MATH-0107-01.jpeg,f(x)=xcosx+sin x，判断函数奇偶性
+MATH-0108,U-013,1,question-images/source-04-020.jpeg,question-images/wrongbook-math/MATH-0108-01.jpeg,f(x)=1/(2ˣ+1)-1/2，判断函数奇偶性
+MATH-0109,U-014,1,question-images/source-04-021.jpeg,question-images/wrongbook-math/MATH-0109-01.jpeg,y=(4x+3)³，求反函数
+MATH-0110,U-015,1,question-images/source-04-021.jpeg,question-images/wrongbook-math/MATH-0110-01.jpeg,y=ln√(x+1)，求反函数
+MATH-0111,U-016,1,question-images/source-04-021.jpeg,question-images/wrongbook-math/MATH-0111-01.jpeg,"y=cos(2x+1)，x∈[-1/2,(π-1)/2]，求反函数"
+MATH-0112,U-017,1,question-images/source-04-021.jpeg,question-images/wrongbook-math/MATH-0112-01.jpeg,y=1+ln(x+2)，求反函数
+MATH-0113,U-018,1,question-images/source-04-023.jpeg,question-images/wrongbook-math/MATH-0113-01.jpeg,设 f(x)=e^(1-x²)，g(x)=sin x，求 f[f(x)]、f[g(x)]、g[f(x)]、g[g(x)]
+MATH-0114,U-019,1,question-images/source-04-023.jpeg,question-images/wrongbook-math/MATH-0114-01.jpeg,设 f(x)=(x+1)/(x-1)，求 f(x+1)
+MATH-0115,U-020,1,question-images/source-04-023.jpeg,question-images/wrongbook-math/MATH-0115-01.jpeg,设 f(x)=x/√(1-x²)，x>0，求 f(1/x)
+MATH-0116,U-021,1,question-images/source-04-025.jpeg,question-images/wrongbook-math/MATH-0116-01.jpeg,函数 f(x)=2x³-3sinx 的奇偶性
+MATH-0117,U-022,1,question-images/source-04-025.jpeg,question-images/wrongbook-math/MATH-0117-01.jpeg,函数 y=|sin x| 的周期
+MATH-0118,U-023,1,question-images/source-04-025.jpeg,question-images/wrongbook-math/MATH-0118-01.jpeg,函数 f(x)=√(x-2)+1/(x-5) 的定义域
+MATH-0119,U-024,1,question-images/source-04-026.jpeg,question-images/wrongbook-math/MATH-0119-01.jpeg,函数 y=arcsin(x-3)+ln(x-2) 的定义域
+MATH-0120,U-025,1,question-images/source-04-026.jpeg,question-images/wrongbook-math/MATH-0120-01.jpeg,分段函数 {2x+1，-1≤x≤0；-1/2·x，0<x<2；e，x≥2} 的定义域
+MATH-0121,U-027,1,question-images/source-04-027.jpeg,question-images/wrongbook-math/MATH-0121-01.jpeg,f(x)=3x²/√(1-x)+lg(3x+1) 的定义域
+MATH-0122,U-028,1,question-images/source-04-027.jpeg,question-images/wrongbook-math/MATH-0122-01.jpeg,"已知 f(x) 定义域为 (-1,2]，求 f(x-1) 的定义域"
+MATH-0123,U-029,1,question-images/source-04-027.jpeg,question-images/wrongbook-math/MATH-0123-01.jpeg,分段函数 f(x)={3ˣ，x>0；2x+1，-2≤x≤0；x²，x<-2}，求 f(f(-3))
+MATH-0124,U-030,1,question-images/source-04-027.jpeg,question-images/wrongbook-math/MATH-0124-01.jpeg,设 f(x)=1+x²，g(x)=sin²x，求 f[g(x)]
+MATH-0125,U-031,1,question-images/source-04-027.jpeg,question-images/wrongbook-math/MATH-0125-01.jpeg,已知 f(1/x)=x/(1-x²)，x>1，求 f(x)
+MATH-0126,U-032,1,question-images/source-04-027.jpeg,question-images/wrongbook-math/MATH-0126-01.jpeg,"y=2sin3x，x∈[-π/6,π/6]，求反函数"
+MATH-0127,U-033,1,question-images/source-04-027.jpeg,question-images/wrongbook-math/MATH-0127-01.jpeg,y=ln(x-1)，2<x<e+1，求反函数
+MATH-0128,U-034,1,question-images/source-04-027.jpeg,question-images/wrongbook-math/MATH-0128-01.jpeg,f(x)=2eˣ-1，求 f^{-1}(1)
+MATH-0129,U-035,1,question-images/source-04-027.jpeg,question-images/wrongbook-math/MATH-0129-01.jpeg,"设 f(1-3x) 的定义域为 (-1,3]，求 f(x-3) 的定义域"
+MATH-0130,U-037,1,question-images/source-04-028.jpeg,question-images/wrongbook-math/MATH-0130-01.jpeg,设 f(x) 满足 2f(x)+f(-x)=x+2，求 f(x)
+MATH-0131,U-038,1,question-images/source-04-028.jpeg,question-images/wrongbook-math/MATH-0131-01.jpeg,"已知 f(x)=(a-2)x²+bx+1 是偶函数，且定义域为 [2a-5,a+1]，求 a²+b²"
+MATH-0132,U-040,1,question-images/source-04-029.jpeg,question-images/wrongbook-math/MATH-0132-01.jpeg,求函数 f(x)=(2x-1)/(x+3) 的反函数
+MATH-0133,U-041,1,question-images/source-04-029.jpeg,question-images/wrongbook-math/MATH-0133-01.jpeg,由 y=u²，u=lnv，v=5ˣ 构成的复合函数
+MATH-0134,U-043,1,question-images/source-04-030.jpeg,question-images/wrongbook-math/MATH-0134-01.jpeg,判断 f(x)=sin³x/(1+cos²x) 的奇偶性
+MATH-0135,U-044,1,question-images/source-04-030.jpeg,question-images/wrongbook-math/MATH-0135-01.jpeg,"将 y=max{sin x,cos x} 在 [0,π] 上写成分段函数并画图"
+MATH-0136,U-045,1,question-images/source-04-030.jpeg,question-images/wrongbook-math/MATH-0136-01.jpeg,已知 f(2ˣ+1/2ˣ)=4ˣ+1/4ˣ，求 f(x)
+MATH-0137,U-047,1,question-images/source-04-031.jpeg,question-images/wrongbook-math/MATH-0137-01.jpeg,设 f(x) 为奇函数，判断 F(x)=f(x)(2ˣ+2^{-x}) 的奇偶性
+MATH-0138,U-048,1,question-images/source-04-031.jpeg,question-images/wrongbook-math/MATH-0138-01.jpeg,将 y=√(x²-2x+1) 写成分段函数并画图像
+MATH-0139,U-049,1,question-images/source-04-032.jpeg,question-images/wrongbook-math/MATH-0139-01.jpeg,选择题：若函数 f(x) 在某点 x₀ 处极限存在，则下列说法正确的是：A. f(x)在x₀的函数值必存在且等于极限值；B. f(x)在x₀函数值必存在，但不一定等于极限值；C. f(x)在x₀的函数值可以不存在；D. 如果f(x₀)存在，
+MATH-0140,U-050,1,question-images/source-04-032.jpeg,question-images/wrongbook-math/MATH-0140-01.jpeg,分段函数 f(x)={sin x+1，x<0；0，x=0；cos x-1，x>0}，求 lim(x→0)f(x)
+MATH-0141,U-051,1,question-images/source-04-032.jpeg,question-images/wrongbook-math/MATH-0141-01.jpeg,当 x→∞ 时，arctan x 的极限等于多少
+MATH-0142,U-053,1,question-images/source-04-033.jpeg,question-images/wrongbook-math/MATH-0142-01.jpeg,计算 lim(x→0) ln(1+5x)/arctan2x
+MATH-0143,U-054,1,question-images/source-04-033.jpeg,question-images/wrongbook-math/MATH-0143-01.jpeg,当 x→0 时，下列函数不是无穷小量的是：A. ln(1+x²)/x；B. eˣ-1；C. (x³+sin x)/x；D. ln(1+x)+tan x
+MATH-0144,U-055,1,question-images/source-04-033.jpeg,question-images/wrongbook-math/MATH-0144-01.jpeg,当 x→0 时，下列变量中为无穷小量的是：A. lg|x|；B. cos(1/x)；C. eˣ；D. √(1+x)-1
+MATH-0145,U-056,1,question-images/source-04-033.jpeg,question-images/wrongbook-math/MATH-0145-01.jpeg,当 x→0 时，√(1+3x²)-1 是 x 的几阶无穷小
+MATH-0146,U-057,1,question-images/source-04-033.jpeg,question-images/wrongbook-math/MATH-0146-01.jpeg,极限 lim(x→1)(x²+ax-2)/(x-1) 存在，求 a
+MATH-0147,U-058,1,question-images/source-04-034.jpeg,question-images/wrongbook-math/MATH-0147-01.jpeg,计算 lim(x→1) sin²(1-x)/((x-1)²(x+2))
+MATH-0148,U-059,1,question-images/source-04-034.jpeg,question-images/wrongbook-math/MATH-0148-01.jpeg,计算 lim(n→∞) 5ⁿ sin(x/5ⁿ)，其中 x 是不为零的常数
+MATH-0149,U-060,1,question-images/source-04-034.jpeg,question-images/wrongbook-math/MATH-0149-01.jpeg,计算 lim(x→∞)(2xsin(1/x)+sin3x/x)
+MATH-0150,U-061,1,question-images/source-04-034.jpeg,question-images/wrongbook-math/MATH-0150-01.jpeg,计算 lim(x→∞) x²(1-cos(1/x))
+MATH-0151,U-062,1,question-images/source-04-035.jpeg,question-images/wrongbook-math/MATH-0151-01.jpeg,已知 lim(x→0)(1-mx)^(1/x)=e²，求 m
+MATH-0152,U-063,1,question-images/source-04-035.jpeg,question-images/wrongbook-math/MATH-0152-01.jpeg,当 x→0 时，比较 arctanx³ 与 √(1+2x³)-1 的无穷小阶数
+MATH-0153,U-064,1,question-images/source-04-035.jpeg,question-images/wrongbook-math/MATH-0153-01.jpeg,当 x→0+ 时，比 sin x 更低阶的无穷小是：A. 1-cos x；B. 3x；C. arctan√x；D. ln(1+x)
+MATH-0154,U-065,1,question-images/source-04-035.jpeg,question-images/wrongbook-math/MATH-0154-01.jpeg,当 x→0 时，若 f(x)=ln(1+ax²) 与 g(x)=1-cos x 是等价无穷小，求 a
+MATH-0155,U-066,1,question-images/source-04-036.jpeg,question-images/wrongbook-math/MATH-0155-01.jpeg,当 x→0+ 时，下列变量是无穷小量的是：A. 3secx/x；B. cos x/x；C. xlnx；D. e^(-x)
+MATH-0156,U-067,1,question-images/source-04-036.jpeg,question-images/wrongbook-math/MATH-0156-01.jpeg,当 x→5 时，求 f(x)=|x-5|/(x-5) 的极限
+MATH-0157,U-068,1,question-images/source-04-036.jpeg,question-images/wrongbook-math/MATH-0157-01.jpeg,计算 lim(x→0)(1+2sinx)^(1/x)
+MATH-0158,U-069,2,question-images/source-04-036.jpeg;question-images/source-04-037.jpeg,question-images/wrongbook-math/MATH-0158-01.jpeg;question-images/wrongbook-math/MATH-0158-02.jpeg,计算 lim(x→0) 1/(2+3^(1/x))
+MATH-0159,U-070,1,question-images/source-04-037.jpeg,question-images/wrongbook-math/MATH-0159-01.jpeg,当 x→∞ 时，f(x) 与 1/x² 等价无穷小，求 lim(x→∞)2x²f(x)
+MATH-0160,U-071,1,question-images/source-04-037.jpeg,question-images/wrongbook-math/MATH-0160-01.jpeg,填空 Q1：lim(x→1)(1/(x-1)-2/(x²-1))
+MATH-0161,U-072,1,question-images/source-04-037.jpeg,question-images/wrongbook-math/MATH-0161-01.jpeg,计算 lim(x→∞)(3x²-x+5)/(5x²+2x³-1)
+MATH-0162,U-073,1,question-images/source-04-037.jpeg,question-images/wrongbook-math/MATH-0162-01.jpeg,填空 Q3：lim(x→1) sin(x-1)/(x-1)
+MATH-0163,U-074,1,question-images/source-05-001.jpeg,question-images/wrongbook-math/MATH-0163-01.jpeg,计算 lim(x→0)(1-eˣ)/sin x
+MATH-0164,U-075,1,question-images/source-05-001.jpeg,question-images/wrongbook-math/MATH-0164-01.jpeg,计算 lim(x→∞) x(e^{1/(2x)}-1)
+MATH-0165,U-076,1,question-images/source-05-001.jpeg,question-images/wrongbook-math/MATH-0165-01.jpeg,已知 lim f(x)=3，lim f(x)/g(x)=1，求 lim g(x)
+MATH-0166,U-077,1,question-images/source-05-001.jpeg,question-images/wrongbook-math/MATH-0166-01.jpeg,计算 lim(x→∞)(√x+∛x+∜x)/√(2x+1)
+MATH-0167,U-078,1,question-images/source-05-002.jpeg,question-images/wrongbook-math/MATH-0167-01.jpeg,计算 lim(x→∞)((x³+1)^200(2x+3)^1426)/x^2026
+MATH-0168,U-079,1,question-images/source-05-002.jpeg,question-images/wrongbook-math/MATH-0168-01.jpeg,计算 lim(x→0+) x²arctan(1/x)
+MATH-0169,U-080,1,question-images/source-05-002.jpeg,question-images/wrongbook-math/MATH-0169-01.jpeg,计算 lim(h→0)((x+h)^3-x³)/h
+MATH-0170,U-081,1,question-images/source-05-002.jpeg,question-images/wrongbook-math/MATH-0170-01.jpeg,计算 lim(x→0) x³sin(1/x)/ln(1-x²)
+MATH-0171,U-082,1,question-images/source-05-003.jpeg,question-images/wrongbook-math/MATH-0171-01.jpeg,当 x→0 时，(1+ax²)^(1/3)-1 与 cos x-1 等价无穷小，求 a
+MATH-0172,U-083,1,question-images/source-05-003.jpeg,question-images/wrongbook-math/MATH-0172-01.jpeg,当 x→0 时，√(1-ax²)-1 与 xsinx 等价无穷小，求 a
+MATH-0173,U-084,1,question-images/source-05-003.jpeg,question-images/wrongbook-math/MATH-0173-01.jpeg,已知 f(x)~3x，求 lim(x→0)arcsin6x/f(x)
+MATH-0174,U-085,1,question-images/source-05-003.jpeg,question-images/wrongbook-math/MATH-0174-01.jpeg,计算 lim(x→0)(1-2tanx)^(3cotx)
+MATH-0175,U-086,1,question-images/source-05-003.jpeg,question-images/wrongbook-math/MATH-0175-01.jpeg,计算 lim(x→0)(e-e^{cos x})/(∛(x²+1)-1)
+MATH-0176,U-087,1,question-images/source-05-003.jpeg,question-images/wrongbook-math/MATH-0176-01.jpeg,计算 lim(x→0)(3sinx+x²cos(1/x))/ln(1+x)
+MATH-0177,U-089,1,question-images/source-05-004.jpeg,question-images/wrongbook-math/MATH-0177-01.jpeg,计算 lim(x→0)(√(1+x)-√(1-x))/x
+MATH-0178,U-090,1,question-images/source-05-004.jpeg,question-images/wrongbook-math/MATH-0178-01.jpeg,计算 lim(x→0)(2x+cos x)/(3x-sin x)
+MATH-0179,U-092,1,question-images/source-05-005.jpeg,question-images/wrongbook-math/MATH-0179-01.jpeg,设 x_n=1+1/3+1/3²+...+1/3ⁿ，计算 lim x_n
+MATH-0180,U-093,1,question-images/source-05-005.jpeg,question-images/wrongbook-math/MATH-0180-01.jpeg,计算 lim(n→∞)(1+2+3+...+n)/n²
+MATH-0181,U-094,1,question-images/source-05-005.jpeg,question-images/wrongbook-math/MATH-0181-01.jpeg,计算 lim(x→∞)(2πˣ-π^{-2x})/(3πˣ+π^{-2x})
+MATH-0182,U-095,2,question-images/source-05-005.jpeg;question-images/source-05-006.jpeg,question-images/wrongbook-math/MATH-0182-01.jpeg;question-images/wrongbook-math/MATH-0182-02.jpeg,计算 lim(x→∞) x[ln(x+2)-ln x]
+MATH-0183,U-096,1,question-images/source-05-006.jpeg,question-images/wrongbook-math/MATH-0183-01.jpeg,设 lim(x→∞)((x+2a)/(x-a))^x=8 且 a≠0，求常数 a
+MATH-0184,U-097,1,question-images/source-05-010.png,question-images/wrongbook-math/MATH-0184-01.png,求极限 lim_{x→0} x²sin(1/x)/sin x
+MATH-0185,U-098,1,question-images/source-05-011.png,question-images/wrongbook-math/MATH-0185-01.png,已知 f(x)=2026arccot√x+ln√(1+x²)，求 f'(x)
+MATH-0186,U-099,1,question-images/source-05-012.png,question-images/wrongbook-math/MATH-0186-01.png,已知方程 x·eʸ+xy-e=0，求 y'
+MATH-0187,U-100,1,question-images/source-05-013.png,question-images/wrongbook-math/MATH-0187-01.png,"求椭圆 x²/16+y²/9=1 在点 (2,3√3/2) 处的切线方程"
+MATH-0188,M-005-01,1,question-images/source-06-001.png,question-images/wrongbook-math/MATH-0188-01.png,设 y=ln(x+√(1+x²))，求 y′。
+MATH-0189,M-005-02,1,question-images/source-06-002.png,question-images/wrongbook-math/MATH-0189-01.png,已知 y 与 f(3^x) 相关，求高阶导数。
+MATH-0190,M-005-03,1,question-images/source-06-003.png,question-images/wrongbook-math/MATH-0190-01.png,求含 x⁴+sin x 的高阶导数。
+MATH-0191,M-005-04,1,question-images/source-06-004.png,question-images/wrongbook-math/MATH-0191-01.png,求 y=log₂(1+x²)+sin1 的微分/导数。
+MATH-0192,M-005-05,1,question-images/source-06-005.png,question-images/wrongbook-math/MATH-0192-01.png,求含 arcsin 与 √(4-x²) 的函数微分。
+MATH-0193,M-005-06,1,question-images/source-06-006.png,question-images/wrongbook-math/MATH-0193-01.png,由含 ln 的隐式方程确定 y=y(x)，求 dy/dx。
+MATH-0194,M-005-07,1,question-images/source-06-007.png,question-images/wrongbook-math/MATH-0194-01.png,判断 f(x)=x arctan x 的凹凸性。
+MATH-0195,M-005-08,1,question-images/source-06-008.png,question-images/wrongbook-math/MATH-0195-01.png,求函数的单调区间和极值，按导数符号表整理。
+MATH-0196,M-005-09,1,question-images/source-06-009.png,question-images/wrongbook-math/MATH-0196-01.png,已知三次函数拐点/条件，求 a、b。
+MATH-0197,M-005-10,1,question-images/source-06-010.png,question-images/wrongbook-math/MATH-0197-01.png,过指定点作三次函数切线，求参数。
+MATH-0198,M-005-11,1,question-images/source-06-011.png,question-images/wrongbook-math/MATH-0198-01.png,求 f(x)=1/(x-2)+1 的渐近线。
+MATH-0199,M-005-12,1,question-images/source-06-012.png,question-images/wrongbook-math/MATH-0199-01.png,求 f(x)=(x²-2)/(x-1) 的渐近线。
+MATH-0200,M-005-13,1,question-images/source-06-013.png,question-images/wrongbook-math/MATH-0200-01.png,求 f(x)=x²/(2x-1) 的渐近线。
+MATH-0201,M-005-14,1,question-images/source-06-014.png,question-images/wrongbook-math/MATH-0201-01.png,求/画 f(x)=x/(x²+1) 的图像。
+MATH-0202,M-005-15,1,question-images/source-06-015.png,question-images/wrongbook-math/MATH-0202-01.png,根据一阶、二阶导数符号表判断函数图像。
+MATH-0203,M-005-16,1,question-images/source-06-016.png,question-images/wrongbook-math/MATH-0203-01.png,函数草图补充，和上一张综合分析配套。
+MATH-0204,M-005-17,1,question-images/source-07-001.jpeg,question-images/wrongbook-math/MATH-0204-01.jpeg,参数方程 x=arctan t，y=t e^t，求 dy/dx。
+MATH-0205,M-005-18,1,question-images/source-07-002.jpeg,question-images/wrongbook-math/MATH-0205-01.jpeg,x=3cost，y=2sint，t=π/4 时求切线方程。
+MATH-0206,M-005-19,1,question-images/source-07-003.jpeg,question-images/wrongbook-math/MATH-0206-01.jpeg,求 y=√(x√x) 的二阶导数。
+MATH-0207,M-005-20,1,question-images/source-07-003.jpeg,question-images/wrongbook-math/MATH-0207-01.jpeg,求 y=(√x-1)(1/√x-1) 的二阶导数。
+MATH-0208,M-005-21,1,question-images/source-07-003.jpeg,question-images/wrongbook-math/MATH-0208-01.jpeg,求 y=e^x ln x 的二阶导数。
+MATH-0209,M-005-22,1,question-images/source-07-003.jpeg,question-images/wrongbook-math/MATH-0209-01.jpeg,求 y=x/√(1-x²) 的二阶导数。
+MATH-0210,M-005-23,1,question-images/source-07-004.jpeg,question-images/wrongbook-math/MATH-0210-01.jpeg,求 y=cot(x/2) 的导数。
+MATH-0211,M-005-24,1,question-images/source-07-004.jpeg,question-images/wrongbook-math/MATH-0211-01.jpeg,求 y=xarcsinx 的导数。
+MATH-0212,M-005-25,1,question-images/source-07-004.jpeg,question-images/wrongbook-math/MATH-0212-01.jpeg,求 y=1/x-2∛x+x^(3/2) 的微分。
+MATH-0213,M-005-26,1,question-images/source-07-004.jpeg,question-images/wrongbook-math/MATH-0213-01.jpeg,求 y=x sin x ln x 的微分。
+MATH-0215,M-005-28,1,question-images/source-07-006.jpeg,question-images/wrongbook-math/MATH-0215-01.jpeg,求 y=e^{-x}cos(3-x) 的导数。
+MATH-0216,M-005-29,1,question-images/source-07-006.jpeg,question-images/wrongbook-math/MATH-0216-01.jpeg,求含 arctan x-x 与 x²sinx 的极限
+MATH-0217,M-005-30,1,question-images/source-07-007.jpeg,question-images/wrongbook-math/MATH-0217-01.jpeg,求 y=ln(1+x²)+sin²(2x+2^x) 的导数。
+MATH-0218,M-005-31,1,question-images/source-07-007.jpeg,question-images/wrongbook-math/MATH-0218-01.jpeg,求含 e^x-sin x-1 与 (arcsin x)² 的极限
+MATH-0219,M-005-32,1,question-images/source-07-008.png,question-images/wrongbook-math/MATH-0219-01.png,求含 ln(e^x+x) 的极限。
+MATH-0220,M-005-33,1,question-images/source-07-009.png,question-images/wrongbook-math/MATH-0220-01.png,求含 xe^x、e^{-x} 的极限。
+MATH-0221,M-005-34,1,question-images/source-07-010.png,question-images/wrongbook-math/MATH-0221-01.png,求 lim(x→0⁺) xlnx。
+MATH-0222,M-005-35,1,question-images/source-07-011.png,question-images/wrongbook-math/MATH-0222-01.png,求含 (1-x)tan(πx/2) 的极限。
+MATH-0223,M-005-36,1,question-images/source-07-012.png,question-images/wrongbook-math/MATH-0223-01.png,求 (e^x+x)^(1/x) 类型极限。
+MATH-0224,M-005-37,1,question-images/source-07-013.png,question-images/wrongbook-math/MATH-0224-01.png,求 ((arctan x)/x)^(1/x²) 类型极限。
+MATH-0225,M-005-38,1,question-images/source-07-014.png,question-images/wrongbook-math/MATH-0225-01.png,求函数 y=x-ln x 的单调区间。
+MATH-0226,M-005-39,1,question-images/source-07-015.png,question-images/wrongbook-math/MATH-0226-01.png,"求 f(x)=2x³+3x²-12x+14 在 [-3,4] 上的最值。"
+MATH-0227,M-005-40,1,question-images/source-07-016.png,question-images/wrongbook-math/MATH-0227-01.png,"已知 f(x)=ax³-6ax²+b 在区间 [-1,2] 上最大值为 3、最小值为 -29，求 a、b。"
+MATH-0228,M-005-41,1,question-images/source-07-017.png,question-images/wrongbook-math/MATH-0228-01.png,求 f(x)=x+e^(1/x) 的单调区间与极值。
+MATH-0229,M-005-42,1,question-images/source-07-018.png,question-images/wrongbook-math/MATH-0229-01.png,讨论曲线凹凸性、拐点及图像特征。
+MATH-0230,M-005-43,1,question-images/source-08-001.png,question-images/wrongbook-math/MATH-0230-01.png,讨论 y=x²-2x+1 的单调性。
+MATH-0231,M-005-44,1,question-images/source-08-002.png,question-images/wrongbook-math/MATH-0231-01.png,根据 f′(x) 的符号或图像判断函数性质。
+MATH-0232,M-005-45,1,question-images/source-08-003.png,question-images/wrongbook-math/MATH-0232-01.png,由函数图像判断导数正负、单调性或极值。
+MATH-0233,M-005-46,1,question-images/source-08-004.png,question-images/wrongbook-math/MATH-0233-01.png,判断函数在 x₀ 处有极值时 f′(x₀) 等条件是否一定成立。
+MATH-0234,M-005-47,1,question-images/source-08-005.png,question-images/wrongbook-math/MATH-0234-01.png,求 f(x)=3-x^(2/3) 的单调区间和极值。
+MATH-0235,M-005-48,1,question-images/source-08-006.png,question-images/wrongbook-math/MATH-0235-01.png,求 f(x)=x³/(x-1) 的单调区间和极值。
+MATH-0236,M-005-49,1,question-images/source-08-007.png,question-images/wrongbook-math/MATH-0236-01.png,求根式函数的单调区间和极值。
+MATH-0237,M-005-50,1,question-images/source-08-008.png,question-images/wrongbook-math/MATH-0237-01.png,利用导数证明三角函数相关不等式或单调性。
+MATH-0238,M-005-51,1,question-images/source-08-009.png,question-images/wrongbook-math/MATH-0238-01.png,"求 y=|x+3| 在 [-1,2] 上的最大值和最小值。"
+MATH-0239,M-005-52,1,question-images/source-08-010.png,question-images/wrongbook-math/MATH-0239-01.png,已知闭区间最值条件，求参数 a、b 的补充题。
+MATH-0240,M-005-53,1,question-images/source-08-011.png,question-images/wrongbook-math/MATH-0240-01.png,"求 f(x)=x+1/x 在 (0,+∞) 上的最小值。"

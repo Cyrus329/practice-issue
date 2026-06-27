@@ -1,0 +1,22 @@
+# v10 清理报告
+
+- 规则：只显示官方解析文字或官方解析原图。
+- 已删除旧 AI/模板/占位解析文字。
+- 没有官方解析的题只显示答案，不再显示“未提供详解”等废话。
+- 计算机扫描答案册题显示官方解析原图，避免 OCR 乱码。
+
+```json
+{
+  "total_questions": 1540,
+  "official_text_analysis": 362,
+  "official_image_analysis": 1072,
+  "remaining_old_template_markers": [],
+  "remaining_old_template_count": 0,
+  "rules": [
+    "只显示官方解析文字或官方解析原图",
+    "删除AI/模板/占位解析文字",
+    "没有官方解析的题只显示答案，不再提示废话",
+    "计算机扫描答案册题优先显示官方解析原图，避免OCR乱码"
+  ]
+}
+```

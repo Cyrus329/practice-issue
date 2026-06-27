@@ -93,18 +93,27 @@
   function normalizeQuestion(question) {
     const source = question || {};
     const id = String(source.id || source.questionId || cryptoRandomId()).trim();
+    const subject = String(source.subject || "未分类").trim();
     return {
+      ...source,
       id,
-      subject: String(source.subject || "未分类").trim(),
-      chapter: normalizeChapter(String(source.subject || "未分类").trim(), source.chapter),
+      subject,
+      chapter: normalizeChapter(subject, source.chapter),
       type: String(source.type || source.questionType || "练习题").trim(),
       stem: String(source.stem || source.question || source.title || "").trim(),
       options: Array.isArray(source.options) ? source.options.map((option) => String(option).trim()).filter(Boolean) : [],
       answer: String(source.answer || source.correctAnswer || "").trim(),
       analysis: String(source.analysis || source.solution || source.explanation || "").trim(),
+      officialAnalysis: String(source.officialAnalysis || "").trim(),
+      analysisSource: String(source.analysisSource || "").trim(),
+      answerSource: String(source.answerSource || "").trim(),
+      questionSource: String(source.questionSource || "").trim(),
+      answerAuthority: String(source.answerAuthority || "").trim(),
+      answerStatus: String(source.answerStatus || "").trim(),
       difficulty: String(source.difficulty || "2").trim(),
       tags: uniqueValues(source.tags || []),
       images: Array.isArray(source.images) ? source.images.map((image) => String(image).trim()).filter(Boolean) : [],
+      analysisImages: Array.isArray(source.analysisImages) ? source.analysisImages.map((image) => String(image).trim()).filter(Boolean) : [],
       source: String(source.source || "题库").trim()
     };
   }
