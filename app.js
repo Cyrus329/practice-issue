@@ -6,7 +6,7 @@ const BUNDLED_DATA_URL = "question-bank-data.json";
 const PAGE_SIZE = QuestionBankCore.PAGE_SIZE;
 
 const FORCE_CLEAN_VERSION_KEY = "zsb-question-bank-trainer:clean-version";
-const FORCE_CLEAN_VERSION = "20260627-v18-wrongbook-images-visible";
+const FORCE_CLEAN_VERSION = "20260627-v19-mobile-image-fallback";
 const STUDY_MODE_KEY = "zsb-question-bank-trainer:study-mode";
 const STUDY_DAYS_KEY = "zsb-question-bank-trainer:study-days";
 const AUTO_HIDE_MASTERED_KEY = "zsb-question-bank-trainer:auto-hide-mastered";
@@ -815,20 +815,104 @@ function renderOptions(options) {
   return `<ul class="options-list">${options.map((option) => `<li>${renderRichText(option)}</li>`).join("")}</ul>`;
 }
 
+
+const IMAGE_VERSION = "20260627-v20-split-image-packs";
+const IMAGE_PACK_SCRIPTS = [
+  { prefix: "question-images/official-answer-crops/comp_scan/", file: "image-pack-comp.js" },
+  { prefix: "question-images/wrongbook-math/", files: ["image-pack-wrongbook-01.js", "image-pack-wrongbook-02.js", "image-pack-wrongbook-03.js", "image-pack-wrongbook-04.js"] },
+  { prefix: "question-images/official-answer-crops/math_func/", file: "image-pack-math-eng.js" },
+  { prefix: "question-images/official-answer-crops/eng_np/", file: "image-pack-math-eng.js" },
+  { prefix: "question-images/answer-math-function/", file: "image-pack-math-eng.js" }
+];
+const loadedImagePackPromises = new Map();
+
+function normalizeImagePath(path) {
+  return String(path || "").trim().replace(/^\.\//, "").replace(/\\/g, "/");
+}
+
+function imageSrc(path) {
+  const raw = normalizeImagePath(path);
+  if (!raw || raw.startsWith("data:") || /^https?:\/\//i.test(raw) || raw.startsWith("blob:")) return raw;
+  return `./${raw}?v=${IMAGE_VERSION}`;
+}
+
+function getImagePackFiles(rawPath) {
+  const raw = normalizeImagePath(rawPath);
+  const hit = IMAGE_PACK_SCRIPTS.find((item) => raw.startsWith(item.prefix));
+  if (!hit) return [];
+  if (Array.isArray(hit.files)) return hit.files;
+  return hit.file ? [hit.file] : [];
+}
+
+function loadImagePack(file) {
+  if (!file) return Promise.resolve(false);
+  if (window.QB_IMAGE_PACKS_LOADED && window.QB_IMAGE_PACKS_LOADED[file]) return Promise.resolve(true);
+  if (loadedImagePackPromises.has(file)) return loadedImagePackPromises.get(file);
+  const promise = new Promise((resolve) => {
+    const script = document.createElement("script");
+    script.src = `./${file}?v=${IMAGE_VERSION}`;
+    script.onload = () => resolve(true);
+    script.onerror = () => resolve(false);
+    document.head.appendChild(script);
+  });
+  loadedImagePackPromises.set(file, promise);
+  return promise;
+}
+
+function loadImagePacks(files) {
+  const list = Array.isArray(files) ? files.filter(Boolean) : [];
+  if (!list.length) return Promise.resolve(false);
+  return Promise.all(list.map((file) => loadImagePack(file))).then((results) => results.some(Boolean));
+}
+
+window.handleQuestionImageError = async function handleQuestionImageError(img) {
+  if (!img) return;
+  const raw = normalizeImagePath(String(img.dataset.rawImage || img.getAttribute("src") || "").split("?")[0].replace(/^\.\//, ""));
+  if (!raw) return;
+  if (img.dataset.fallbackTried === "1") {
+    img.classList.add("image-load-failed");
+    const box = img.closest("figure") || img.parentElement;
+    if (box && !box.querySelector(".image-error-note")) {
+      const note = document.createElement("div");
+      note.className = "image-error-note";
+      note.textContent = "图片未加载：请确认 question-images 文件夹已完整上传，或等待内置图片包加载。";
+      box.appendChild(note);
+    }
+    return;
+  }
+  img.dataset.fallbackTried = "1";
+  const existing = window.QB_IMAGE_PACKS && window.QB_IMAGE_PACKS[raw];
+  if (existing) {
+    img.src = existing;
+    return;
+  }
+  const packFiles = getImagePackFiles(raw);
+  const ok = await loadImagePacks(packFiles);
+  const packed = ok && window.QB_IMAGE_PACKS && window.QB_IMAGE_PACKS[raw];
+  if (packed) {
+    img.src = packed;
+    return;
+  }
+  img.src = `./${raw}`;
+};
+
 function renderImages(images, label = "原题图片") {
   if (!images || !images.length) {
     return "";
   }
   return `
     <div class="question-images">
-      ${images.map((image, index) => `
+      ${images.map((image, index) => {
+        const raw = normalizeImagePath(image);
+        const src = imageSrc(raw);
+        return `
         <figure class="question-image">
-          <button class="image-zoom-button" type="button" data-zoom-image="${escapeHtml(image)}" aria-label="放大查看${escapeHtml(label)} ${index + 1}">
-            <img src="${escapeHtml(image)}" alt="${escapeHtml(label)} ${index + 1}" loading="lazy">
+          <button class="image-zoom-button" type="button" data-zoom-image="${escapeHtml(raw)}" aria-label="放大查看${escapeHtml(label)} ${index + 1}">
+            <img src="${escapeHtml(src)}" data-raw-image="${escapeHtml(raw)}" alt="${escapeHtml(label)} ${index + 1}" loading="eager" decoding="async" onerror="window.handleQuestionImageError && window.handleQuestionImageError(this)">
           </button>
           <figcaption>点图放大</figcaption>
-        </figure>
-      `).join("")}
+        </figure>`;
+      }).join("")}
     </div>
   `;
 }
@@ -1713,7 +1797,7 @@ function openImageZoom(src) {
   overlay.innerHTML = `
     <div class="image-zoom-inner">
       <button class="image-zoom-close" type="button" aria-label="关闭图片">×</button>
-      <img src="${escapeHtml(src)}" alt="放大图片">
+      <img src="${escapeHtml(imageSrc(src))}" data-raw-image="${escapeHtml(normalizeImagePath(src))}" alt="放大图片" onerror="window.handleQuestionImageError && window.handleQuestionImageError(this)">
     </div>
   `;
   overlay.addEventListener("click", (event) => {
@@ -2343,11 +2427,21 @@ function bindEvents() {
 }
 
 async function registerServiceWorker() {
+  // v19 不再启用旧版 Service Worker，避免手机继续读取旧缓存导致图片显示问号。
   if ("serviceWorker" in navigator) {
     try {
-      await navigator.serviceWorker.register("sw.js");
+      const regs = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map((reg) => reg.unregister()));
     } catch (error) {
-      console.warn("Service worker registration failed", error);
+      console.warn("Service worker unregister failed", error);
+    }
+  }
+  if (window.caches && caches.keys) {
+    try {
+      const keys = await caches.keys();
+      await Promise.all(keys.filter((key) => key.includes("question-bank")).map((key) => caches.delete(key)));
+    } catch (error) {
+      console.warn("Cache cleanup failed", error);
     }
   }
 }
