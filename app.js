@@ -816,7 +816,7 @@ function renderOptions(options) {
 }
 
 
-const IMAGE_VERSION = "20260627-v20-split-image-packs";
+const IMAGE_VERSION = "20260628-v21-final-audit-fix";
 const IMAGE_PACK_SCRIPTS = [
   { prefix: "question-images/official-answer-crops/comp_scan/", file: "image-pack-comp.js" },
   { prefix: "question-images/wrongbook-math/", files: ["image-pack-wrongbook-01.js", "image-pack-wrongbook-02.js", "image-pack-wrongbook-03.js", "image-pack-wrongbook-04.js"] },
@@ -1003,6 +1003,20 @@ function renderAnalysisImageToggle(question, forceOpen = false) {
   `;
 }
 
+function renderBackupAnalysisImages(question) {
+  if (!Array.isArray(question.backupAnalysisImages) || !question.backupAnalysisImages.length) return "";
+  const label = String(question.backupAnalysisImageLabel || "完整答案页备份").trim() || "完整答案页备份";
+  return `
+    <section class="analysis-image-card backup-page-card">
+      <strong>${escapeHtml(label)}</strong>
+      <details>
+        <summary>查看${escapeHtml(label)}</summary>
+        ${renderImages(question.backupAnalysisImages, label)}
+      </details>
+    </section>
+  `;
+}
+
 function renderSolution(question, progress) {
   const level = progress.solutionLevel || "answer";
   const showAnalysis = level === "analysis";
@@ -1025,6 +1039,7 @@ function renderSolution(question, progress) {
     </section>
     ${showAnalysis && officialAnalysis ? renderShortAnalysis("官方解析", officialAnalysis, question.analysisSource || question.verifiedSource || "") : ""}
     ${showAnalysis && hasOfficialImage && !isWrongbookMathImage ? renderAnalysisImageToggle(question, !officialAnalysis) : ""}
+    ${showAnalysis ? renderBackupAnalysisImages(question) : ""}
   `;
 }
 
